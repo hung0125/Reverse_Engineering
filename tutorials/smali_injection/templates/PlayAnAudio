@@ -89,7 +89,7 @@
 #caller. Paste it at the first line of onCreate() method
 invoke-direct {p0}, Lcom/mycompany/myapp2/MainActivity;->iq500PlayAnAudio()V
 
-#You have to manually set the current activity (Lcom...)
+#You have to manually change the current activity (Lcom/mycompany...)
 
 #Java logic is as follows:
 	private void iq500PlayAnAudio()
