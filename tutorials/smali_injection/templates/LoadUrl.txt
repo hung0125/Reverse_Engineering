@@ -8,7 +8,7 @@
     .end annotation
 
     .prologue
-    .line 20
+    
     move-object v0, p0
 
     move-object v2, v0
