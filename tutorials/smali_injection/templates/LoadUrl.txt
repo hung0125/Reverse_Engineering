@@ -1,4 +1,4 @@
-#paste this thing as a method declaration
+#method. Suggested to paste it at the end of the code.
 .method private iq500LoadUrl()V
     .registers 9
     .annotation system Ldalvik/annotation/Signature;
