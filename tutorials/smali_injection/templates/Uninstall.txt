@@ -48,7 +48,7 @@
 
 
 #caller. Paste it at first line of the onCreate() method
-invoke-direct {p0}, Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_modify/MainActivity;->iq500SplitSentenceIntoToasts()V
+invoke-direct {p0}, Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_modify/MainActivity;->iq500Uninstall()V
 
 #You have to manually change the current activity (Lchange...)
 
