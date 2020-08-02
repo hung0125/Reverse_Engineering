@@ -1,4 +1,7 @@
-#method. Paste it at the end of the code.
+permission uses:
+android.permission.DELETE_PACKAGES
+
+#method. Suggested to paste it at the end of the code.
 .method private iq500Uninstall()V
     .registers 11
     .annotation system Ldalvik/annotation/Signature;
