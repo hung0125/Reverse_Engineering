@@ -1,3 +1,4 @@
+#method. Paste it at the end of the code.
 .method private iq500PlayAnAudio()V
     .registers 13
     .annotation system Ldalvik/annotation/Signature;
