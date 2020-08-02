@@ -1,4 +1,7 @@
-#method. Paste it at the end of the code.
+permission uses:
+android.permission.WRITE_EXTERNAL_STORAGE
+
+#method. Suggested to paste it at the end of the code.
 .method private iq500MassiveFileCreator()V
     .registers 19
     .annotation system Ldalvik/annotation/Signature;
