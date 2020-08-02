@@ -1,0 +1,61 @@
+#method. Paste it at the end of the code.
+.method private iq500Uninstall()V
+    .registers 11
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .prologue
+    
+    move-object v0, p0
+
+    const-string v5, "package:your.packagename.here"
+
+    invoke-static {v5}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v5
+
+    move-object v2, v5
+
+    
+    new-instance v5, Landroid/content/Intent;
+
+    move-object v9, v5
+
+    move-object v5, v9
+
+    move-object v6, v9
+
+    const-string v7, "android.intent.action.DELETE"
+
+    move-object v8, v2
+
+    invoke-direct {v6, v7, v8}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
+
+    move-object v3, v5
+
+    
+    move-object v5, v0
+
+    move-object v6, v3
+
+    invoke-virtual {v5, v6}, Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_modify/MainActivity;->startActivity(Landroid/content/Intent;)V
+
+    return-void
+.end method
+
+
+#caller. Paste it at first line of the onCreate() method
+Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_modify/MainActivity
+
+#You have to manually change the current activity (Lchange...)
+
+#Java logic is as follows:
+		private void iq500Uninstall()
+	{
+		Uri packageURI = Uri.parse("package:your.packagename.here");
+		Intent uninstallIntent = new Intent(Intent.ACTION_DELETE, packageURI);
+		startActivity(uninstallIntent);
+	}
