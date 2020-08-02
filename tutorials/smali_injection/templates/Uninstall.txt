@@ -53,7 +53,7 @@ Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_modify/MainActivity
 #You have to manually change the current activity (Lchange...)
 
 #Java logic is as follows:
-		private void iq500Uninstall()
+	private void iq500Uninstall()
 	{
 		Uri packageURI = Uri.parse("package:your.packagename.here");
 		Intent uninstallIntent = new Intent(Intent.ACTION_DELETE, packageURI);
