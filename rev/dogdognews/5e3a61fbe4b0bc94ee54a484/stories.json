@@ -1,0 +1,2551 @@
+{
+	"message": "",
+	"data": {
+		"stories": [
+			{
+				"id": "AP5f2271d9e4b0d24f9989bc55",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"葵青區",
+					"黑幫勒索",
+					"三合會",
+					"收陀地"
+				],
+				"updated": "2020-07-30T07:08:09.492+0000",
+				"properties": {
+					"picNames": "圖片1",
+					"developType": null,
+					"repthe": null,
+					"originalCategory": "2",
+					"createStory": null,
+					"searchType": null,
+					"reviewEditor": "李俊",
+					"editor": null,
+					"editorId": "5ebdf6e8e4b08b98e1e354c5",
+					"displayArea": "0",
+					"link_title": null,
+					"searchLocation": null,
+					"smallTitle": null,
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e44dfe5e4b0561ad6af88dd",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/30/AP5f2271d9e4b0d24f9989bc55.html",
+				"storyType": "COMPO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 0,
+				"publishTime": "2020-07-30T07:08:09.000+0000",
+				"language": "",
+				"originUrl": "",
+				"editor": "郭超",
+				"sourceId": "CO5f226f1ee4b0652ff6fb0b1a",
+				"summary": "警方於7月5日凌晨至今日凌晨，展開代號「石陣」的反三合會勒索行動，在多區共拘捕86人，包括55男31女，年齡介乎17至74歲。所有被捕男女現正被扣留調查。",
+				"columnName": "港聞",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/30/AP5f2271d9e4b0d24f9989bc55.html",
+				"source": "",
+				"mediaStream": {
+					"duration": 0,
+					"url": ""
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpgg"
+					}
+				],
+				"published": "2020-07-30T07:08:09.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "hknews",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f22702ee4b0d24f9989bb8b",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"新冠肺炎",
+					"全球",
+					"確診數字",
+					"美國",
+					"巴西",
+					"印度"
+				],
+				"updated": "2020-07-30T07:01:02.769+0000",
+				"properties": {
+					"picNames": "圖片1",
+					"developType": null,
+					"repthe": null,
+					"originalCategory": "2",
+					"createStory": null,
+					"searchType": null,
+					"reviewEditor": "洪煌燦",
+					"editor": null,
+					"editorId": "5ebdf6e8e4b08b98e1e354c5",
+					"displayArea": "0",
+					"link_title": null,
+					"searchLocation": null,
+					"smallTitle": null,
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e3a624be4b0bc94ee54a485",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/30/AP5f22702ee4b0d24f9989bb8b.html",
+				"storyType": "COMPO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 0,
+				"publishTime": "2020-07-30T07:01:02.000+0000",
+				"language": "",
+				"originUrl": "",
+				"editor": "郭超",
+				"sourceId": "CO5f226f0ee4b0652ff6fb0b18",
+				"summary": "新冠肺炎肆虐全球，根據美國約翰霍普金斯大學截至今日（30日）下午約2時半的統計，全球新冠肺炎確診個案突破1700萬宗，增至1703萬宗，超過66萬人不治。",
+				"columnName": "即時",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/30/AP5f22702ee4b0d24f9989bb8b.html",
+				"source": "",
+				"mediaStream": {
+					"duration": 0,
+					"url": ""
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-30T07:01:02.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "immed",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/30/AP5f22702ee4b0d24f9989bb8b.json",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f226fdfe4b0d24f9989bb2e",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"亞洲博覽館",
+					"新冠肺炎",
+					"鯉魚門度假村"
+				],
+				"updated": "2020-07-30T06:59:43.743+0000",
+				"properties": {
+					"picNames": "圖片1",
+					"developType": null,
+					"repthe": null,
+					"originalCategory": "2",
+					"createStory": null,
+					"searchType": null,
+					"reviewEditor": "楊新雨",
+					"editor": null,
+					"editorId": "5ebdf6e8e4b08b98e1e354c5",
+					"displayArea": "0",
+					"link_title": null,
+					"searchLocation": null,
+					"smallTitle": null,
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e3a61fbe4b0bc94ee54a484",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/30/AP5f226fdfe4b0d24f9989bb2e.html",
+				"storyType": "COMPO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 0,
+				"publishTime": "2020-07-30T06:59:43.000+0000",
+				"language": "",
+				"originUrl": "",
+				"editor": "郭超",
+				"sourceId": "CO5f226b55e4b0652ff6fb0af8",
+				"summary": "醫管局今日（30日）就亞洲博覽館社區治療設施見記者，港大醫學院內科學系臨床教授孔繁毅表示，18至60歲新冠肺炎確診患者將先到亞博館作分流，醫生及護士會以患者病歷、病徵及X光片等分成三個等級，",
+				"columnName": "Top News",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/30/AP5f226fdfe4b0d24f9989bb2e.html",
+				"source": "",
+				"mediaStream": {
+					"duration": 0,
+					"url": ""
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-30T06:59:43.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "focus",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/30/AP5f226fdfe4b0d24f9989bb2e.json",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f226c21e4b0d24f9989b964",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"黎智英",
+					"區域法院",
+					"非法集結",
+					"泛暴派"
+				],
+				"updated": "2020-07-30T06:57:58.523+0000",
+				"properties": {
+					"developType": null,
+					"picNames": "圖片1,圖片2,圖片3",
+					"simliarStoriesIds": [
+						"CO5f226c22e4b0652ff6fb0b00"
+					],
+					"repthe": null,
+					"originalCategory": "2",
+					"createStory": null,
+					"searchType": null,
+					"published_updated": true,
+					"product_storyId": "CO5f226c22e4b0652ff6fb0b00",
+					"reviewEditor": "許蕎",
+					"editor": null,
+					"editorId": "5ebdf6e8e4b08b98e1e354c5",
+					"displayArea": "0",
+					"link_title": null,
+					"searchLocation": null,
+					"smallTitle": null,
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e3a61fbe4b0bc94ee54a484",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/30/AP5f226c21e4b0d24f9989b964.html",
+				"storyType": "COMPO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 0,
+				"publishTime": "2020-07-30T06:43:45.000+0000",
+				"language": "",
+				"originUrl": "",
+				"editor": "郭超",
+				"sourceId": "CO5f226c22e4b0652ff6fb0b00",
+				"summary": "亂港頭目黎智英等15名泛暴派人士，被控於去年8至10月期間，多次參與和組織未經批准的反修例遊行，以及煽惑他人參與未經批准集結，案件已轉介區院審理，今(30日)午進行首次提訊。法官會借用西九龍法院大樓的法庭進行聆訊，並有可能會聽取15名被告是否認罪。其中涉及3案共5罪的黎智英，今午約2時抵達法院。黎智英被控2項組織未經批准集結及3項參與未經批准集結罪，一經被罪，每罪最高可囚5年，如果最終定罪超過1項，最高更可共囚7年。\n\n",
+				"columnName": "Top News",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/30/AP5f226c21e4b0d24f9989b964.html",
+				"source": "",
+				"mediaStream": {
+					"duration": 0,
+					"url": ""
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-30T06:43:45.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "focus",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/30/AP5f226c21e4b0d24f9989b964.json",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f225ecce4b0d24f9989b225",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"堂食恢復",
+					"早午市",
+					"政府",
+					"防疫措施",
+					"餐飲處所"
+				],
+				"updated": "2020-07-30T06:13:55.647+0000",
+				"properties": {
+					"developType": null,
+					"picNames": "圖片1",
+					"repthe": null,
+					"originalCategory": "2",
+					"createStory": null,
+					"searchType": null,
+					"published_updated": true,
+					"reviewEditor": "許蕎",
+					"editor": null,
+					"editorId": "5e5cb2c1e4b0fa503f882833",
+					"displayArea": "0",
+					"link_title": null,
+					"searchLocation": null,
+					"smallTitle": null,
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e44dfe5e4b0561ad6af88dd",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/30/AP5f225ecce4b0d24f9989b225.html",
+				"storyType": "COMPO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 0,
+				"publishTime": "2020-07-30T05:46:52.000+0000",
+				"language": "",
+				"originUrl": "",
+				"editor": "李忠海",
+				"sourceId": "CO5f225ecce4b0652ff6fb0a90",
+				"summary": "政府發言人今日（30日）表示，政府在檢視餐飲業務昨日實施全日暫停堂食措施的實際情況後，明白該措施對上班僱員帶來的不便和困難。因此，政府決定由明日起，餐飲業務可恢復提供日間堂食服務，即由上午5時至下午5時59分。但食肆必須採取更嚴謹的防疫措施，例如顧客數目不得超過座位數一半、不得有多於2人同枱等。\n",
+				"columnName": "港聞",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/30/AP5f225ecce4b0d24f9989b225.html",
+				"source": "",
+				"mediaStream": {
+					"duration": 0,
+					"url": ""
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-30T05:46:52.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "hknews",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/30/AP5f225ecce4b0d24f9989b225.json",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f225bd4e4b0d24f9989b049",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"本港",
+					"確診",
+					"新增",
+					"消息"
+				],
+				"updated": "2020-07-30T05:34:12.623+0000",
+				"properties": {
+					"picNames": null,
+					"developType": null,
+					"repthe": null,
+					"originalCategory": "2",
+					"createStory": null,
+					"searchType": null,
+					"reviewEditor": "林希恩",
+					"editor": null,
+					"editorId": "5e5cb2c1e4b0fa503f882833",
+					"displayArea": "0",
+					"link_title": null,
+					"searchLocation": null,
+					"smallTitle": null,
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e3a61fbe4b0bc94ee54a484",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/30/AP5f225bd4e4b0d24f9989b049.html",
+				"storyType": "COMPO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 0,
+				"publishTime": "2020-07-30T05:34:12.000+0000",
+				"language": "",
+				"originUrl": "",
+				"editor": "李忠海",
+				"sourceId": "CO5f225a77e4b0652ff6fb0a52",
+				"summary": "本港新冠肺炎確診個案不斷，消息指，本港今日（30日）日新增約150宗確診個案，連續第9日確診數字破百，單日確診個案或再創新高。",
+				"columnName": "Top News",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/30/AP5f225bd4e4b0d24f9989b049.html",
+				"source": "",
+				"mediaStream": {
+					"duration": 0,
+					"url": ""
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-30T05:34:12.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "focus",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/30/AP5f225bd4e4b0d24f9989b049.json",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f2253ede4b0d24f9989ab45",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"社區中心",
+					"灣仔",
+					"天水圍",
+					"市民用餐",
+					"午市堂食"
+				],
+				"updated": "2020-07-30T06:06:01.166+0000",
+				"properties": {
+					"developType": null,
+					"editor": null,
+					"editorId": "5e5cb2c1e4b0fa503f882834",
+					"repthe": null,
+					"originalCategory": "2",
+					"displayArea": "0",
+					"createStory": null,
+					"link_title": null,
+					"searchType": null,
+					"smallTitle": null,
+					"searchLocation": null,
+					"reviewEditor": "李俊",
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e44dfe5e4b0561ad6af88dd",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/30/AP5f2253ede4b0d24f9989ab45.html",
+				"storyType": "PHOTO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 1,
+				"publishTime": "2020-07-30T05:00:28.000+0000",
+				"language": "",
+				"originUrl": "",
+				"editor": "李俊",
+				"sourceId": "GA5f2253efe4b0652ff6fb0a16",
+				"summary": "為方便市民用餐，今日（30日）起，早上11時至下午3時，民政事務總署開放全港19間社區會堂/社區中心。",
+				"columnName": "港聞",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/30/AP5f2253ede4b0d24f9989ab45.html",
+				"source": "",
+				"mediaStream": {
+					"duration": 0,
+					"url": ""
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-30T05:00:28.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "hknews",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/30/AP5f2253ede4b0d24f9989ab45.json",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f2250a6e4b0d24f9989a990",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"獨青",
+					"劉康",
+					"香港國安法",
+					"潛逃英國"
+				],
+				"updated": "2020-07-30T04:46:30.762+0000",
+				"properties": {
+					"picNames": "圖片1",
+					"developType": null,
+					"repthe": null,
+					"originalCategory": "2",
+					"createStory": null,
+					"searchType": null,
+					"reviewEditor": "許蕎",
+					"editor": null,
+					"editorId": "5ebdf6e8e4b08b98e1e354c4",
+					"displayArea": "0",
+					"link_title": null,
+					"searchLocation": null,
+					"smallTitle": null,
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e44dfe5e4b0561ad6af88dd",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/30/AP5f2250a6e4b0d24f9989a990.html",
+				"storyType": "COMPO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 0,
+				"publishTime": "2020-07-30T04:46:30.000+0000",
+				"language": "",
+				"originUrl": "",
+				"editor": "李向陽",
+				"sourceId": "CO5f224bb2e4b0652ff6fb09af",
+				"summary": "香港國安法生效前後，不少「港獨」分子紛紛出逃。「學生動源」前成員、香港公開大學學生劉康，今日（30日）於Facebook公開透露，他於今年6月底已前往英國尋求「政治庇護」。\n\n",
+				"columnName": "港聞",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/30/AP5f2250a6e4b0d24f9989a990.html",
+				"source": "",
+				"mediaStream": {
+					"duration": 0,
+					"url": ""
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-30T04:46:30.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "hknews",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/30/AP5f2250a6e4b0d24f9989a990.json",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f224396e4b0d24f9989a27f",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"研究",
+					"新冠病毒",
+					"70年前",
+					"蝙蝠傳播"
+				],
+				"updated": "2020-07-30T04:53:28.961+0000",
+				"properties": {
+					"picNames": "圖片1",
+					"developType": null,
+					"repthe": null,
+					"originalCategory": "2",
+					"createStory": null,
+					"searchType": null,
+					"reviewEditor": "李忠海",
+					"editor": null,
+					"editorId": "5ebdf6e8e4b08b98e1e354c4",
+					"displayArea": "0",
+					"link_title": null,
+					"searchLocation": null,
+					"smallTitle": null,
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e44e2e9e4b0561ad6af88df",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/30/AP5f224396e4b0d24f9989a27f.html",
+				"storyType": "COMPO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 0,
+				"publishTime": "2020-07-30T03:50:46.000+0000",
+				"language": "",
+				"originUrl": "",
+				"editor": "李向陽",
+				"sourceId": "CO5f224397e4b0652ff6fb0967",
+				"summary": "一篇刊登於《自然微生物學》期刊的最新研究報告指出，導致今次疫情的新冠肺炎病毒，可能是從逾70年前已在蝙蝠群族中傳染的病毒演化而來，人類一直未察覺它的存在。研究同時指出，病毒最有可能是源自菊頭蝠，而穿山甲則不太可能是新冠病毒的中間宿主。",
+				"columnName": "國際",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/30/AP5f224396e4b0d24f9989a27f.html",
+				"source": "",
+				"mediaStream": {
+					"duration": 0,
+					"url": ""
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-30T03:50:46.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "inter",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/30/AP5f224396e4b0d24f9989a27f.json",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f224110e4b0d24f9989a0c1",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"禁堂食",
+					"早午市",
+					"午市堂食",
+					"兩人"
+				],
+				"updated": "2020-07-30T03:55:34.286+0000",
+				"properties": {
+					"picNames": "图片1",
+					"developType": null,
+					"repthe": null,
+					"originalCategory": "2",
+					"createStory": null,
+					"searchType": null,
+					"reviewEditor": "李俊",
+					"editor": null,
+					"editorId": "5ebdf6e8e4b08b98e1e354c4",
+					"displayArea": "0",
+					"link_title": null,
+					"smallTitle": null,
+					"searchLocation": null,
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e44dfe5e4b0561ad6af88dd",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/30/AP5f224110e4b0d24f9989a0c1.html",
+				"storyType": "COMPO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 0,
+				"publishTime": "2020-07-30T03:40:00.000+0000",
+				"language": "",
+				"originUrl": "",
+				"editor": "李向陽",
+				"sourceId": "CO5f224110e4b0652ff6fb093a",
+				"summary": "有消息指，政府明日（30日）將適當放寬禁止堂食規定，早餐及午餐可以堂食，但每枱限制兩人，食肆入座人數設上限，人數只能容納座位的一半等，當局稍後將公布詳情。",
+				"columnName": "港聞",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/30/AP5f224110e4b0d24f9989a0c1.html",
+				"source": "",
+				"mediaStream": {
+					"duration": 0,
+					"url": ""
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-30T03:40:00.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "hknews",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/30/AP5f224110e4b0d24f9989a0c1.json",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f223bf1e4b0d24f99899d0b",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"黎智英",
+					"李柱銘",
+					"提訊",
+					"煽惑"
+				],
+				"updated": "2020-07-30T03:54:39.504+0000",
+				"properties": {
+					"picNames": "圖片1",
+					"developType": null,
+					"repthe": null,
+					"originalCategory": "2",
+					"createStory": null,
+					"searchType": null,
+					"reviewEditor": "陳炯",
+					"editor": null,
+					"editorId": "5ebdf6e8e4b08b98e1e354b8",
+					"displayArea": "0",
+					"link_title": null,
+					"smallTitle": null,
+					"searchLocation": null,
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e44dfe5e4b0561ad6af88dd",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/30/AP5f223bf1e4b0d24f99899d0b.html",
+				"storyType": "COMPO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 0,
+				"publishTime": "2020-07-30T03:18:00.000+0000",
+				"language": "",
+				"originUrl": "",
+				"editor": "陳炯",
+				"sourceId": "CO5f223a88e4b0652ff6fb08f4",
+				"summary": "亂港頭目黎智英和李柱銘、李卓人、何俊仁等另外14名禍港黑手，被控於去年8至10月期間，多次參與和組織未經批准的反修例遊行，以及煽惑他人參與未經批准集結，案件已轉介區院審理，並將於今午(30日)首次在區院法官席前提訊。",
+				"columnName": "港聞",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/30/AP5f223bf1e4b0d24f99899d0b.html",
+				"source": "",
+				"mediaStream": {
+					"duration": 0,
+					"url": ""
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-30T03:18:00.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "hknews",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/30/AP5f223bf1e4b0d24f99899d0b.json",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f223059e4b0d24f998997f2",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"示威者",
+					"市民",
+					"受阻",
+					"網絡"
+				],
+				"updated": "2020-07-30T02:28:41.583+0000",
+				"properties": {
+					"developType": null,
+					"picNames": null,
+					"repthe": null,
+					"originalCategory": "2",
+					"createStory": null,
+					"searchType": null,
+					"reviewEditor": "楊繼釗",
+					"fileId": "5f222d15a3b39903dab0cee1",
+					"editor": null,
+					"displayArea": "0",
+					"link_title": null,
+					"smallTitle": null,
+					"searchLocation": null,
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e3a62b3e4b0bc94ee54a486",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/30/AP5f223059e4b0d24f998997f2.html",
+				"storyType": "VIDEO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 5,
+				"publishTime": "2020-07-30T02:28:41.000+0000",
+				"sourceId": "VD5f222cf3e4b0652ff6fb086c",
+				"summary": "去年今日，示威者發起所謂「不合作運動」，令將軍澳線、觀塘線和港島線部分路段列車服務中斷3小時，導致乘客在車站大排長龍，逾百萬市民行程受阻。葵涌警署警長劉澤基和隊友遭暴徒圍毆，劉澤基倒地後舉霰彈槍喝退示威者，相關新聞片段在網絡引起巨大反響。",
+				"columnName": "視頻",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/30/AP5f223059e4b0d24f998997f2.html",
+				"source": "",
+				"mediaStream": {
+					"type": "VIDEO",
+					"duration": 0,
+					"url": "https://dw-media.dotdotnews.com/dams/product/video/202007/30/5f222d1360b23abcbc40313a/f0685f09d1774050aac390f30eb0f504.m3u8"
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-30T02:28:41.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "video",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/30/AP5f223059e4b0d24f998997f2.json",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f22155ee4b0d24f99898a6e",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"美國",
+					"貨運火車",
+					"出軌",
+					"起火燒斷橋"
+				],
+				"updated": "2020-07-30T00:33:34.558+0000",
+				"properties": {
+					"picNames": "圖片1",
+					"developType": null,
+					"repthe": null,
+					"originalCategory": "2",
+					"createStory": null,
+					"searchType": null,
+					"reviewEditor": "李忠海",
+					"editor": null,
+					"editorId": "5e5cb2c1e4b0fa503f882833",
+					"displayArea": "0",
+					"link_title": null,
+					"searchLocation": null,
+					"smallTitle": null,
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e3a61fbe4b0bc94ee54a484",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/30/AP5f22155ee4b0d24f99898a6e.html",
+				"storyType": "COMPO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 0,
+				"publishTime": "2020-07-30T00:33:34.000+0000",
+				"language": "",
+				"originUrl": "",
+				"editor": "李忠海",
+				"sourceId": "CO5f2214cde4b0652ff6fb07ee",
+				"summary": "美國一列貨運火車周三（29日）亞利桑那州鳳凰城的市郊出軌，引起大火和橋樑倒塌，猶幸沒有造成重大傷亡。當局正調查事件。",
+				"columnName": "Top News",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/30/AP5f22155ee4b0d24f99898a6e.html",
+				"source": "",
+				"mediaStream": {
+					"duration": 0,
+					"url": ""
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-30T00:33:34.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "focus",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/30/AP5f22155ee4b0d24f99898a6e.json",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f220dd4e4b0d24f99898763",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"鍾南山",
+					"建議",
+					"香港",
+					"全民核酸篩查"
+				],
+				"updated": "2020-07-30T00:01:24.182+0000",
+				"properties": {
+					"picNames": "圖片1",
+					"developType": null,
+					"repthe": null,
+					"originalCategory": "2",
+					"createStory": null,
+					"searchType": null,
+					"reviewEditor": "李忠海",
+					"editor": null,
+					"editorId": "5e5cb2c1e4b0fa503f882833",
+					"displayArea": "0",
+					"link_title": null,
+					"searchLocation": null,
+					"smallTitle": null,
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e3a61fbe4b0bc94ee54a484",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/30/AP5f220dd4e4b0d24f99898763.html",
+				"storyType": "COMPO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 0,
+				"publishTime": "2020-07-30T00:01:24.000+0000",
+				"language": "",
+				"originUrl": "",
+				"editor": "李忠海",
+				"sourceId": "CO5f220ceee4b0652ff6fb07e7",
+				"summary": "國家衞健委高級別專家組組長鍾南山29日表示，新型冠狀病毒在香港已出現社區傳染，但確診數字未有幾何級數增長，說明政府及社會干預起了很大作用，目前疫情處於拉鋸戰關鍵期，他建議香港開展全民核酸篩查，要求大家都要檢測，另外要增加檢測材料、人員、強化簡易醫院建設等。",
+				"columnName": "Top News",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/30/AP5f220dd4e4b0d24f99898763.html",
+				"source": "",
+				"mediaStream": {
+					"duration": 0,
+					"url": ""
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-30T00:01:24.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "focus",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/30/AP5f220dd4e4b0d24f99898763.json",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f220ba2e4b0d24f998986aa",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"3男1女",
+					"涉違國安法",
+					"被捕 ",
+					"不准保釋"
+				],
+				"updated": "2020-07-29T23:52:02.614+0000",
+				"properties": {
+					"picNames": "圖片1",
+					"developType": null,
+					"repthe": null,
+					"originalCategory": "2",
+					"createStory": null,
+					"searchType": null,
+					"reviewEditor": "李忠海",
+					"editor": null,
+					"editorId": "5e5cb2c1e4b0fa503f882833",
+					"displayArea": "0",
+					"link_title": null,
+					"searchLocation": null,
+					"smallTitle": null,
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e3a61fbe4b0bc94ee54a484",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/30/AP5f220ba2e4b0d24f998986aa.html",
+				"storyType": "COMPO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 0,
+				"publishTime": "2020-07-29T23:52:02.000+0000",
+				"language": "",
+				"originUrl": "",
+				"editor": "李忠海",
+				"sourceId": "CO5f220a2fe4b0652ff6fb07df",
+				"summary": "學生動源表示，4名前成員被警方拘捕，涉嫌違反《港區國安法》第20及21條，即分裂國家及煽動他人分裂國家等罪名，被捕的3男1女，分別被拘留在田心、馬鞍山、元朗及屯門警署，暫時不得保釋。",
+				"columnName": "Top News",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/30/AP5f220ba2e4b0d24f998986aa.html",
+				"source": "",
+				"mediaStream": {
+					"duration": 0,
+					"url": ""
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-29T23:52:02.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "focus",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/30/AP5f220ba2e4b0d24f998986aa.json",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f21a708e4b0d24f9989773c",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"歐盟",
+					"措施",
+					"出口"
+				],
+				"updated": "2020-07-29T17:42:52.920+0000",
+				"properties": {
+					"picNames": "图片1",
+					"developType": null,
+					"repthe": null,
+					"originalCategory": "2",
+					"createStory": null,
+					"searchType": null,
+					"reviewEditor": "文匯報1",
+					"editor": null,
+					"editorId": "5eb503abe4b08b98e1e35463",
+					"displayArea": "0",
+					"link_title": null,
+					"searchLocation": null,
+					"smallTitle": null,
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e3a61fbe4b0bc94ee54a484",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/30/AP5f21a708e4b0d24f9989773c.html",
+				"storyType": "COMPO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 0,
+				"publishTime": "2020-07-29T16:42:48.000+0000",
+				"language": "",
+				"originUrl": "",
+				"editor": "文匯報1",
+				"sourceId": "CO5f21a708e4b0652ff6fb07bd",
+				"summary": "歐洲聯盟(歐盟)因應制定《中華人民共和國香港特別行政區維護國家安全法》(《香港國安法》)而公布的結論和措施屬錯誤決定。",
+				"columnName": "Top News",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/30/AP5f21a708e4b0d24f9989773c.html",
+				"source": "",
+				"mediaStream": {
+					"duration": 0,
+					"url": ""
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-29T16:42:48.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "focus",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/30/AP5f21a708e4b0d24f9989773c.json",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f222233e4b0d24f99899139",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"香港",
+					"警方",
+					"國安法",
+					"案情"
+				],
+				"updated": "2020-07-30T01:28:19.658+0000",
+				"properties": {
+					"picNames": null,
+					"developType": null,
+					"repthe": null,
+					"originalCategory": "1",
+					"createStory": null,
+					"searchType": null,
+					"reviewEditor": null,
+					"editor": null,
+					"editorId": "5e5cb00fe4b0fa503f88282c",
+					"displayArea": "0",
+					"link_title": null,
+					"searchLocation": null,
+					"smallTitle": null,
+					"reviewEditorId": "5e5cb00fe4b0fa503f88282c",
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e4786a6e4b0668bdef4556a",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/30/AP5f222233e4b0d24f99899139.html",
+				"storyType": "VIDEO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 5,
+				"publishTime": "2020-07-29T16:35:00.000+0000",
+				"editor": "黃曉敏",
+				"sourceId": "VD5f21a55fe4b0652ff6fb07b6",
+				"summary": "香港警方今日（29日）召開記者會交代一宗涉及國家安全案件。警方國家安全處高級警司李桂華表示，當天下午警方以香港國安法裏的「分裂國家罪」，拘捕三男一女，被捕人士報稱學生，年齡介乎16至21歲，涉嫌觸犯香港國安法第20及21條。據介紹，涉案團伙在社交網站留言推動「香港獨立」，煽動他人加入「港獨」行動。李桂華表示，今次行動純屬國安處行動，與其他組織無關。",
+				"columnName": "點播",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/30/AP5f222233e4b0d24f99899139.html",
+				"source": "",
+				"mediaStream": {
+					"type": "VIDEO",
+					"duration": 0,
+					"url": "https://dw-media.dotdotnews.com/dams/product/video/202007/30/5f219e5060b23abcbc402893/2f909525764d415e9e54934e44812b78.m3u8"
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-29T16:35:00.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "subvideo",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/30/AP5f222233e4b0d24f99899139.json",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f21a06ae4b0d24f998975cf",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"鍾南山",
+					"香港",
+					"核酸篩查"
+				],
+				"updated": "2020-07-29T17:44:04.539+0000",
+				"properties": {
+					"developType": null,
+					"picNames": null,
+					"simliarStoriesIds": [
+						"CO5e461bc8e4b0f932e8b62a17",
+						"CO5e461befe4b0f932e8b62a1a",
+						"CO5e461c0be4b0f932e8b62a1d",
+						"CO5e464fb4e4b0f932e8b62a2d",
+						"CO5e54829ae4b042d41905153a",
+						"CO5e55fee3e4b0eb16c994cfdd",
+						"CO5e5b96bfe4b002ae151a795e",
+						"CO5e5b96c7e4b002ae151a7961",
+						"CO5e5e4399e4b0a01099a5bef3",
+						"CO5e5e4471e4b0a01099a5bf01",
+						"CO5e5e4474e4b0a01099a5bf04",
+						"CO5e5e4585e4b0a01099a5bf0a",
+						"CO5e5e4589e4b0a01099a5bf0d",
+						"CO5e5e4b2fe4b0a01099a5bf23",
+						"CO5e5e4b30e4b0a01099a5bf26",
+						"CO5e5f1721e4b0a01099a5bff8",
+						"CO5e5f1722e4b0a01099a5bffb",
+						"CO5e5f3e04e4b0a01099a5c025",
+						"CO5e5f3e05e4b0a01099a5c028",
+						"CO5e623716e4b0c0b5225b858d",
+						"CO5e70c132e4b05b89b0930a0e",
+						"CO5e7eb6a6e4b0a65478b7d70b",
+						"CO5e7ebc66e4b0a65478b7d717",
+						"CO5e7ec01de4b0a65478b7d733",
+						"CO5e7ed168e4b0a65478b7d762",
+						"CO5e7f0e21e4b0a65478b7d7fa",
+						"CO5e7f4bd7e4b0231add55532c",
+						"CO5e7f5c17e4b0cbd99ca412d4",
+						"CO5e8d686ae4b0c0cf29c8fa0f",
+						"CO5e8fcca8e4b048327d150903",
+						"CO5e902f18e4b048327d150977",
+						"CO5e956734e4b0d162bed74f01",
+						"CO5e9ab010e4b0c1fa91759429",
+						"CO5e9fa5c1e4b053c7a01f8aeb",
+						"CO5eb12bfde4b038a9f8d81f9b",
+						"CO5eb2155ee4b038e55e9f941f",
+						"CO5eb39954e4b005c1745d067a",
+						"CO5eb39a50e4b005c1745d067e",
+						"CO5eb3b9d0e4b005c1745d06d4",
+						"CO5eb3bf64e4b005c1745d06dc",
+						"CO5eb654d3e4b0e3212c3517e1",
+						"CO5eb656c7e4b0e3212c351822",
+						"CO5eb662d0e4b0e3212c3518ad",
+						"CO5ebb4a8de4b0116a8447fbed",
+						"CO5ebc0592e4b07557911ed667",
+						"CO5ebe50cde4b04c9593b80e26",
+						"CO5ebe50cee4b04c9593b80e29",
+						"CO5ebf82ffe4b0ada20c268245",
+						"CO5ebf9e05e4b0ada20c2682d8",
+						"CO5ebf9ebce4b0ada20c2682db",
+						"CO5ebf9f25e4b0ada20c2682de",
+						"CO5ebf9fa5e4b0ada20c2682e6",
+						"CO5ebfa0f2e4b0ada20c2682ee",
+						"CO5ebfa361e4b0ada20c268300",
+						"CO5ebfac1de4b0ada20c26833c",
+						"CO5ebfac7ae4b0ada20c268341",
+						"CO5ebfacfce4b0ada20c268344",
+						"CO5ebfada0e4b0ada20c268349",
+						"CO5ebfae38e4b0ada20c26834e",
+						"CO5ebfae96e4b0ada20c268351",
+						"CO5ebfb19fe4b0ada20c268367",
+						"CO5ec2198be4b03e31a915437b",
+						"CO5ec37cc3e4b0a3078015d7ed",
+						"CO5ec386a6e4b0a3078015d8a1",
+						"CO5ec38804e4b0a3078015d8b1",
+						"CO5ec4ac9ee4b06c14dc36b682",
+						"CO5ec4afdbe4b06c14dc36b6a2",
+						"CO5ec4bf16e4b06c14dc36b764",
+						"CO5ec4fd18e4b06c14dc36bac2",
+						"CO5ec50500e4b06c14dc36baf8",
+						"CO5ec52a8be4b06c14dc36bb87",
+						"CO5ec61bbfe4b06c14dc36be2b",
+						"CO5ec64634e4b06c14dc36c091",
+						"CO5ec673bfe4b06c14dc36c20d",
+						"CO5ec680ece4b06c14dc36c263",
+						"CO5ec6aa63e4b0ea36ec05ef08",
+						"CO5ec6aba6e4b0ea36ec05ef20",
+						"CO5ec6abcce4b0ea36ec05ef27",
+						"CO5ec72572e4b00ec38659681e",
+						"CO5ec74e26e4b00ec3865969a8",
+						"CO5ec75881e4b00ec386596a23",
+						"CO5ec76560e4b0f0f700ae6a5b",
+						"CO5ec7c4d6e4b0f0f700ae6d83",
+						"CO5ec7c9cbe4b0f0f700ae6d93",
+						"CO5ec7cc59e4b0f0f700ae6d9a",
+						"CO5ec7db86e4b0f0f700ae6e07",
+						"CO5ec8a8efe4b0f0f700ae6fdd",
+						"CO5ec8c695e4b0f0f700ae70a3",
+						"CO5ec8d6afe4b0f0f700ae711f",
+						"CO5ec909a8e4b0f0f700ae72b0",
+						"CO5ec92a9de4b0f0f700ae731d",
+						"CO5ec9e45ce4b01f2be724415a",
+						"CO5ec9ffcde4b01f2be724420c",
+						"CO5eca2090e4b01f2be72442ed",
+						"CO5ecb2a5de4b01f2be72445cf",
+						"CO5ecb3d78e4b01f2be72446bd",
+						"CO5ecb749be4b01f2be72447fc",
+						"CO5ecb8776e4b01f2be7244898",
+						"CO5ecba51be4b01f2be7244998",
+						"CO5ecbaadce4b01f2be72449c5",
+						"CO5ecbc957e4b01f2be7244a2c",
+						"CO5ecc7349e4b01f2be7244b15",
+						"CO5ecc9982e4b01f2be7244c51",
+						"CO5eccf229e4b01f2be7244f3f",
+						"CO5ecdafdee4b01f2be7245074",
+						"CO5ecdcc8fe4b01f2be7245114",
+						"CO5ecdd97ee4b01f2be724517c",
+						"CO5ece019ce4b0274af80bb468",
+						"CO5ece121ee4b0274af80bb520",
+						"CO5ece6a1ce4b0274af80bb78c",
+						"CO5ece6ab8e4b0274af80bb791",
+						"CO5ece8714e4b0274af80bb837",
+						"CO5ecf0f01e4b0274af80bb8c6",
+						"CO5ecf26aae4b0274af80bb946",
+						"CO5ecf5b8ae4b0274af80bba5a",
+						"CO5ecf6531e4b0274af80bbab4",
+						"CO5ecf71fce4b0274af80bbb66",
+						"CO5ecf7283e4b0274af80bbb70",
+						"CO5ecf830ee4b0274af80bbc32",
+						"CO5ecf958ce4b0274af80bbd01",
+						"CO5ecfe2aae4b0274af80bbde9",
+						"CO5ed07b77e4b0274af80bbeb0",
+						"CO5ed08c69e4b0274af80bbf23",
+						"CO5ed0b296e4b0274af80bbfbd",
+						"CO5ed0bd07e4b0274af80bc00e",
+						"CO5ed0bd5ae4b0274af80bc011",
+						"CO5ed0f713e4b0274af80bc125",
+						"CO5ed0f84ee4b0274af80bc12c",
+						"CO5ed11588e4b0274af80bc17b",
+						"CO5ed21763e4b0bf66fae79293",
+						"CO5ed218ede4b0bf66fae792ad",
+						"CO5ed3860ee4b0c495a0d5f461",
+						"CO5ed45969e4b0c495a0d5f5e4",
+						"CO5ed49c4ee4b0c495a0d5f845",
+						"CO5ed4b1dde4b0c495a0d5f8df",
+						"CO5ed4b52fe4b0c495a0d5f903",
+						"CO5ed4bf82e4b0c495a0d5f9ac",
+						"CO5ed5b6a7e4b0c495a0d5fdeb",
+						"CO5ed5cf58e4b0c495a0d5ff0f",
+						"CO5ed5e768e4b0c495a0d60039",
+						"CO5ed5e813e4b0c495a0d60042",
+						"CO5ed5efc3e4b0c495a0d60084",
+						"CO5ed5f0bbe4b0c495a0d60096",
+						"CO5ed60e09e4b0c495a0d60252",
+						"CO5ed60f5ce4b0c495a0d60269",
+						"CO5ed711bfe4b0c495a0d605b1",
+						"CO5ed74c95e4b0c495a0d607f3",
+						"CO5ed75eeae4b0c495a0d6092a",
+						"CO5ed769f8e4b0c495a0d609d2",
+						"CO5ed775afe4b0c495a0d60a5d",
+						"CO5ed84a90e4b0c495a0d60c4f",
+						"CO5ed8915ce4b0190feee78cc3",
+						"CO5ed89e26e4b0190feee78d4c",
+						"CO5ed8a4a8e4b0190feee78d96",
+						"CO5ed8afe3e4b0190feee78e27",
+						"CO5ed8b6f1e4b0190feee78e7c",
+						"CO5edb0053e4b08be08b38fa49",
+						"CO5edc9728e4b08be08b38fee8",
+						"CO5edda9cde4b08be08b39024c",
+						"CO5eddbb75e4b08be08b39031c",
+						"CO5eddd914e4b08be08b390406",
+						"CO5edddb38e4b08be08b390429",
+						"CO5edde3f5e4b08be08b390493",
+						"CO5edde596e4b08be08b3904a4",
+						"CO5ede1722e4b08be08b390700",
+						"CO5edee913e4b01d2a57046cd6",
+						"CO5edf0386e4b01d2a57046e1c",
+						"CO5edf2c19e4b0ab4b8abd2cee",
+						"CO5edf3329e4b0ab4b8abd2d47",
+						"CO5edf44f5e4b0ab4b8abd2ef6",
+						"CO5edf66d0e4b0ab4b8abd3097",
+						"CO5ee04716e4b0ab4b8abd3338",
+						"CO5ee075bfe4b0ab4b8abd3507",
+						"CO5ee19f36e4b0ab4b8abd3c13",
+						"CO5ee20255e4b0ab4b8abd407c",
+						"CO5ee35050e4b0ab4b8abd4684",
+						"CO5ee350a5e4b0ab4b8abd468d",
+						"CO5ee4269fe4b0ab4b8abd4847",
+						"CO5ee44fffe4b0ab4b8abd491f",
+						"CO5ee5c672e4b0ab4b8abd4d98",
+						"CO5ee6cf7ae4b01b9f27c696da",
+						"CO5ee6e458e4b01b9f27c697bc",
+						"CO5ee72b2be4b01b9f27c69b43",
+						"CO5ee75964e4b01b9f27c69ed3",
+						"CO5ee8251ae4b01b9f27c6a66e",
+						"CO5ee838b6e4b01b9f27c6a7da",
+						"CO5ee84995e4b01b9f27c6a8b0",
+						"CO5ee84996e4b01b9f27c6a8b3",
+						"CO5ee84997e4b01b9f27c6a8b6",
+						"CO5ee84998e4b01b9f27c6a8b9",
+						"CO5ee86006e4b01b9f27c6a9ac",
+						"CO5ee87ce2e4b01b9f27c6acf9",
+						"CO5ee87d3fe4b01b9f27c6ad0d",
+						"CO5ee885c5e4b01b9f27c6ae32",
+						"CO5ee89787e4b01b9f27c6afc9",
+						"CO5ee897a9e4b01b9f27c6afcc",
+						"CO5ee8a22ee4b01b9f27c6b0eb",
+						"CO5ee8a653e4b01b9f27c6b178",
+						"CO5ee8a6a2e4b01b9f27c6b184",
+						"CO5ee8a6b5e4b01b9f27c6b187",
+						"CO5eeb0f9ee4b01b9f27c6bfc0",
+						"CO5eeb1860e4b01b9f27c6c02a",
+						"CO5eec6f0be4b01b9f27c6c5ce",
+						"CO5eec74bae4b01b9f27c6c618",
+						"CO5eeda61ce4b01b9f27c6c96e",
+						"CO5eedc0d4e4b01b9f27c6c9e6",
+						"CO5eede7b7e4b01b9f27c6ca9d",
+						"CO5eeec6f4e4b01b9f27c6cd5b",
+						"CO5eeeceabe4b01b9f27c6cd87",
+						"CO5ef033c6e4b017342a6b51ac",
+						"CO5ef04c49e4b017342a6b526b",
+						"CO5ef058e4e4b017342a6b52e9",
+						"CO5ef089cde4b017342a6b556e",
+						"CO5ef08a14e4b017342a6b5575",
+						"CO5ef16020e4b0775c93c71c70",
+						"CO5ef20e29e4b0775c93c72157",
+						"CO5ef2fbcbe4b0775c93c724b6",
+						"CO5ef314d7e4b0775c93c725e7",
+						"CO5ef4112ce4b0775c93c728fb",
+						"CO5ef55984e4b0775c93c72cbb",
+						"CO5ef55aa6e4b0775c93c72ccf",
+						"CO5ef56551e4b0775c93c72d51",
+						"CO5ef59843e4b0775c93c72ec8",
+						"CO5ef5b896e4b0775c93c72fe5",
+						"CO5ef83508e4b0775c93c73668",
+						"CO5ef939bee4b0775c93c73895",
+						"CO5efa043ce4b01ee739b429e0",
+						"CO5efa98cee4b01ee739b42a8f",
+						"CO5efab0bae4b01ee739b42bb9",
+						"CO5efafd6ae4b01ee739b42f54",
+						"CO5efb07fbe4b01ee739b43006",
+						"CO5efb0879e4b01ee739b4300e",
+						"CO5efb0d42e4b01ee739b4303e",
+						"CO5efb10a3e4b01ee739b4308a",
+						"CO5efb13e8e4b01ee739b430ef",
+						"CO5efb17b6e4b01ee739b4312d",
+						"CO5efbcf96e4b0a04062afa095",
+						"CO5efbd6b3e4b0a04062afa0a6",
+						"CO5efbe1a1e4b0a04062afa0e9",
+						"CO5efbe25ce4b0a04062afa0f1",
+						"CO5efbee17e4b0a04062afa16d",
+						"CO5efbf23de4b0a04062afa1b2",
+						"CO5efbf2b2e4b0a04062afa1c2",
+						"CO5efbfbd3e4b0a04062afa224",
+						"CO5efc28e6e4b0a04062afa4ad",
+						"CO5efc3e0ce4b0a04062afa5e0",
+						"CO5efc51dae4b0a04062afa6f7",
+						"CO5efd4d27e4b0afc6bec84aaa",
+						"CO5efd801ee4b0afc6bec84c64",
+						"CO5efd8bd3e4b0afc6bec84cab",
+						"CO5efd9f10e4b0afc6bec84d99",
+						"CO5efda3dde4b0afc6bec84dcf",
+						"CO5efdc051e4b0afc6bec84ed5",
+						"CO5efdc0a4e4b0afc6bec84ede",
+						"CO5efea0cbe4b0afc6bec85087",
+						"CO5efea583e4b0afc6bec8509a",
+						"CO5efff094e4b0afc6bec85544",
+						"CO5f018c17e4b0afc6bec85911",
+						"CO5f018fece4b0afc6bec85920",
+						"CO5f02b828e4b0405225b6ea6c",
+						"CO5f02fc8ce4b0405225b6ed37",
+						"CO5f03d40ee4b0405225b6ef7e",
+						"CO5f03e0a9e4b0405225b6f011",
+						"CO5f04181ae4b0405225b6f1f1",
+						"CO5f041eace4b0405225b6f234",
+						"CO5f042802e4b0405225b6f2aa",
+						"CO5f043a51e4b0405225b6f362",
+						"CO5f045672e4b0405225b6f48e",
+						"CO5f045684e4b0405225b6f491",
+						"CO5f04602be4b0405225b6f4ec",
+						"CO5f0531efe4b0405225b6f6d6",
+						"CO5f05399ce4b0405225b6f721",
+						"CO5f054267e4b0405225b6f78e",
+						"CO5f054c7fe4b0405225b6f7cf",
+						"CO5f058698e4b0405225b6f990",
+						"CO5f0587c0e4b0405225b6f9ae",
+						"CO5f059faee4b0405225b6fa97",
+						"CO5f05c477e4b0405225b6fb35",
+						"CO5f067171e4b0405225b6fc04",
+						"CO5f06a15be4b0405225b6fdb3",
+						"CO5f06d587e4b0405225b6ff76",
+						"CO5f06e493e4b0405225b70029",
+						"CO5f08053ae4b0405225b70443",
+						"CO5f0827cee4b0405225b70593",
+						"CO5f091ce5e4b0405225b70802",
+						"CO5f0a7f83e4b0405225b70cbf",
+						"CO5f0acb2be4b0405225b70e31",
+						"CO5f0b1454e4b0405225b70fa3",
+						"CO5f0b15e8e4b0405225b70faa",
+						"CO5f0b285ce4b048e9d3210c62",
+						"CO5f0bc7a8e4b048e9d3210d95",
+						"CO5f0bcfabe4b048e9d3210de4",
+						"CO5f0bd40fe4b048e9d3210e10",
+						"CO5f0c134ce4b048e9d32110bc",
+						"CO5f0c2a04e4b048e9d3211230",
+						"CO5f0d463fe4b048e9d321171e",
+						"CO5f0d77fee4b048e9d32119a2",
+						"CO5f0e5b54e4b048e9d3211be4",
+						"CO5f0ea390e4b048e9d3211eb6",
+						"CO5f0ec3bbe4b048e9d3212081",
+						"CO5f0fbd29e4b048e9d3212393",
+						"CO5f0fd0ece4b048e9d3212479",
+						"CO5f0ffe3ae4b048e9d32125b3",
+						"CO5f10138ae4b048e9d3212689",
+						"CO5f1028ede4b048e9d32127d5",
+						"CO5f111569e4b048e9d3212a6d",
+						"CO5f111713e4b048e9d3212a7d",
+						"CO5f112f73e4b048e9d3212b84",
+						"CO5f114d52e4b048e9d3212c93",
+						"CO5f1163dde4b048e9d3212e01",
+						"CO5f116f40e4b048e9d3212e45",
+						"CO5f126671e4b048e9d32130f8",
+						"CO5f126f69e4b048e9d3213126",
+						"CO5f126f6be4b048e9d3213129",
+						"CO5f126f6ce4b048e9d321312c",
+						"CO5f126f6de4b048e9d321312f",
+						"CO5f12b3b2e4b048e9d3213231",
+						"CO5f13e9ade4b00be1b3e44421",
+						"CO5f140129e4b00be1b3e444a9",
+						"CO5f14fa83e4b011fbdebc3ba0",
+						"CO5f150662e4b011fbdebc3c1d",
+						"CO5f150f0ae4b011fbdebc3c72",
+						"CO5f151a21e4b011fbdebc3ce1",
+						"CO5f1525c7e4b011fbdebc3d23",
+						"CO5f15346fe4b011fbdebc3d72",
+						"CO5f156b3de4b011fbdebc3f56",
+						"CO5f17d0dce4b01b9e9245a2bf",
+						"CO5f17ea42e4b01b9e9245a3ae",
+						"CO5f17fca0e4b01b9e9245a462",
+						"CO5f1857bfe4b01b9e9245a642",
+						"CO5f18f568e4b01b9e9245a788",
+						"CO5f18fe50e4b01b9e9245a7f3",
+						"CO5f1929d7e4b01b9e9245a939",
+						"CO5f192ccae4b01b9e9245a964",
+						"CO5f194b14e4b01b9e9245ab94",
+						"CO5f197033e4b01b9e9245ad0e",
+						"CO5f19a4bce4b01b9e9245ae87",
+						"CO5f19c140e4b099a832703fa8",
+						"CO5f19c572e4b099a832703fbf",
+						"CO5f19c7c4e4b099a832703fd1",
+						"CO5f1a48e7e4b099a8327040a1",
+						"CO5f1a49a8e4b099a8327040b1",
+						"CO5f1a4a0de4b099a8327040b7",
+						"CO5f1a543fe4b099a83270415c",
+						"CO5f1a815ee4b099a8327042f5",
+						"CO5f1a9c08e4b099a8327043ec",
+						"CO5f1acd26e4b099a832704508",
+						"CO5f1bafe9e4b099a83270466b",
+						"CO5f1be1abe4b099a832704731",
+						"CO5f1bf5b0e4b099a8327047b2",
+						"CO5f1d0965e4b099a8327049e2",
+						"CO5f1d4460e4b099a832704ad7",
+						"CO5f1e4361e4b0652ff6faf482",
+						"CO5f1e606ee4b0652ff6faf5a6",
+						"CO5f1e7c11e4b0652ff6faf6b4",
+						"CO5f1e9486e4b0652ff6faf836",
+						"CO5f1f95fae4b0652ff6fafb7d",
+						"CO5f1fbdace4b0652ff6fafd2d",
+						"CO5f1fc8a3e4b0652ff6fafd7a",
+						"CO5f1fe2a7e4b0652ff6fafea3",
+						"CO5f201a10e4b0652ff6fb0079",
+						"CO5f20d231e4b0652ff6fb0193",
+						"CO5f20ea5ce4b0652ff6fb0275",
+						"CO5f21348be4b0652ff6fb0536"
+					],
+					"repthe": null,
+					"originalCategory": "2",
+					"createStory": null,
+					"searchType": null,
+					"reviewEditor": "文匯報1",
+					"editor": null,
+					"editorId": "5eb503abe4b08b98e1e35463",
+					"displayArea": "0",
+					"link_title": null,
+					"searchLocation": null,
+					"smallTitle": null,
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e3a61fbe4b0bc94ee54a484",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/30/AP5f21a06ae4b0d24f998975cf.html",
+				"storyType": "COMPO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 0,
+				"publishTime": "2020-07-29T16:14:34.000+0000",
+				"language": "",
+				"originUrl": "",
+				"editor": "文匯報1",
+				"sourceId": "CO5f21a06be4b0652ff6fb07ae",
+				"summary": "他表示，根據目前香港每日新增病例的數據來看，香港疫情正在發展之中，已經出現了社區傳染，但還沒有出現指數級增長，所以關鍵要看接下來的防控情況。",
+				"columnName": "Top News",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/30/AP5f21a06ae4b0d24f998975cf.html",
+				"source": "",
+				"mediaStream": {
+					"duration": 0,
+					"url": ""
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-29T16:14:34.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "focus",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/30/AP5f21a06ae4b0d24f998975cf.json",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f219406e4b0d24f998970ee",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"香港國安法",
+					"分裂國家",
+					"警方",
+					"拘捕"
+				],
+				"updated": "2020-07-29T15:43:07.550+0000",
+				"properties": {
+					"picNames": "图片1",
+					"developType": null,
+					"repthe": null,
+					"originalCategory": "2",
+					"createStory": null,
+					"searchType": null,
+					"reviewEditor": "孫青川",
+					"editor": null,
+					"editorId": "5ebdf6e8e4b08b98e1e354b5",
+					"displayArea": "0",
+					"link_title": null,
+					"searchLocation": null,
+					"smallTitle": null,
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e3a61fbe4b0bc94ee54a484",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/29/AP5f219406e4b0d24f998970ee.html",
+				"storyType": "COMPO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 0,
+				"publishTime": "2020-07-29T15:21:00.000+0000",
+				"language": "",
+				"originUrl": "",
+				"editor": "孫青川",
+				"sourceId": "CO5f219407e4b0652ff6fb078d",
+				"summary": "香港警方今日（29日）表示，下午3時30分許，於本港不同地區，包括元朗、屯門、沙田等地，以「組織、策劃、實施或者參與實施分裂國家」罪及「煽動、協助、教唆、資助分裂國家」罪拘捕3男1女，年齡介乎16指21歲，報稱學生。",
+				"columnName": "Top News",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/29/AP5f219406e4b0d24f998970ee.html",
+				"source": "",
+				"mediaStream": {
+					"duration": 0,
+					"url": ""
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-29T15:21:00.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "focus",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/29/AP5f219406e4b0d24f998970ee.json",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f21834fe4b0d24f99896897",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"選舉",
+					"立法",
+					"法律",
+					"延後"
+				],
+				"updated": "2020-07-29T14:10:23.084+0000",
+				"properties": {
+					"developType": null,
+					"picNames": null,
+					"repthe": null,
+					"originalCategory": "1",
+					"createStory": null,
+					"searchType": null,
+					"reviewEditor": null,
+					"fileId": "5f2180efa3b39903dab0ccf7",
+					"editor": null,
+					"displayArea": "0",
+					"link_title": null,
+					"smallTitle": null,
+					"searchLocation": null,
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e4786a6e4b0668bdef4556a",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/29/AP5f21834fe4b0d24f99896897.html",
+				"storyType": "VIDEO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 5,
+				"publishTime": "2020-07-29T14:10:22.000+0000",
+				"sourceId": "VD5f2180c9e4b0652ff6fb0752",
+				"summary": "香港新冠肺炎疫情日趨嚴重，有消息指政府決定押後選舉一年，並提請全國人大常委會，將今屆立法會任期延長一年。香港大學客席教授黃顯舜律師今日（29日）接受本網專訪時表示，根據基本法第69條規定，立法會議員每屆任期為4年，但沒有規定任期開始和結束的時間。他建議，港府可以根據《立法會條例》第4條，定明新一屆立法會的會期，而無需提請全國人大常委會處理議員任期，形容是在「一國兩制」框架下合情、合理、合法的做法。",
+				"columnName": "點播",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/29/AP5f21834fe4b0d24f99896897.html",
+				"source": "",
+				"mediaStream": {
+					"type": "VIDEO",
+					"duration": 0,
+					"url": "https://dw-media.dotdotnews.com/dams/product/video/202007/29/5f2180ed60b23abcbc4026df/7051349573924890a5a200864d0ddf33.m3u8"
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-29T14:10:22.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "subvideo",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/29/AP5f21834fe4b0d24f99896897.json",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f218281e4b0d24f9989685c",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"上水屠房",
+					"食環署",
+					"病毒檢測"
+				],
+				"updated": "2020-07-29T14:06:57.305+0000",
+				"properties": {
+					"picNames": "图片1",
+					"developType": null,
+					"repthe": null,
+					"originalCategory": "2",
+					"createStory": null,
+					"searchType": null,
+					"reviewEditor": "孫青川",
+					"editor": null,
+					"editorId": "5e5cb00fe4b0fa503f88282c",
+					"displayArea": "0",
+					"link_title": null,
+					"searchLocation": null,
+					"smallTitle": null,
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e44dfe5e4b0561ad6af88dd",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/29/AP5f218281e4b0d24f9989685c.html",
+				"storyType": "COMPO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 0,
+				"publishTime": "2020-07-29T14:06:57.000+0000",
+				"language": "",
+				"originUrl": "",
+				"editor": "黃曉敏",
+				"sourceId": "CO5f218039e4b0652ff6fb074c",
+				"summary": "上水屠房近日累計出現7宗確診及初步確診個案。食物環境衞生署今日（29日）表示，會為所有進出屠房的持份者（包括營運者、入口商、買手及運輸公司）安排新冠病毒檢測，務求盡快隔離染病的人員。",
+				"columnName": "港聞",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/29/AP5f218281e4b0d24f9989685c.html",
+				"source": "",
+				"mediaStream": {
+					"duration": 0,
+					"url": ""
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-29T14:06:57.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "hknews",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/29/AP5f218281e4b0d24f9989685c.json",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f217fcde4b0d24f99896695",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"香港國安法",
+					"鍾翰林",
+					"港獨",
+					"煽動他人分裂國家罪",
+					"學生動源"
+				],
+				"updated": "2020-07-29T14:41:31.751+0000",
+				"properties": {
+					"developType": null,
+					"picNames": "图片1",
+					"repthe": null,
+					"originalCategory": "2",
+					"createStory": null,
+					"searchType": null,
+					"published_updated": true,
+					"product_storyId": "CO5f217fcde4b0652ff6fb0745",
+					"reviewEditor": "洪煌燦",
+					"editor": null,
+					"editorId": "5ebdf6e8e4b08b98e1e354b5",
+					"displayArea": "0",
+					"link_title": null,
+					"searchLocation": null,
+					"smallTitle": null,
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e3a61fbe4b0bc94ee54a484",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/29/AP5f217fcde4b0d24f99896695.html",
+				"storyType": "COMPO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 0,
+				"publishTime": "2020-07-29T13:55:25.000+0000",
+				"language": "",
+				"originUrl": "",
+				"editor": "孫青川",
+				"sourceId": "CO5f217fcde4b0652ff6fb0745",
+				"summary": "「港獨」組織「學生動源」今日（29日）晚上在社交平台表示，前召集人鍾翰林晚上8時許於元朗住所被警方以煽動他人分裂國家罪拘捕，警方並檢走數袋證物。元朗區議員巫啟航在社交網站表示，鍾翰林被警方鎖上手扣帶走。",
+				"columnName": "Top News",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/29/AP5f217fcde4b0d24f99896695.html",
+				"source": "",
+				"mediaStream": {
+					"duration": 0,
+					"url": ""
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-29T13:55:25.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "focus",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/29/AP5f217fcde4b0d24f99896695.json",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f217c19e4b0d24f998963c2",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"民政總署",
+					"社區會堂",
+					"午膳",
+					"開放"
+				],
+				"updated": "2020-07-29T13:39:37.437+0000",
+				"properties": {
+					"developType": null,
+					"picNames": "图片1",
+					"editor": null,
+					"repthe": null,
+					"originalCategory": "2",
+					"displayArea": "0",
+					"createStory": null,
+					"link_title": null,
+					"searchType": null,
+					"smallTitle": null,
+					"searchLocation": null,
+					"reviewEditor": "孫青川",
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e3a61fbe4b0bc94ee54a484",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/29/AP5f217c19e4b0d24f998963c2.html",
+				"storyType": "COMPO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 0,
+				"publishTime": "2020-07-29T13:39:37.000+0000",
+				"language": "",
+				"originUrl": "",
+				"sourceId": "CO5f2176f2e4b0652ff6fb072d",
+				"summary": "民政事務總署由30日起，於午膳時間開放位於全港18區的19間社區會堂／社區中心，有關社區會堂／社區中心將由上午11時開放至下午3時。",
+				"columnName": "Top News",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/29/AP5f217c19e4b0d24f998963c2.html",
+				"source": "",
+				"mediaStream": {
+					"duration": 0,
+					"url": ""
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-29T13:39:37.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "focus",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/29/AP5f217c19e4b0d24f998963c2.json",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f217bc8e4b0d24f99896389",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"新冠肺炎",
+					"立法會選舉",
+					"特區政府",
+					"香港研究協會",
+					"調查"
+				],
+				"updated": "2020-07-29T15:27:57.879+0000",
+				"properties": {
+					"developType": null,
+					"picNames": "图片1",
+					"simliarStoriesIds": [
+						"CO5f217bc8e4b0652ff6fb073b"
+					],
+					"repthe": null,
+					"originalCategory": "2",
+					"createStory": null,
+					"searchType": null,
+					"published_updated": true,
+					"product_storyId": "CO5f217bc8e4b0652ff6fb073b",
+					"reviewEditor": "洪煌燦",
+					"editor": null,
+					"editorId": "5ebdf6e8e4b08b98e1e354b5",
+					"displayArea": "0",
+					"link_title": null,
+					"searchLocation": null,
+					"smallTitle": null,
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e3a61fbe4b0bc94ee54a484",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/29/AP5f217bc8e4b0d24f99896389.html",
+				"storyType": "COMPO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 0,
+				"publishTime": "2020-07-29T13:38:16.000+0000",
+				"language": "",
+				"originUrl": "",
+				"editor": "孫青川",
+				"sourceId": "CO5f217bc8e4b0652ff6fb073b",
+				"summary": "本港的新冠肺炎疫情及9月立法會換屆選舉近日備受關注。香港研究協會就此於本周一（27日）至今日（29日）展開全港性隨機抽樣電話訪問，成功訪問了1069名18歲或以上市民。",
+				"columnName": "Top News",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/29/AP5f217bc8e4b0d24f99896389.html",
+				"source": "",
+				"mediaStream": {
+					"duration": 0,
+					"url": ""
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-29T13:38:16.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "focus",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/29/AP5f217bc8e4b0d24f99896389.json",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f2169c1e4b0d24f99895bbd",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"新冠肺炎",
+					"民政總署",
+					"東華三院",
+					"樣本瓶",
+					"慈雲山"
+				],
+				"updated": "2020-07-29T12:21:21.353+0000",
+				"properties": {
+					"picNames": "图片1",
+					"developType": null,
+					"repthe": null,
+					"originalCategory": "2",
+					"createStory": null,
+					"searchType": null,
+					"reviewEditor": "洪煌燦",
+					"editor": null,
+					"editorId": "5ebdf6e8e4b08b98e1e354b5",
+					"displayArea": "0",
+					"link_title": null,
+					"searchLocation": null,
+					"smallTitle": null,
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e3a61fbe4b0bc94ee54a484",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/29/AP5f2169c1e4b0d24f99895bbd.html",
+				"storyType": "COMPO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 0,
+				"publishTime": "2020-07-29T12:21:21.000+0000",
+				"language": "",
+				"originUrl": "",
+				"editor": "孫青川",
+				"sourceId": "CO5f216583e4b0652ff6fb06f0",
+				"summary": "民政事務總署昨日（28日）起聯同東華三院，為慈雲山慈正邨居民派發樣本瓶，進行新冠病毒檢測。東華三院今日（29日）共收回4150份樣本及登記表格，交由檢測承辦商作測試。",
+				"columnName": "Top News",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/29/AP5f2169c1e4b0d24f99895bbd.html",
+				"source": "",
+				"mediaStream": {
+					"duration": 0,
+					"url": ""
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-29T12:21:21.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "focus",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/29/AP5f2169c1e4b0d24f99895bbd.json",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f2164a6e4b0d24f99895944",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"新冠肺炎",
+					"亞博館",
+					"方艙醫院",
+					"醫管局"
+				],
+				"updated": "2020-07-29T11:59:34.890+0000",
+				"properties": {
+					"developType": null,
+					"picNames": "图片1",
+					"editor": null,
+					"repthe": null,
+					"originalCategory": "2",
+					"displayArea": "0",
+					"createStory": null,
+					"link_title": null,
+					"searchType": null,
+					"smallTitle": null,
+					"searchLocation": null,
+					"reviewEditor": "李俊",
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e44dfe5e4b0561ad6af88dd",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/29/AP5f2164a6e4b0d24f99895944.html",
+				"storyType": "COMPO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 0,
+				"publishTime": "2020-07-29T11:59:34.000+0000",
+				"language": "",
+				"originUrl": "",
+				"sourceId": "CO5f21621ce4b0652ff6fb06de",
+				"summary": "梁美芬批評，醫管局當時若能未雨綢繆，當機立斷，現時可能不會出現過百病人等候入院的情況，並認為當局需向公眾交代港版方艙拖延5個月的原因。",
+				"columnName": "港聞",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/29/AP5f2164a6e4b0d24f99895944.html",
+				"source": "",
+				"mediaStream": {
+					"duration": 0,
+					"url": ""
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-29T11:59:34.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "hknews",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/29/AP5f2164a6e4b0d24f99895944.json",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f2150aae4b0d24f99894fa4",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"疫情日報",
+					"新冠病毒",
+					"新增確診",
+					"衞生署",
+					"醫管局"
+				],
+				"updated": "2020-07-29T10:34:18.515+0000",
+				"properties": {
+					"picNames": "圖片1",
+					"developType": null,
+					"repthe": null,
+					"originalCategory": "2",
+					"createStory": null,
+					"searchType": null,
+					"reviewEditor": "許蕎",
+					"editor": null,
+					"editorId": "5ebdf6e8e4b08b98e1e354b6",
+					"displayArea": "0",
+					"link_title": null,
+					"searchLocation": null,
+					"smallTitle": null,
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e44dfe5e4b0561ad6af88dd",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/29/AP5f2150aae4b0d24f99894fa4.html",
+				"storyType": "COMPO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 0,
+				"publishTime": "2020-07-29T10:34:18.000+0000",
+				"language": "",
+				"originUrl": "",
+				"editor": "許蕎",
+				"sourceId": "CO5f2148fee4b0652ff6fb0632",
+				"summary": "本港新冠肺炎疫情嚴峻，連續8日新增個案破百宗。截至今日（29日）零時，本港新增118宗確診個案，包括113宗本地個案及5宗輸入性個案。至今本港累計個案已達3003宗，包括3002宗確診個案和1宗疑似個案。",
+				"columnName": "港聞",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/29/AP5f2150aae4b0d24f99894fa4.html",
+				"source": "",
+				"mediaStream": {
+					"duration": 0,
+					"url": ""
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-29T10:34:18.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "hknews",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/29/AP5f2150aae4b0d24f99894fa4.json",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f215071e4b0d24f99894f8e",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"香港",
+					"特朗普",
+					"新冠肺炎",
+					"外交部"
+				],
+				"updated": "2020-07-29T10:33:43.229+0000",
+				"properties": {
+					"picNames": "图片1,图片2,图片3,图片4,图片5,图片6,图片7,图片8,图片9,图片10",
+					"developType": null,
+					"editor": null,
+					"repthe": null,
+					"originalCategory": "2",
+					"createStory": null,
+					"displayArea": "0",
+					"searchType": null,
+					"link_title": null,
+					"reviewEditor": "左豐",
+					"searchLocation": null,
+					"smallTitle": null,
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e44e2e9e4b0561ad6af88df",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/29/AP5f215071e4b0d24f99894f8e.html",
+				"storyType": "COMPO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 0,
+				"publishTime": "2020-07-29T10:33:00.000+0000",
+				"language": "",
+				"originUrl": "",
+				"sourceId": "CO5f214df6e4b0652ff6fb0664",
+				"summary": "今天（2020年7月29日）國際熱點新聞有哪些？",
+				"columnName": "國際",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/29/AP5f215071e4b0d24f99894f8e.html",
+				"source": "",
+				"mediaStream": {
+					"duration": 0,
+					"url": ""
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-29T10:33:00.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "inter",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/29/AP5f215071e4b0d24f99894f8e.json",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f215010e4b0d24f99894f85",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"香港",
+					"新冠肺炎",
+					"立法會",
+					"修例風波"
+				],
+				"updated": "2020-07-29T10:31:44.498+0000",
+				"properties": {
+					"picNames": "图片1,图片2,图片3,图片4,图片5,图片6,图片7,图片8",
+					"developType": null,
+					"repthe": null,
+					"originalCategory": "2",
+					"createStory": null,
+					"searchType": null,
+					"reviewEditor": "左豐",
+					"editor": null,
+					"editorId": "5e5cb2c1e4b0fa503f882834",
+					"displayArea": "0",
+					"link_title": null,
+					"searchLocation": null,
+					"smallTitle": null,
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e44dfe5e4b0561ad6af88dd",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/29/AP5f215010e4b0d24f99894f85.html",
+				"storyType": "COMPO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 0,
+				"publishTime": "2020-07-29T10:31:44.000+0000",
+				"language": "",
+				"originUrl": "",
+				"editor": "李俊",
+				"sourceId": "CO5f214b71e4b0652ff6fb0645",
+				"summary": "今天（2020年7月29日）香港都發生了什麼事情？",
+				"columnName": "港聞",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/29/AP5f215010e4b0d24f99894f85.html",
+				"source": "",
+				"mediaStream": {
+					"duration": 0,
+					"url": ""
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-29T10:31:44.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "hknews",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/29/AP5f215010e4b0d24f99894f85.json",
+				"channelName": "點新聞"
+			},
+			{
+				"id": "AP5f214ce7e4b0d24f99894e16",
+				"title": "淋病月蛾死了!",
+				"keywords": [
+					"新冠肺炎",
+					"確診工人",
+					"地盤爆發",
+					"張竹君"
+				],
+				"updated": "2020-07-29T10:18:15.637+0000",
+				"properties": {
+					"developType": null,
+					"picNames": "图片1",
+					"editor": null,
+					"repthe": null,
+					"originalCategory": "2",
+					"displayArea": "0",
+					"createStory": null,
+					"link_title": null,
+					"searchType": null,
+					"smallTitle": null,
+					"searchLocation": null,
+					"reviewEditor": "李俊",
+					"primeMoverIndustry": null
+				},
+				"channelId": "somenewsapp",
+				"columnId": "5e44dfe5e4b0561ad6af88dd",
+				"author": "",
+				"url": "https://www.dotdotnews.com/a/202007/29/AP5f214ce7e4b0d24f99894e16.html",
+				"storyType": "COMPO",
+				"storyResource": {},
+				"thumbnailStyle": 0,
+				"contentType": 0,
+				"publishTime": "2020-07-29T10:18:15.000+0000",
+				"language": "",
+				"originUrl": "",
+				"sourceId": "CO5f214a65e4b0652ff6fb0638",
+				"summary": "張竹君指出，確診的地盤工人多為散工，會到不同地盤工作，遍布港九新界，暫時不能說有地盤出現爆發情況。",
+				"columnName": "港聞",
+				"subtitle": "",
+				"coverStyle": 0,
+				"shareUrl": "https://www.dotdotnews.com/s/202007/29/AP5f214ce7e4b0d24f99894e16.html",
+				"source": "",
+				"mediaStream": {
+					"duration": 0,
+					"url": ""
+				},
+				"thumbnails": [
+					{
+						"proportion": "2:1",
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"published": "2020-07-29T10:18:15.000+0000",
+				"leadinLine": "",
+				"categories": 0,
+				"columnDirname": "hknews",
+				"coverImages": [
+					{
+						"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+					}
+				],
+				"jsonUrl": "https://www.dotdotnews.com/a/202007/29/AP5f214ce7e4b0d24f99894e16.json",
+				"channelName": "點新聞"
+			}
+		],
+		"blocks": [
+			{
+				"uuid": "5ec251d1e4b0622ad3510722",
+				"name": "聚焦兩會",
+				"orderTag": 1204,
+				"stories": []
+			},
+			{
+				"uuid": "5ecf24c5e4b0691507bdf362",
+				"name": "正在直播",
+				"orderTag": 1207,
+				"stories": []
+			},
+			{
+				"uuid": "5e95392ee4b0c1d8eb977366",
+				"name": "鏤空廣告",
+				"orderTag": 1310,
+				"stories": []
+			},
+			{
+				"uuid": "5e70348ae4b01b9d133f36cd",
+				"name": "輪播圖",
+				"orderTag": 2001,
+				"stories": [
+					{
+						"id": "AP5efaad51e4b0e515fa82d363",
+						"title": "香港國安法不應推行!",
+						"keywords": [
+							"香港",
+							"國安法",
+							"實施"
+						],
+						"updated": "2020-07-29T06:24:07.170+0000",
+						"properties": {
+							"developType": null,
+							"editor": null,
+							"editorId": "5e37ed7ce4b07291d8d2dc1c",
+							"repthe": null,
+							"originalCategory": "2",
+							"displayArea": "0",
+							"createStory": null,
+							"link_title": null,
+							"searchType": null,
+							"searchLocation": null,
+							"smallTitle": null,
+							"reviewEditor": "王海岐",
+							"primeMoverIndustry": null
+						},
+						"channelId": "somenewsapp",
+						"columnId": "5e3a61fbe4b0bc94ee54a484",
+						"author": "",
+						"url": "https://www.dotdotnews.com/a/202006/30/AP5efaad51e4b0e515fa82d363.html",
+						"storyType": "HREF",
+						"storyResource": {},
+						"thumbnailStyle": 0,
+						"contentType": 2,
+						"publishTime": "2020-06-30T02:44:00.000+0000",
+						"originUrl": "https://www.dotdotnews.com/spec/hksafe",
+						"editor": "王海岐",
+						"sourceId": "HR5efaa710e4b01ee739b42b26",
+						"summary": "實施國安法，香港再出發",
+						"columnName": "Top News",
+						"subtitle": "",
+						"coverStyle": 0,
+						"shareUrl": "https://www.dotdotnews.com/s/202006/30/AP5efaad51e4b0e515fa82d363.html",
+						"source": "",
+						"mediaStream": {
+							"duration": 0,
+							"url": ""
+						},
+						"originSpecialId": "5eeed813e4b0e515fa7ee9b2",
+						"thumbnails": [
+							{
+								"proportion": "2:1",
+								"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+							}
+						],
+						"published": "2020-06-30T02:44:00.000+0000",
+						"leadinLine": "",
+						"categories": 0,
+						"columnDirname": "focus",
+						"coverImages": [
+							{
+								"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+							}
+						],
+						"jsonUrl": "https://www.dotdotnews.com/a/202006/30/AP5efaad51e4b0e515fa82d363.json",
+						"channelName": "點新聞"
+					}
+				]
+			},
+			{
+				"uuid": "5eb62504e4b0c3dbeefcf861",
+				"name": "栏目广告",
+				"orderTag": 2009,
+				"stories": [
+					{
+						"id": "AP5f1fd824e4b0d24f99886076",
+						"title": "香港國安法不應推行",
+						"keywords": [
+							"國安法",
+							"香港國安法",
+							"專題"
+						],
+						"updated": "2020-07-29T04:48:40.546+0000",
+						"properties": {
+							"developType": null,
+							"editor": null,
+							"editorId": "5ebb5ea0e4b08b98e1e35487",
+							"repthe": null,
+							"originalCategory": "2",
+							"displayArea": "0",
+							"createStory": null,
+							"link_title": null,
+							"searchType": null,
+							"searchLocation": null,
+							"smallTitle": null,
+							"reviewEditor": "蔡璨",
+							"primeMoverIndustry": null
+						},
+						"channelId": "somenewsapp",
+						"columnId": "5e3a61fbe4b0bc94ee54a484",
+						"author": "",
+						"url": "https://www.dotdotnews.com/a/202007/28/AP5f1fd824e4b0d24f99886076.html",
+						"storyType": "HREF",
+						"storyResource": {},
+						"thumbnailStyle": 0,
+						"contentType": 6,
+						"publishTime": "2020-07-28T07:47:48.000+0000",
+						"originUrl": "https://www.dotdotnews.com/spec/hksafe",
+						"editor": "蔡璨",
+						"sourceId": "HR5f1fd824e4b0652ff6fafe27",
+						"summary": "港區國安法專題",
+						"columnName": "Top News",
+						"subtitle": "",
+						"coverStyle": 0,
+						"shareUrl": "https://www.dotdotnews.com/s/202007/28/AP5f1fd824e4b0d24f99886076.html",
+						"source": "",
+						"mediaStream": {
+							"duration": 0,
+							"url": ""
+						},
+						"thumbnails": [
+							{
+								"proportion": "原圖",
+								"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+							}
+						],
+						"published": "2020-07-28T07:47:48.000+0000",
+						"leadinLine": "",
+						"categories": 0,
+						"columnDirname": "focus",
+						"coverImages": [
+							{
+								"url": "https://hung0125.000webhostapp.com/rev_eng/dogdognews/columns/5e3a61fbe4b0bc94ee54a484/7ngor.jpg"
+							}
+						],
+						"jsonUrl": "https://www.dotdotnews.com/a/202007/28/AP5f1fd824e4b0d24f99886076.json",
+						"channelName": "點新聞"
+					}
+				]
+			}
+		]
+	},
+	"code": 0
+}
