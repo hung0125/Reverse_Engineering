@@ -1,0 +1,15 @@
+{
+  "meta": {
+    "result": "success",
+    "app_version": {
+      "version": "5.1.1",
+      "minimum_version": "5.1.1",
+      "display_update_reminder": true
+    }
+  },
+  "user": {
+    "id": 876771,
+    "one_signal_player_id": "aea2a8ba-ac9a-4819-850d-6e1bd23b74e5",
+    "language": "en"
+  }
+}

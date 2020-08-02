@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "result": "success",
+    "app_version": {
+      "version": "5.1.1",
+      "minimum_version": "5.1.1",
+      "display_update_reminder": true
+    }
+  },
+  "access_token": "dXz3AowhuBOZc1lSWmdvkwtt"
+}
