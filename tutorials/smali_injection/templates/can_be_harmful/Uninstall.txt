@@ -1,4 +1,4 @@
-permission uses:
+AndroidManifest.xml:
 android.permission.REQUEST_DELETE_PACKAGES
 
 #method. Suggested to paste it at the end of the code.
