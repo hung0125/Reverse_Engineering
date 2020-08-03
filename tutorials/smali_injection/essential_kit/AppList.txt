@@ -1,0 +1,5 @@
+1. Aide
+2. Apktool (github)
+3. Current Activity
+4. QuickEdit
+5. SearchEverything
