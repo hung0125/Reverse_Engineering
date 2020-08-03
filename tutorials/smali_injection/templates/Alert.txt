@@ -1,5 +1,5 @@
 #method. Suggested to paste it at the end of the code.
-******************************************************
+********************************************************
 .method private iq500Alert()V
     .registers 9
     .annotation system Ldalvik/annotation/Signature;
@@ -51,7 +51,7 @@
 
     return-void
 .end method
-******************************************************
+********************************************************
 
 #caller. Paste it at first line of the onCreate() method
 ********************************************************
