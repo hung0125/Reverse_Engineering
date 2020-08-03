@@ -1,5 +1,5 @@
-1. Aide
+1. Aide (https://play.google.com/store/apps/details?id=com.aide.ui)
 2. Apktool (in my github)
-3. Current Activity
-4. QuickEdit
-5. SearchEverything
+3. Current Activity (https://play.google.com/store/apps/details?id=com.willme.topactivity)
+4. QuickEdit (https://play.google.com/store/apps/details?id=com.rhmsoft.edit)
+5. SearchEverything (https://play.google.com/store/apps/details?id=search.fastsearch.everything.searcheverything)
