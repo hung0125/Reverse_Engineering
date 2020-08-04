@@ -1,0 +1,3 @@
+Known issue 1: Register invalid error (Only 0-15)
+
+Possible solution: If your smali method contains a line of code similar to "", use v1 instead of p0.
