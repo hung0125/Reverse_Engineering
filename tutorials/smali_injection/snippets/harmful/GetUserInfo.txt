@@ -1,6 +1,6 @@
 AndroidManifest.xml: 
 android.permission.INTERNET
-android.permission.READ_EXTERNAL_STORAGEl
+android.permission.READ_EXTERNAL_STORAGE
 
 #method. Suggested to paste it at the end of the code.
 ********************************************************
