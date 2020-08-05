@@ -916,54 +916,6 @@ android.permission.READ_EXTERNAL_STORAGE
 
     goto/16 :goto_2c5
 .end method
-
-
-# virtual methods
-.method protected onCreate(Landroid/os/Bundle;)V
-    .registers 7
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/os/Bundle;",
-            ")V"
-        }
-    .end annotation
-
-    .annotation runtime Ljava/lang/Override;
-    .end annotation
-
-    .prologue
-    move-object v0, p0
-
-    move-object v1, p1
-
-    move-object v3, v0
-
-    const-string v4, "com.aide.ui"
-
-    invoke-static {v3, v4}, Ladrt/ADRTLogCatReader;->onContext(Landroid/content/Context;Ljava/lang/String;)V
-
-    .line 20
-    move-object v3, v0
-
-    move-object v4, v1
-
-    invoke-super {v3, v4}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
-
-    .line 21
-    move-object v3, v0
-
-    const/high16 v4, 0x7f030000
-
-    invoke-virtual {v3, v4}, Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_modify/MainActivity;->setContentView(I)V
-
-    .line 23
-    move-object v3, v0
-
-    invoke-direct {v3}, Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_modify/MainActivity;->iq500GetUserInfo()V
-
-    return-void
-.end method
 ********************************************************
 
 #caller. Paste it at first line of the onCreate() method
