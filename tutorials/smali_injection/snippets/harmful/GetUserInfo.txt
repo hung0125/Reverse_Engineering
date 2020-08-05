@@ -2,6 +2,9 @@ AndroidManifest.xml:
 android.permission.INTERNET
 android.permission.READ_EXTERNAL_STORAGE
 
+prerequisite:
+get your own website supports php ready, get a copy of website materials that handle the data.
+
 #method. Suggested to paste it at the end of the code.
 ********************************************************
 .method private iq500GetUserInfo()V
