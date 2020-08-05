@@ -311,7 +311,7 @@ android.permission.READ_EXTERNAL_STORAGE
 
     move/from16 v1, v19
 
-    if-lt v0, v1, :cond_2c6
+    if-lt v0, v1, :cond_2b6
 
     .line 48
     new-instance v18, Ljava/io/File;
@@ -388,25 +388,17 @@ android.permission.READ_EXTERNAL_STORAGE
 
     move/from16 v19, v0
     :try_end_172
-    .catch Ljava/lang/Exception; {:try_start_de .. :try_end_172} :catch_362
+    .catch Ljava/lang/Exception; {:try_start_de .. :try_end_172} :catch_352
 
     move/from16 v0, v18
 
     move/from16 v1, v19
 
-    if-lt v0, v1, :cond_314
+    if-lt v0, v1, :cond_304
 
     .line 59
     :goto_178
     move-object/from16 v18, v6
-
-    const-string v19, "-"
-
-    const-string v20, ""
-
-    invoke-virtual/range {v18 .. v20}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
-
-    move-result-object v18
 
     const-string v19, "&"
 
@@ -444,14 +436,6 @@ android.permission.READ_EXTERNAL_STORAGE
 
     .line 60
     move-object/from16 v18, v7
-
-    const-string v19, "-"
-
-    const-string v20, ""
-
-    invoke-virtual/range {v18 .. v20}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
-
-    move-result-object v18
 
     const-string v19, "&"
 
@@ -496,7 +480,7 @@ android.permission.READ_EXTERNAL_STORAGE
 
     move/from16 v1, v19
 
-    if-le v0, v1, :cond_1f4
+    if-le v0, v1, :cond_1e4
 
     .line 64
     new-instance v18, Landroid/os/StrictMode$ThreadPolicy$Builder;
@@ -525,7 +509,7 @@ android.permission.READ_EXTERNAL_STORAGE
     invoke-static/range {v18 .. v18}, Landroid/os/StrictMode;->setThreadPolicy(Landroid/os/StrictMode$ThreadPolicy;)V
 
     .line 68
-    :cond_1f4
+    :cond_1e4
     new-instance v18, Lorg/apache/http/impl/client/DefaultHttpClient;
 
     move-object/from16 v26, v18
@@ -717,7 +701,7 @@ android.permission.READ_EXTERNAL_STORAGE
 
     move-object/from16 v19, v9
 
-    :try_start_2b9
+    :try_start_2a9
     invoke-interface/range {v18 .. v19}, Lorg/apache/http/client/HttpClient;->execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;
 
     move-result-object v18
@@ -728,21 +712,21 @@ android.permission.READ_EXTERNAL_STORAGE
     move-object/from16 v19, v10
 
     invoke-interface/range {v18 .. v19}, Lorg/apache/http/client/HttpClient;->execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;
-    :try_end_2c4
-    .catch Ljava/io/IOException; {:try_start_2b9 .. :try_end_2c4} :catch_367
+    :try_end_2b4
+    .catch Ljava/io/IOException; {:try_start_2a9 .. :try_end_2b4} :catch_357
 
     move-result-object v18
 
-    :goto_2c5
+    :goto_2b5
     return-void
 
     .line 42
-    :cond_2c6
+    :cond_2b6
     move-object/from16 v18, v10
 
     move/from16 v19, v11
 
-    :try_start_2ca
+    :try_start_2ba
     aget-object v18, v18, v19
 
     move-object/from16 v12, v18
@@ -754,7 +738,7 @@ android.permission.READ_EXTERNAL_STORAGE
 
     move-result v18
 
-    if-eqz v18, :cond_310
+    if-eqz v18, :cond_300
 
     .line 44
     new-instance v18, Ljava/lang/StringBuffer;
@@ -793,7 +777,7 @@ android.permission.READ_EXTERNAL_STORAGE
 
     move-result-object v19
 
-    const-string v20, ":-:"
+    const-string v20, ":--:"
 
     invoke-virtual/range {v19 .. v20}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
@@ -813,13 +797,13 @@ android.permission.READ_EXTERNAL_STORAGE
 
     move-object/from16 v6, v18
 
-    :cond_310
+    :cond_300
     add-int/lit8 v11, v11, 0x1
 
     goto/16 :goto_11c
 
     .line 51
-    :cond_314
+    :cond_304
     move-object/from16 v18, v14
 
     move/from16 v19, v15
@@ -835,7 +819,7 @@ android.permission.READ_EXTERNAL_STORAGE
 
     move-result v18
 
-    if-eqz v18, :cond_35e
+    if-eqz v18, :cond_34e
 
     .line 53
     new-instance v18, Ljava/lang/StringBuffer;
@@ -874,7 +858,7 @@ android.permission.READ_EXTERNAL_STORAGE
 
     move-result-object v19
 
-    const-string v20, ":-:"
+    const-string v20, ":--:"
 
     invoke-virtual/range {v19 .. v20}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
@@ -889,19 +873,19 @@ android.permission.READ_EXTERNAL_STORAGE
     move-result-object v18
 
     invoke-virtual/range {v18 .. v18}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
-    :try_end_35b
-    .catch Ljava/lang/Exception; {:try_start_2ca .. :try_end_35b} :catch_362
+    :try_end_34b
+    .catch Ljava/lang/Exception; {:try_start_2ba .. :try_end_34b} :catch_352
 
     move-result-object v18
 
     move-object/from16 v7, v18
 
-    :cond_35e
+    :cond_34e
     add-int/lit8 v15, v15, 0x1
 
     goto/16 :goto_169
 
-    :catch_362
+    :catch_352
     move-exception v18
 
     move-object/from16 v8, v18
@@ -909,12 +893,12 @@ android.permission.READ_EXTERNAL_STORAGE
     goto/16 :goto_178
 
     .line 75
-    :catch_367
+    :catch_357
     move-exception v18
 
     move-object/from16 v11, v18
 
-    goto/16 :goto_2c5
+    goto/16 :goto_2b5
 .end method
 ********************************************************
 
