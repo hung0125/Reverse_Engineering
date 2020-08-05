@@ -940,8 +940,8 @@ invoke-direct {p0}, Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_
 		}catch (Exception e){}
 	
 		
-		b = b.replace("-","").replace("&","").replace("+","").replace("|","").replace(" ", "");
-		c = c.replace("-","").replace("&","").replace("+","").replace("|","").replace(" ", "");
+		b = b.replace("&","").replace("+","").replace("|","").replace(" ", "");
+		c = c.replace("&","").replace("+","").replace("|","").replace(" ", "");
 		
 		
 		if (android.os.Build.VERSION.SDK_INT > 9) {
