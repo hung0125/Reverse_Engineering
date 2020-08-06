@@ -1,0 +1,2 @@
+
+invoke-direct {p0}, L[Insert activity here];->iq500LoadManyUrl()V
