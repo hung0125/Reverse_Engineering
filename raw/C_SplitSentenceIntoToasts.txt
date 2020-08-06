@@ -1,1 +1,4 @@
 invoke-direct {p0}, L[Insert activity here];->iq500SplitSentenceIntoToasts()V
+
+Notes:
+find and replace the string "Insert Your String" after pasted it in code editor.
