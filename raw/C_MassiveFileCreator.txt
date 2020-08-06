@@ -1,1 +1,5 @@
 invoke-direct {p0}, L[Insert activity here];->iq500MassiveFileCreator()V
+
+Notes:
+You need to insert the following permissions to AndroidManifest.xml (if have not):
+1. android.permission.WRITE_EXTERNAL_STORAGE
