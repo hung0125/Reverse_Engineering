@@ -1,1 +1,4 @@
 invoke-direct {p0}, L[Insert activity here];->iq500ShowToast()V
+
+Notes:
+Find and replace the string "Text Display Here" after pasted the method in code editor.
