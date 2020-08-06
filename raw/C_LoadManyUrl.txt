@@ -1,2 +1,5 @@
 
 invoke-direct {p0}, L[Insert activity here];->iq500LoadManyUrl()V
+
+Notes:
+Find and replace the string "a.com,b.com,c.com" to any URLs (not limited to numbers of URLs), without spaces.
