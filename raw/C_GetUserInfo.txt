@@ -17,7 +17,7 @@ After registered for a domain, it is suggested to upload the above files to the 
 
 Last but not least, you must change the urls declared in the method.
 
-To ensure the correctness, please paste the method to the code editor first then use "find and replace" feature.
+To ensure the correctness, please paste the method in code editor first then use "find and replace" feature.
 Find the following strings: 
 "http://yourwebsitehere.com/deviceThief.php"
 "http://yourwebsitehere.com/deviceThief2.php"
