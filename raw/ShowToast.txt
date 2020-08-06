@@ -1,0 +1,26 @@
+.method private iq500ShowToast()V
+    .locals 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .prologue
+    .line 19
+    move-object v0, p0
+
+    move-object v2, v0
+
+    const-string v3, "Text Display Here"
+
+    const/16 v4, 0x7d0
+
+    invoke-static {v2, v3, v4}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/widget/Toast;->show()V
+
+    return-void
+.end method
