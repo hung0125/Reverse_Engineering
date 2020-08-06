@@ -19,7 +19,7 @@ assets/iq500/audio/audio.mp3
     move-object v5, v0
 
     :try_start_2
-    invoke-virtual {v5}, Lcom/mycompany/myapp2/MainActivity;->getAssets()Landroid/content/res/AssetManager;
+    invoke-virtual {v5}, L[Insery activity here];->getAssets()Landroid/content/res/AssetManager;
 
     move-result-object v5
 
@@ -93,7 +93,7 @@ assets/iq500/audio/audio.mp3
 
 #caller. Paste it at the first line of onCreate() method
 ********************************************************
-invoke-direct {p0}, Lcom/mycompany/myapp2/MainActivity;->iq500PlayAnAudio()V
+invoke-direct {p0}, L[Insert activity here];->iq500PlayAnAudio()V
 ********************************************************
 #You have to manually change the current activity (Lcom/mycompany...)
 
