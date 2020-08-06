@@ -1,0 +1,91 @@
+.method private iq500SplitSentenceIntoToasts()V
+    .registers 11
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .prologue
+    move-object v0, p0
+
+    const-string v5, "Insert Your String"
+
+    move-object v2, v5
+
+    const/4 v5, 0x0
+
+    move v3, v5
+
+    :goto_6
+    move v5, v3
+
+    move-object v6, v2
+
+    invoke-virtual {v6}, Ljava/lang/String;->length()I
+
+    move-result v6
+
+    const/4 v7, 0x1
+
+    add-int/lit8 v6, v6, 0x1
+
+    if-lt v5, v6, :cond_12
+
+    return-void
+
+    :cond_12
+    move v5, v3
+
+    move-object v6, v2
+
+    invoke-virtual {v6}, Ljava/lang/String;->length()I
+
+    move-result v6
+
+    if-ge v5, v6, :cond_30
+
+    move-object v5, v0
+
+    move-object v6, v2
+
+    move v7, v3
+
+    move v8, v3
+
+    const/4 v9, 0x1
+
+    add-int/lit8 v8, v8, 0x1
+
+    invoke-virtual {v6, v7, v8}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v6
+
+    const/4 v7, 0x0
+
+    invoke-static {v5, v6, v7}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Landroid/widget/Toast;->show()V
+
+    :goto_2d
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_6
+
+    :cond_30
+    move-object v5, v0
+
+    const-string v6, "END"
+
+    const/4 v7, 0x0
+
+    invoke-static {v5, v6, v7}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Landroid/widget/Toast;->show()V
+
+    goto :goto_2d
+.end method
