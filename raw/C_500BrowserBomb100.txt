@@ -1,3 +1,5 @@
 invoke-direct {p0}, L[Insert activity here];->iq500BrowserBomb100()V
 
 Notes:
+You may change the website which open in the browser.
+1. Find the string "http://a.com" then change it to another website
