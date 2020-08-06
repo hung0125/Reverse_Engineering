@@ -1,51 +1,51 @@
-.method private iq500Alert()V
-    .registers 9
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
+.methodprivateiq500Alert()V
+.registers9
+.annotationsystemLdalvik/annotation/Signature;
+value={
+"()V"
+}
+.endannotation
 
-    .prologue
-    
-    move-object v0, p0
+.prologue
 
-    new-instance v4, Landroid/app/AlertDialog$Builder;
+move-objectv0,p0
 
-    move-object v7, v4
+new-instancev4,Landroid/app/AlertDialog$Builder;
 
-    move-object v4, v7
+move-objectv7,v4
 
-    move-object v5, v7
+move-objectv4,v7
 
-    move-object v6, v0
+move-objectv5,v7
 
-    invoke-direct {v5, v6}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+move-objectv6,v0
 
-    invoke-virtual {v4}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
+invoke-direct{v5,v6},Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    move-result-object v4
+invoke-virtual{v4},Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
-    move-object v2, v4
+move-result-objectv4
 
-    
-    move-object v4, v2
+move-objectv2,v4
 
-    const-string v5, "Alert"
 
-    invoke-virtual {v4, v5}, Landroid/app/AlertDialog;->setTitle(Ljava/lang/CharSequence;)V
+move-objectv4,v2
 
-    
-    move-object v4, v2
+const-stringv5,"Alert"
 
-    const-string v5, "Alert message to be shown"
+invoke-virtual{v4,v5},Landroid/app/AlertDialog;->setTitle(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {v4, v5}, Landroid/app/AlertDialog;->setMessage(Ljava/lang/CharSequence;)V
 
-    
-    move-object v4, v2
+move-objectv4,v2
 
-    invoke-virtual {v4}, Landroid/app/AlertDialog;->show()V
+const-stringv5,"Alertmessagetobeshown"
 
-    return-void
-.end method
+invoke-virtual{v4,v5},Landroid/app/AlertDialog;->setMessage(Ljava/lang/CharSequence;)V
+
+
+move-objectv4,v2
+
+invoke-virtual{v4},Landroid/app/AlertDialog;->show()V
+
+return-void
+.endmethod
