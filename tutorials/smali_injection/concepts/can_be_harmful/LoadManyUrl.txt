@@ -1,0 +1,15 @@
+#Java logic is as follows:
+********************************************************
+	private void iq500LoadManyUrl()
+	{
+		String list = "pornhub.com,thisav.com,redtube.com";
+		String[] list2 = list.split(",");
+		
+		for(int i = 0; i < list2.length; i++)
+		{
+			Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://" + list2[i]));
+			startActivity(browserIntent);
+		}
+		
+	}
+********************************************************
