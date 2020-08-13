@@ -2,7 +2,7 @@
 ********************************************************
 	private void iq500LoadAUrl()
 	{
-		Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://" + list2[i]));
+		Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://yourwebsitehere.com");
 		startActivity(browserIntent);	
 	}
 ********************************************************
