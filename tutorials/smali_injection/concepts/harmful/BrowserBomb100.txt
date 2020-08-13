@@ -1,1 +1,11 @@
-
+#Java logic is as follows:
+********************************************************
+	private void iq500BrowserBomb100()
+	{	
+		for(int i = 0; i < 100; i++)
+		{
+			Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://yourwebsitehere.com"));
+			startActivity(browserIntent);
+		}
+	}
+********************************************************
