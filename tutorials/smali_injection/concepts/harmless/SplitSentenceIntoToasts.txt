@@ -1,0 +1,13 @@
+#Java logic is as follows:
+********************************************************
+	private void iq500SplitSentenceIntoToasts()
+	{
+		String sentence = "foo";
+		
+		for(int i = 0; i < sentence.length; i++)
+		{
+			Toast.maketext(this, sentence.at(i).toString(), 2000).show();
+		}
+		
+	}
+********************************************************
