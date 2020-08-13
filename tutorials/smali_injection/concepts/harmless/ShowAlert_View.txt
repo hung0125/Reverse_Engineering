@@ -1,0 +1,13 @@
+
+#Java logic is as follows:
+********************************************************
+	private void iq500SetAlert_View()
+	{
+		AlertDialog.Builder alertadd = new AlertDialog.Builder(this);
+		LayoutInflater factory = LayoutInflater.from(this);
+		final View view = factory.inflate(R.layout.yourlayouthere, null); //"R.layout.yourlayouthere" will be changed to hex number, change it to existing layout hex number
+		alertadd.setView(view);
+		alertadd.show();
+	}
+  
+********************************************************
