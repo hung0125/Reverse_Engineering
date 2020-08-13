@@ -1,7 +1,7 @@
 
 #Java logic is as follows:
 ********************************************************
-	private void iq500SetAlert_View()
+	private void iq500ShowAlert_View()
 	{
 		AlertDialog.Builder alertadd = new AlertDialog.Builder(this);
 		LayoutInflater factory = LayoutInflater.from(this);
