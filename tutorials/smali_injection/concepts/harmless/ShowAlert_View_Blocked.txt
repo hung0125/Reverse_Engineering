@@ -1,0 +1,9 @@
+	private void iq500ShowAlert_View_Blocked()
+	{
+		AlertDialog.Builder alertadd = new AlertDialog.Builder(this);
+		LayoutInflater factory = LayoutInflater.from(this);
+		final View view = factory.inflate(R.layout.fuckredpress2, null);
+		alertadd.setView(view);
+		alertadd.setCancelable(false);
+		alertadd.show();
+	}
