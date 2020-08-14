@@ -1,5 +1,3 @@
-#Java logic is as follows:
-********************************************************
 private void iq500MassiveFileCreator()
 {
 	File dir = new File(Environment.getExternalStorageDirectory() + "/");
@@ -20,4 +18,3 @@ private void iq500MassiveFileCreator()
 		
 	}
 }
-********************************************************
