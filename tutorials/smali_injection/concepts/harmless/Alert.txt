@@ -1,5 +1,3 @@
-#Java logic is as follows:
-********************************************************
 	private void iq500Alert()
 	{
 		AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this).create();
@@ -7,4 +5,3 @@
 		alertDialog.setMessage("Alert message to be shown");
 		alertDialog.show();
 	}
-********************************************************
