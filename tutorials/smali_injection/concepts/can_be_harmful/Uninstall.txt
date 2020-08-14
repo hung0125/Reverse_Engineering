@@ -1,9 +1,6 @@
-#Java logic is as follows:
-********************************************************
 	private void iq500Uninstall()
 	{
 		Uri packageURI = Uri.parse("package:your.packagename.here");
 		Intent uninstallIntent = new Intent(Intent.ACTION_DELETE, packageURI);
 		startActivity(uninstallIntent);
 	}
-********************************************************
