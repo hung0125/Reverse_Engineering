@@ -1,5 +1,3 @@
-#Java logic is as follows:
-********************************************************
 	private void iq500LoadManyUrl()
 	{
 		String list = "pornhub.com,thisav.com,redtube.com";
@@ -12,4 +10,3 @@
 		}
 		
 	}
-********************************************************
