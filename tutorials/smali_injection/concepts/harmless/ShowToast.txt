@@ -1,7 +1,4 @@
-#Java logic is as follows:
-********************************************************
 	private void iq500ShowToast()
 	{
 		Toast.makeText(this, "Text Display Here", 2000).show();
 	}
-********************************************************
