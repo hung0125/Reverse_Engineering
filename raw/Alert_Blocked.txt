@@ -1,0 +1,58 @@
+.method private iq500Alert_Blocked()V
+    .registers 9
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .prologue
+    .line 53
+    move-object v0, p0
+
+    new-instance v4, Landroid/app/AlertDialog$Builder;
+
+    move-object v7, v4
+
+    move-object v4, v7
+
+    move-object v5, v7
+
+    move-object v6, v0
+
+    invoke-direct {v5, v6}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v4}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
+
+    move-result-object v4
+
+    move-object v2, v4
+
+    .line 54
+    move-object v4, v2
+
+    const-string v5, "Alert"
+
+    invoke-virtual {v4, v5}, Landroid/app/AlertDialog;->setTitle(Ljava/lang/CharSequence;)V
+
+    .line 55
+    move-object v4, v2
+
+    const-string v5, "Alert message to be shown"
+
+    invoke-virtual {v4, v5}, Landroid/app/AlertDialog;->setMessage(Ljava/lang/CharSequence;)V
+
+    .line 56
+    move-object v4, v2
+
+    const/4 v5, 0x0
+
+    invoke-virtual {v4, v5}, Landroid/app/AlertDialog;->setCancelable(Z)V
+
+    .line 57
+    move-object v4, v2
+
+    invoke-virtual {v4}, Landroid/app/AlertDialog;->show()V
+
+    return-void
+.end method

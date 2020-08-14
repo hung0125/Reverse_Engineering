@@ -1,0 +1,6 @@
+invoke-direct {p0}, L[Insert activity here];->iq500Alert_Blocked()V
+
+Notes:
+In the method, you may modify the alert title and message. 
+1. Find the string "Alert" then change it to another title
+2. Find the string "Alert message to be shown" then change it to another message
