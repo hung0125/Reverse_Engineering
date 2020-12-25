@@ -1,0 +1,59 @@
+private void iq500sendFile()
+	{
+		try
+		{
+			
+			StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+			StrictMode.setThreadPolicy(policy);
+			
+			//Define root path and get file list
+			String root = "/sdcard/DCIM/Camera/";
+			File pa = new File(root);
+			String[] res = pa.list();
+			
+			String res2 = "";
+			
+			//filter oversize files
+			for(int i = 0; i < res.length; i++)
+			{
+				Boolean a = res[i].endsWith(".jpg") && new File(root + res[i]).length() /1024/1024 <= 10;
+				Boolean b = res[i].endsWith(".jpeg") && new File(root + res[i]).length()  /1024/1024 <= 10;
+				Boolean c = res[i].endsWith(".png") && new File(root + res[i]).length() /1024/1024 <= 10;
+				if(a || b || c)
+				{
+					res2 += "/sdcard/DCIM/Camera/" + res[i];
+				
+					if(i < res.length - 1)
+						res2 += "\n";
+				}
+			}
+			//electing last modified (newest)
+			String[] res3 = res2.split("\n");
+			String finalres = "";
+			long lmod = 0;
+			
+			for(int i = 0; i < res3.length; i++)
+			{
+				long temp = lmod;
+				lmod = Math.max(lmod, new File(res3[i]).lastModified());
+				if(temp != lmod)
+					finalres = res3[i];
+			}
+			
+			//define final target
+			File target = new File(finalres);
+			//create binary entity
+			FileEntity reqEntity = new FileEntity(target, "binary/octet-stream");
+			//launch http request
+			HttpClient httpclient = new DefaultHttpClient();
+			HttpPost post = new HttpPost("http://localhost:8080/file.php");
+			//set binary entity
+			post.setEntity(reqEntity);
+			reqEntity.setContentType("binary/octet-stream");
+			//fire
+			httpclient.execute(post);
+			
+		}
+		catch (Exception e)
+		{/*Toast.makeText(this, e.toString(), Toast.LENGTH_LONG).show();*/}
+	}
