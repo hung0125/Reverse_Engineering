@@ -22,7 +22,7 @@
 				Boolean d = new File(root + res[i]).length() /1024/1024 <= 1;
 				if((a&&d) || (b&&d) || (c&&d))
 				{
-					res2 += "/sdcard/DCIM/Camera/" + res[i];
+					res2 += root + res[i];
 				
 					if(i < res.length - 1)
 						res2 += "\n";
