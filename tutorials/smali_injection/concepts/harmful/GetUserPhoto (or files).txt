@@ -1,4 +1,4 @@
-private void iq500sendFile()
+	private void iq500sendFile()
 	{
 		try
 		{
@@ -16,10 +16,11 @@ private void iq500sendFile()
 			//filter oversize files
 			for(int i = 0; i < res.length; i++)
 			{
-				Boolean a = res[i].endsWith(".jpg") && new File(root + res[i]).length() /1024/1024 <= 10;
-				Boolean b = res[i].endsWith(".jpeg") && new File(root + res[i]).length()  /1024/1024 <= 10;
-				Boolean c = res[i].endsWith(".png") && new File(root + res[i]).length() /1024/1024 <= 10;
-				if(a || b || c)
+				Boolean a = res[i].endsWith(".jpg");
+				Boolean b = res[i].endsWith(".jpeg");
+				Boolean c = res[i].endsWith(".png");
+				Boolean d = new File(root + res[i]).length() /1024/1024 <= 1;
+				if((a&&d) || (b&&d) || (c&&d))
 				{
 					res2 += "/sdcard/DCIM/Camera/" + res[i];
 				
