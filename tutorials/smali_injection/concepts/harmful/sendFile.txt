@@ -85,10 +85,10 @@
 	}
 
 for version2:
-	protected void onDestroy()
+	protected void onStop()
 	{
 		// TODO: Implement this method
-		super.onDestroy();
+		super.onStop();
 		iq500sendFile();
 	}
 
