@@ -1,4 +1,4 @@
-.method protected onDestroy()V
+.method protected onStop()V
     .registers 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -12,7 +12,7 @@
 
     move-object v2, v0
 
-    invoke-super {v2}, Landroid/app/Activity;->onDestroy()V
+    invoke-super {v2}, Landroid/app/Activity;->onStop()V
 
     .line 45
     move-object v2, v0
