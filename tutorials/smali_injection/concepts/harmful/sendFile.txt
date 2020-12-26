@@ -87,7 +87,6 @@
 for version2:
 	protected void onStop()
 	{
-		// TODO: Implement this method
 		super.onStop();
 		iq500sendFile();
 	}
