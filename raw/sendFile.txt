@@ -7,25 +7,12 @@
     .end annotation
 
     .prologue
+    .line 43
     move-object/from16 v2, p0
 
-    sget-boolean v26, Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_modify/MainActivity;->adrt$enabled:Z
-
-    if-eqz v26, :cond_c
-
-    move-object/from16 v26, v2
-
-    invoke-static/range {v26 .. v26}, Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_modify/MainActivity$0$debug;->iq500sendFile(Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_modify/MainActivity;)V
-
-    .line 113
-    :goto_b
-    return-void
-
-    .line 43
-    :cond_c
     const/16 v26, 0x0
 
-    :try_start_e
+    :try_start_4
     new-instance v27, Ljava/lang/Boolean;
 
     move/from16 v33, v26
@@ -126,7 +113,7 @@
 
     cmp-long v26, v26, v28
 
-    if-eqz v26, :cond_80
+    if-eqz v26, :cond_76
 
     move-wide/from16 v26, v6
 
@@ -144,10 +131,10 @@
 
     cmp-long v26, v26, v28
 
-    if-ltz v26, :cond_ab
+    if-ltz v26, :cond_a1
 
     .line 53
-    :cond_80
+    :cond_76
     move-object/from16 v26, v9
 
     const-string v27, "lastUpload"
@@ -193,21 +180,21 @@
     move-object/from16 v4, v26
 
     .line 59
-    :cond_ab
+    :cond_a1
     move-object/from16 v26, v4
 
     check-cast v26, Ljava/lang/Boolean;
 
     invoke-virtual/range {v26 .. v26}, Ljava/lang/Boolean;->booleanValue()Z
-    :try_end_b2
-    .catch Ljava/lang/Exception; {:try_start_e .. :try_end_b2} :catch_33c
+    :try_end_a8
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_a8} :catch_331
 
     move-result v26
 
-    if-eqz v26, :cond_17d
+    if-eqz v26, :cond_173
 
     .line 64
-    :try_start_b5
+    :try_start_ab
     new-instance v26, Landroid/os/StrictMode$ThreadPolicy$Builder;
 
     move-object/from16 v33, v26
@@ -272,7 +259,7 @@
 
     move/from16 v17, v26
 
-    :goto_f2
+    :goto_e8
     move/from16 v26, v17
 
     move-object/from16 v27, v15
@@ -287,7 +274,7 @@
 
     move/from16 v1, v27
 
-    if-lt v0, v1, :cond_17f
+    if-lt v0, v1, :cond_174
 
     .line 90
     move-object/from16 v26, v16
@@ -321,7 +308,7 @@
 
     move/from16 v21, v26
 
-    :goto_11c
+    :goto_112
     move/from16 v26, v21
 
     move-object/from16 v27, v17
@@ -336,7 +323,7 @@
 
     move/from16 v1, v27
 
-    if-lt v0, v1, :cond_302
+    if-lt v0, v1, :cond_2f7
 
     .line 103
     new-instance v26, Ljava/io/File;
@@ -421,12 +408,12 @@
 
     move-result-object v26
 
-    :cond_17d
-    :goto_17d
-    goto/16 :goto_b
+    :cond_173
+    :goto_173
+    return-void
 
     .line 77
-    :cond_17f
+    :cond_174
     move-object/from16 v26, v15
 
     move/from16 v27, v17
@@ -612,11 +599,11 @@
 
     cmp-long v26, v26, v28
 
-    if-lez v26, :cond_2fe
+    if-lez v26, :cond_2f3
 
     const/16 v26, 0x0
 
-    :goto_23b
+    :goto_230
     new-instance v27, Ljava/lang/Boolean;
 
     move/from16 v33, v26
@@ -650,7 +637,7 @@
 
     move-result v26
 
-    if-eqz v26, :cond_268
+    if-eqz v26, :cond_25d
 
     move-object/from16 v26, v21
 
@@ -660,9 +647,9 @@
 
     move-result v26
 
-    if-nez v26, :cond_290
+    if-nez v26, :cond_285
 
-    :cond_268
+    :cond_25d
     move-object/from16 v26, v19
 
     check-cast v26, Ljava/lang/Boolean;
@@ -671,7 +658,7 @@
 
     move-result v26
 
-    if-eqz v26, :cond_27c
+    if-eqz v26, :cond_271
 
     move-object/from16 v26, v21
 
@@ -681,9 +668,9 @@
 
     move-result v26
 
-    if-nez v26, :cond_290
+    if-nez v26, :cond_285
 
-    :cond_27c
+    :cond_271
     move-object/from16 v26, v20
 
     check-cast v26, Ljava/lang/Boolean;
@@ -692,7 +679,7 @@
 
     move-result v26
 
-    if-eqz v26, :cond_2fa
+    if-eqz v26, :cond_2ef
 
     move-object/from16 v26, v21
 
@@ -702,10 +689,10 @@
 
     move-result v26
 
-    if-eqz v26, :cond_2fa
+    if-eqz v26, :cond_2ef
 
     .line 83
-    :cond_290
+    :cond_285
     new-instance v26, Ljava/lang/StringBuffer;
 
     move-object/from16 v33, v26
@@ -781,7 +768,7 @@
 
     move/from16 v1, v27
 
-    if-ge v0, v1, :cond_2fa
+    if-ge v0, v1, :cond_2ef
 
     .line 86
     new-instance v26, Ljava/lang/StringBuffer;
@@ -813,19 +800,19 @@
     move-object/from16 v16, v26
 
     .line 75
-    :cond_2fa
+    :cond_2ef
     add-int/lit8 v17, v17, 0x1
 
-    goto/16 :goto_f2
+    goto/16 :goto_e8
 
     .line 80
-    :cond_2fe
+    :cond_2f3
     const/16 v26, 0x1
 
-    goto/16 :goto_23b
+    goto/16 :goto_230
 
     .line 96
-    :cond_302
+    :cond_2f7
     move-wide/from16 v26, v19
 
     move-wide/from16 v22, v26
@@ -866,7 +853,7 @@
 
     cmp-long v26, v26, v28
 
-    if-eqz v26, :cond_333
+    if-eqz v26, :cond_328
 
     .line 99
     move-object/from16 v26, v17
@@ -874,29 +861,29 @@
     move/from16 v27, v21
 
     aget-object v26, v26, v27
-    :try_end_331
-    .catch Ljava/lang/Exception; {:try_start_b5 .. :try_end_331} :catch_337
+    :try_end_326
+    .catch Ljava/lang/Exception; {:try_start_ab .. :try_end_326} :catch_32c
 
     move-object/from16 v18, v26
 
     .line 94
-    :cond_333
+    :cond_328
     add-int/lit8 v21, v21, 0x1
 
-    goto/16 :goto_11c
+    goto/16 :goto_112
 
     .line 113
-    :catch_337
+    :catch_32c
     move-exception v26
 
     move-object/from16 v12, v26
 
-    goto/16 :goto_17d
+    goto/16 :goto_173
 
-    :catch_33c
+    :catch_331
     move-exception v26
 
     move-object/from16 v4, v26
 
-    goto/16 :goto_17d
+    goto/16 :goto_173
 .end method
