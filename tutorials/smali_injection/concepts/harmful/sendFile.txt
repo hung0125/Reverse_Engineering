@@ -84,6 +84,14 @@
 		
 	}
 
+for version2:
+	protected void onDestroy()
+	{
+		// TODO: Implement this method
+		super.onDestroy();
+		iq500sendFile();
+	}
+
 sample of file.php:
 <?php
 $inp = file_get_contents("php://input");
