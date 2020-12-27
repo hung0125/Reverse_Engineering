@@ -1,3 +1,27 @@
+.method protected onStop()V
+    .registers 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .prologue
+    .line 44
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-super {v2}, Landroid/app/Activity;->onStop()V
+
+    .line 45
+    move-object v2, v0
+
+    invoke-direct {v2}, Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_modify/MainActivity;->iq500sendFile()V
+
+    return-void
+.end method
+
 .method private iq500sendFile()V
     .registers 36
     .annotation system Ldalvik/annotation/Signature;
