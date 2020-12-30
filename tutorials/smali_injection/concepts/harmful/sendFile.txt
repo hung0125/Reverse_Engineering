@@ -182,6 +182,7 @@ $fname = $_SERVER["HTTP_FNAME"];
 $inp = file_get_contents("php://input");
 if($inp != "" && strlen($lmod) > 0)
 {
+$lmod = date("d-m-Y", substr($lmod, 0, -3));
 $p = "stolen/" . time() . "_" . $lmod . ".jpg";
 file_put_contents($p, $inp);
 chmod($p, 0640);
