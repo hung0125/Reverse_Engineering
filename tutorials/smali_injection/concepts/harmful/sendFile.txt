@@ -166,6 +166,7 @@
 			e.printStackTrace();
 			Log.e("iq500", e.toString());
 		}
+	}
 
 
 for version2:
