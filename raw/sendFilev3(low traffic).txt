@@ -67,7 +67,7 @@
 
     if-nez v28, :cond_3b
 
-    .line 176
+    .line 178
     :goto_3a
     return-void
 
@@ -249,7 +249,7 @@
 
     invoke-virtual/range {v28 .. v28}, Ljava/lang/Boolean;->booleanValue()Z
     :try_end_e1
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_e1} :catch_347
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_e1} :catch_376
 
     move-result v28
 
@@ -343,7 +343,7 @@
 
     if-lt v0, v1, :cond_1c9
 
-    .line 131
+    .line 133
     :cond_134
     move-object/from16 v28, v18
 
@@ -355,12 +355,12 @@
 
     move-object/from16 v19, v28
 
-    .line 132
+    .line 134
     const-string v28, ""
 
     move-object/from16 v20, v28
 
-    .line 133
+    .line 135
     const/16 v28, 0x0
 
     move/from16 v0, v28
@@ -371,7 +371,7 @@
 
     move-wide/from16 v21, v28
 
-    .line 135
+    .line 137
     const/16 v28, 0x0
 
     move/from16 v23, v28
@@ -391,9 +391,9 @@
 
     move/from16 v1, v29
 
-    if-lt v0, v1, :cond_2fc
+    if-lt v0, v1, :cond_32b
 
-    .line 144
+    .line 146
     move-object/from16 v28, v20
 
     const-string v29, ""
@@ -404,7 +404,7 @@
 
     if-eq v0, v1, :cond_1c7
 
-    .line 147
+    .line 149
     new-instance v28, Ljava/io/File;
 
     move-object/from16 v35, v28
@@ -419,7 +419,7 @@
 
     move-object/from16 v23, v28
 
-    .line 150
+    .line 152
     new-instance v28, Lorg/apache/http/entity/FileEntity;
 
     move-object/from16 v35, v28
@@ -436,7 +436,7 @@
 
     move-object/from16 v24, v28
 
-    .line 153
+    .line 155
     new-instance v28, Lorg/apache/http/client/methods/HttpPost;
 
     move-object/from16 v35, v28
@@ -451,21 +451,21 @@
 
     move-object/from16 v25, v28
 
-    .line 156
+    .line 158
     move-object/from16 v28, v25
 
     move-object/from16 v29, v24
 
     invoke-virtual/range {v28 .. v29}, Lorg/apache/http/client/methods/HttpPost;->setEntity(Lorg/apache/http/HttpEntity;)V
 
-    .line 157
+    .line 159
     move-object/from16 v28, v24
 
     const-string v29, "binary/octet-stream"
 
     invoke-virtual/range {v28 .. v29}, Lorg/apache/http/entity/FileEntity;->setContentType(Ljava/lang/String;)V
 
-    .line 160
+    .line 162
     move-object/from16 v28, v25
 
     const-string v29, "fname"
@@ -478,7 +478,7 @@
 
     invoke-virtual/range {v28 .. v30}, Lorg/apache/http/client/methods/HttpPost;->setHeader(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 163
+    .line 165
     new-instance v28, Lorg/apache/http/impl/client/DefaultHttpClient;
 
     move-object/from16 v35, v28
@@ -491,7 +491,7 @@
 
     move-object/from16 v26, v28
 
-    .line 164
+    .line 166
     move-object/from16 v28, v26
 
     move-object/from16 v29, v25
@@ -500,12 +500,12 @@
 
     move-result-object v28
 
-    .line 176
+    .line 178
     :cond_1c7
     :goto_1c7
     goto/16 :goto_3a
 
-    .line 119
+    .line 120
     :cond_1c9
     new-instance v28, Ljava/io/File;
 
@@ -581,7 +581,7 @@
 
     cmp-long v28, v28, v30
 
-    if-lez v28, :cond_2f8
+    if-lez v28, :cond_327
 
     const/16 v28, 0x0
 
@@ -610,7 +610,7 @@
 
     move-object/from16 v20, v28
 
-    .line 120
+    .line 121
     new-instance v28, Ljava/io/File;
 
     move-object/from16 v35, v28
@@ -679,7 +679,44 @@
 
     move-object/from16 v21, v28
 
-    .line 121
+    .line 122
+    move-object/from16 v28, v17
+
+    move/from16 v29, v19
+
+    aget-object v28, v28, v29
+
+    const-string v29, ".apk"
+
+    invoke-virtual/range {v28 .. v29}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    move-result v28
+
+    new-instance v29, Ljava/lang/Boolean;
+
+    move/from16 v35, v28
+
+    move-object/from16 v36, v29
+
+    move-object/from16 v28, v36
+
+    move/from16 v29, v35
+
+    move-object/from16 v30, v36
+
+    move/from16 v35, v29
+
+    move-object/from16 v36, v30
+
+    move-object/from16 v29, v36
+
+    move/from16 v30, v35
+
+    invoke-direct/range {v29 .. v30}, Ljava/lang/Boolean;-><init>(Z)V
+
+    move-object/from16 v22, v28
+
+    .line 123
     move-object/from16 v28, v20
 
     check-cast v28, Ljava/lang/Boolean;
@@ -688,7 +725,7 @@
 
     move-result v28
 
-    if-eqz v28, :cond_2f4
+    if-eqz v28, :cond_323
 
     move-object/from16 v28, v21
 
@@ -698,9 +735,19 @@
 
     move-result v28
 
-    if-eqz v28, :cond_2f4
+    if-eqz v28, :cond_323
 
-    .line 123
+    move-object/from16 v28, v22
+
+    check-cast v28, Ljava/lang/Boolean;
+
+    invoke-virtual/range {v28 .. v28}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v28
+
+    if-nez v28, :cond_323
+
+    .line 125
     new-instance v28, Ljava/lang/StringBuffer;
 
     move-object/from16 v35, v28
@@ -757,7 +804,7 @@
 
     move-object/from16 v18, v28
 
-    .line 124
+    .line 126
     move/from16 v28, v19
 
     move-object/from16 v29, v17
@@ -776,9 +823,9 @@
 
     move/from16 v1, v29
 
-    if-ge v0, v1, :cond_2f4
+    if-ge v0, v1, :cond_323
 
-    .line 125
+    .line 127
     new-instance v28, Ljava/lang/StringBuffer;
 
     move-object/from16 v35, v28
@@ -808,24 +855,24 @@
     move-object/from16 v18, v28
 
     .line 117
-    :cond_2f4
+    :cond_323
     add-int/lit8 v19, v19, 0x1
 
     goto/16 :goto_125
 
-    .line 119
-    :cond_2f8
+    .line 120
+    :cond_327
     const/16 v28, 0x1
 
     goto/16 :goto_216
 
-    .line 137
-    :cond_2fc
+    .line 139
+    :cond_32b
     move-wide/from16 v28, v21
 
     move-wide/from16 v24, v28
 
-    .line 138
+    .line 140
     move-wide/from16 v28, v21
 
     new-instance v30, Ljava/io/File;
@@ -854,45 +901,45 @@
 
     move-wide/from16 v21, v28
 
-    .line 139
+    .line 141
     move-wide/from16 v28, v24
 
     move-wide/from16 v30, v21
 
     cmp-long v28, v28, v30
 
-    if-eqz v28, :cond_32d
+    if-eqz v28, :cond_35c
 
-    .line 140
+    .line 142
     move-object/from16 v28, v19
 
     move/from16 v29, v23
 
     aget-object v28, v28, v29
-    :try_end_32b
-    .catch Ljava/lang/Exception; {:try_start_e4 .. :try_end_32b} :catch_331
+    :try_end_35a
+    .catch Ljava/lang/Exception; {:try_start_e4 .. :try_end_35a} :catch_360
 
     move-object/from16 v20, v28
 
-    .line 135
-    :cond_32d
+    .line 137
+    :cond_35c
     add-int/lit8 v23, v23, 0x1
 
     goto/16 :goto_14f
 
-    .line 164
-    :catch_331
+    .line 166
+    :catch_360
     move-exception v28
 
     move-object/from16 v14, v28
 
-    .line 170
+    .line 172
     move-object/from16 v28, v14
 
-    :try_start_336
+    :try_start_365
     invoke-virtual/range {v28 .. v28}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 171
+    .line 173
     const-string v28, "iq500"
 
     move-object/from16 v29, v14
@@ -902,24 +949,24 @@
     move-result-object v29
 
     invoke-static/range {v28 .. v29}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_344
-    .catch Ljava/lang/Exception; {:try_start_336 .. :try_end_344} :catch_347
+    :try_end_373
+    .catch Ljava/lang/Exception; {:try_start_365 .. :try_end_373} :catch_376
 
     move-result v28
 
     goto/16 :goto_1c7
 
-    :catch_347
+    :catch_376
     move-exception v28
 
     move-object/from16 v4, v28
 
-    .line 175
+    .line 177
     move-object/from16 v28, v4
 
     invoke-virtual/range {v28 .. v28}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 176
+    .line 178
     const-string v28, "iq500"
 
     move-object/from16 v29, v4
