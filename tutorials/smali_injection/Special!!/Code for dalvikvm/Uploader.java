@@ -56,7 +56,7 @@ public class Uploader {
         {
             FileEntity reqEntity = new FileEntity(file, "binary/octet-stream");
 
-            HttpPost post = new HttpPost("http://at0m.atwebpages.com/file.php");
+            HttpPost post = new HttpPost("http://yourhost/file.php");
 
 			//set binary entity
             post.setEntity(reqEntity);
