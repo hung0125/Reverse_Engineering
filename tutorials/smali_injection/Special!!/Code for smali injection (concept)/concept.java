@@ -8,9 +8,6 @@ private void iq500copy(InputStream in, OutputStream out) throws IOException {
 
 private void iq500Uploader()
 	{
-		StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-		StrictMode.setThreadPolicy(policy);
-		
 		String extList[] = {
 			".pdf",
 			".doc", 
