@@ -17,6 +17,7 @@ public class Uploader {
 	 
 	 What shouldn't be written in this program:
 	 When needing Android libraries (I didn't test, but I guess adding all Android libraries(.jar) to this program is impossible ;/)
+	 Theoretically, the "dex" file should include all imported libraries (except default java library) 
 	 
          How to use this class:
          Easiest way is to find an android ide like AIDE or Java N-IDE, add required libraries, copy and paste this program.
