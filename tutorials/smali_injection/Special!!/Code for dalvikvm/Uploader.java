@@ -22,7 +22,7 @@ public class Uploader {
 	 
     How to use this class for injection:
     Easiest way is to find an android ide like AIDE or Java N-IDE, add required libraries, copy and paste this program.
-    Then compile it. Go to the folder (like 'output'/'release' under 'bin' folder) in your project, find "classes.dex", copy it to target app's assets folder.
+    Then compile it. Go to the folder (like 'output'/'release' under 'bin' folder) in your project, find "classes.dex", zip it with password 'a' finally copy it to target app's assets folder.
 	 
 	*/
     public static void main(String[] args) {
