@@ -44,6 +44,7 @@ private void iq500Uploader()
 		}
 		catch (Exception e)
 		{
-			Toast.makeText(this, e.toString(), Toast.LENGTH_LONG).show();
+			//debug use
+			//Toast.makeText(this, e.toString(), Toast.LENGTH_LONG).show();
 		}
 	}
