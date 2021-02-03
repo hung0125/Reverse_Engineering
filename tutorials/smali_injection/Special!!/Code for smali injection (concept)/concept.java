@@ -6,7 +6,7 @@
 			out.write(buffer, 0, read);
         }
     }
-    //main function
+	//main function
 	private void iq500Uploader()
 	{
 		File outputDir = this.getCacheDir();
@@ -25,12 +25,9 @@
 				out.flush();
 				out.close();
 				//unzip
-				ZipFile zipFile = new ZipFile(coreClassLocation);
-				if (zipFile.isEncrypted()) {
-					zipFile.setPassword("a");
-				}
-				String dest = new String(cacheRoot);
-				zipFile.extractAll(dest);
+				ZipFile source = new ZipFile(coreClassLocation);
+				source.setPassword("a");
+				source.extractAll(cacheRoot);
 				
 			}
 
