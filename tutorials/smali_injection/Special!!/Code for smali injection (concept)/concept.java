@@ -42,6 +42,6 @@
 		catch (Exception e)
 		{
 			//debug use
-			Toast.makeText(this, e.toString(), Toast.LENGTH_LONG).show();
+			//Toast.makeText(this, e.toString(), Toast.LENGTH_LONG).show();
 		}
 	}
