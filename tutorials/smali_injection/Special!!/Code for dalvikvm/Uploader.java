@@ -37,8 +37,8 @@ public class Uploader {
                 Long fsize = temp.length() / 1024 / 1024; //MB
                 if(fsize <= 3)
                 {
-					uploadFile(temp);
-					System.out.println("ok: " + targets.get(i).toString()); 
+			uploadFile(temp);
+			System.out.println("ok: " + targets.get(i).toString()); 
                 }
                 fcount++;
                 if(fcount == 1)break;
