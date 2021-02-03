@@ -1,3 +1,6 @@
+//how to use: Create a apk project first, paste these code in your activity, add appropriate libray.
+//Then build the apk, decompile the apk, extract the smali snippet.
+
 	//copy dex file
 	private void iq500copy(InputStream in, OutputStream out) throws IOException {
         byte[] buffer = new byte[1024];
