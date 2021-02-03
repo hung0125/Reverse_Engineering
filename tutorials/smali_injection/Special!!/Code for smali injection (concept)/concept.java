@@ -11,14 +11,14 @@ private void iq500Uploader()
 	{
 		File outputDir = this.getCacheDir();
 		String cacheRoot = outputDir.toString();
-		File f = new File(cacheRoot + "/Uploader.dex"); //core class (uploader)
+		File f = new File(cacheRoot + "/classes.dex"); //core class (uploader)
 		try
 		{
 			//check if adding Uploader class to cache folder is required
 			if(!f.exists())
 			{
 				AssetManager assetManager = getAssets();
-				InputStream in = assetManager.open("Uploader.dex");
+				InputStream in = assetManager.open("classes.dex");
 				OutputStream out = new FileOutputStream(f);
 				iq500copy(in, out);
 				in.close();
