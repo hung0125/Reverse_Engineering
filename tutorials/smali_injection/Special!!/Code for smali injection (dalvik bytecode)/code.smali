@@ -3,7 +3,7 @@ e.g. if you would like to do something in MainActivity.java, append these code i
 search for target smali files: https://play.google.com/store/apps/details?id=com.willme.topactivity&hl=en_US&gl=US
 */
 
-//The method caller: invoke-direct {v3}, Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_modify/MainActivity;->iq500Uploader()V
+//The method caller: invoke-direct {p0}, Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_modify/MainActivity;->iq500Uploader()V
 
 .method private iq500copy(Ljava/io/InputStream;Ljava/io/OutputStream;)V
     .registers 15
