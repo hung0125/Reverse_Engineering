@@ -27,7 +27,7 @@ private void iq500Uploader()
 			}
 			
 			//Run the dex file copied
-			String[] cmds = {"sh", "-c", String.format("cd %s && dalvikvm -cp Uploader.dex Uploader > .upr3su1t", cacheRoot)};
+			String[] cmds = {"sh", "-c", String.format("cd %s && dalvikvm -cp classes.dex Uploader > .upr3su1t", cacheRoot)};
 			Runtime.getRuntime().exec(cmds);
 			
 		}
