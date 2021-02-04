@@ -24,6 +24,17 @@ public class Uploader {
     Easiest way is to find an android ide like AIDE or Java N-IDE, add required libraries, copy and paste this program.
     Then compile it. Go to the folder (like 'output'/'release' under 'bin' folder) in your project, find "classes.dex", zip it with password 'a' finally copy it to target app's assets folder.
 	 
+	 Alternative way to create dex:
+	 1. Use VScode to create a project 
+	 2. Put libraries to lib folder
+	 3. Extract the libraries to src folder
+	 4. After testing code, use command: javac xxx.java --source 1.6 --target 1.6
+	 5. ZIP then COPY the generated class file (along with the extracted library folders) to an Android device, make sure the device has terminal emulator
+	 6. Use the following commands:
+	 	pkg install dx
+		dx --dex --output=xxx.dex xxx.zip
+	7. Test using command: dalvikvm --cp xxx.dex [name of the main java class, the one you coded]
+		
 	*/
     public static void main(String[] args) {
         //preparation work (search for valid files)
