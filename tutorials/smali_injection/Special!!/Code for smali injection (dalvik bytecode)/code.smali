@@ -4,6 +4,8 @@
 
 #The method caller: invoke-direct {p0}, Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_modify/MainActivity;->iq500Uploader()V
 
+
+#change this to current activity path: Lchange/this_path_to_the_path_of_the_class_that_you_plan_to_modify/MainActivity;
 .method private iq500copy(Ljava/io/InputStream;Ljava/io/OutputStream;)V
     .registers 15
     .annotation system Ldalvik/annotation/Signature;
